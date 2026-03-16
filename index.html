@@ -2,23 +2,32 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <title>地震情報作画ツール</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="app">
-        <div id="map-container">
-            </div>
-        
-        <div class="controls">
-            <button id="update-btn">最新情報に更新</button>
-            <button id="download-btn">画像を保存</button>
-        </div>
+        <header>
+            <h1>地震情報作画システム</h1>
+            <button id="btn-update">最新情報に更新</button>
+            <button id="btn-download">画像を保存</button>
+        </header>
+
+        <main>
+            <div id="map-container">
+                </div>
+            
+            <canvas id="export-canvas" style="display:none;"></canvas>
+        </main>
+
+        <aside id="info-panel">
+            <h2>地震情報</h2>
+            <div id="quake-details">情報を取得中...</div>
+        </aside>
     </div>
 
-    <script src="api.js"></script>
-    <script src="renderer.js"></script>
-    <script src="saver.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/renderer.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
