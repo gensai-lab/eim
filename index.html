@@ -2,18 +2,23 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <title>地震情報作画ツール</title>
-    <style>
-        #canvas-container { width: 1280px; height: 720px; border: 1px solid #000; position: relative; }
-        canvas { width: 100%; height: auto; }
-    </style>
 </head>
 <body>
-    <div id="canvas-container">
-        <canvas id="earthquake-canvas" width="1920" height="1080"></canvas>
+    <div id="app">
+        <div id="map-container">
+            </div>
+        
+        <div class="controls">
+            <button id="update-btn">最新情報に更新</button>
+            <button id="download-btn">画像を保存</button>
+        </div>
     </div>
-    <button id="download-btn">画像を保存 (PNG)</button>
 
-    <script src="script.js"></script>
+    <script src="api.js"></script>
+    <script src="renderer.js"></script>
+    <script src="saver.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
