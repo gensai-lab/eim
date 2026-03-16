@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>地震情報作画ツール</title>
+    <style>
+        #canvas-container { width: 1280px; height: 720px; border: 1px solid #000; position: relative; }
+        canvas { width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div id="canvas-container">
+        <canvas id="earthquake-canvas" width="1920" height="1080"></canvas>
+    </div>
+    <button id="download-btn">画像を保存 (PNG)</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
