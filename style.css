@@ -1,75 +1,23 @@
-/* 全体の設定 */
+/* style.css の冒頭部分を修正 */
 body {
     margin: 0;
     padding: 0;
     background-color: #333;
-    font-family: "A-OTF UD新ゴ Pr6", "Hiragino Kaku Gothic ProN", sans-serif;
+    /* フォント名を正確に指定（Mを基本に） */
+    font-family: "A-OTF Shin Go Pro M", "A-OTF 新ゴ Pro M", sans-serif;
     overflow: hidden;
 }
 
-/* 作画対象のエリア（1280x720） */
-#display-area {
-    width: 1280px; 
-    height: 720px;
-    background-color: #1e2a58; /* 海の色 */
-    position: relative;
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-/* 地図の配置 */
-#map-container {
-    width: 100%;
-    height: 100%;
-}
-
-#map-container svg {
-    width: 100%;
-    height: 100%;
-}
-
-/* サイドパネル（左側） */
-#side-panel {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 320px;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.85);
-    z-index: 10;
-}
-
-.header-blue {
-    background-color: #0066ff;
-    color: white;
-    padding: 10px 20px;
-}
-
+/* 太字が必要な箇所にDBやBを指定 */
 .header-blue h2 {
     margin: 0;
     font-size: 32px;
-}
-
-.shindo-display {
-    border: 2px solid white;
-    margin: 15px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.shindo-display .label {
-    font-size: 20px;
+    font-family: "A-OTF Shin Go Pro B", "A-OTF 新ゴ Pro B", sans-serif;
 }
 
 #max-shindo {
     font-size: 48px;
-    font-weight: bold;
-}
-
-.detail-item {
-    margin: 15px 20px;
+    font-family: "A-OTF Shin Go Pro B", "A-OTF 新ゴ Pro B", sans-serif;
 }
 
 .item-label {
@@ -77,57 +25,6 @@ body {
     color: black;
     display: inline-block;
     padding: 2px 8px;
-    font-weight: bold;
     font-size: 14px;
-}
-
-.item-value {
-    color: white;
-    font-size: 22px;
-    margin-top: 5px;
-    line-height: 1.2;
-}
-
-/* テロップ */
-#telop-area {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-
-.telop {
-    padding: 10px 20px;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.tsunami { background-color: #ff00ff; color: white; }
-.eew { background-color: #ffff00; color: black; }
-
-/* コピーライト（右下） */
-#copyright-label {
-    position: absolute;
-    bottom: 10px;
-    right: 15px;
-    color: white;
-    font-size: 14px;
-    text-shadow: 1px 1px 2px black;
-    z-index: 10;
-}
-
-/* ユーティリティ */
-.hidden { display: none; }
-
-/* 操作ボタン（画面外） */
-#controls {
-    text-align: center;
-    padding: 20px;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    margin: 0 5px;
+    font-family: "A-OTF Shin Go Pro DB", "A-OTF 新ゴ Pro DB", sans-serif;
 }
