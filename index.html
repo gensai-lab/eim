@@ -2,28 +2,58 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>地震情報作画ツール</title>
+    <title>地震情報作画ツール - みんなの減災ラボ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="app">
-        <header>
-            <h1>地震情報作画システム</h1>
-            <button id="btn-update">最新情報に更新</button>
-            <button id="btn-download">画像を保存</button>
-        </header>
+    <div id="display-area">
+        <div id="map-container"></div>
 
-        <main>
-            <div id="map-container">
-                </div>
+        <div id="side-panel">
+            <div class="header-blue">
+                <small>Earthquake Information</small>
+                <h2>地震情報</h2>
+            </div>
             
-            <canvas id="export-canvas" style="display:none;"></canvas>
-        </main>
+            <div class="info-content">
+                <div class="shindo-display">
+                    <span class="label">最大震度</span>
+                    <span id="max-shindo">X</span>
+                </div>
 
-        <aside id="info-panel">
-            <h2>地震情報</h2>
-            <div id="quake-details">情報を取得中...</div>
-        </aside>
+                <div class="detail-item">
+                    <div class="item-label">発生日時</div>
+                    <div id="quake-time" class="item-value">2026年XX月XX日<br>XX時XX分ごろ</div>
+                </div>
+
+                <div id="hypo-details" class="hidden">
+                    <div class="detail-item">
+                        <div class="item-label">震源地</div>
+                        <div id="hypo-name" class="item-value">---</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="item-label">地震の規模</div>
+                        <div id="mag-value" class="item-value">M0.0</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="item-label">地震の深さ</div>
+                        <div id="depth-value" class="item-value">約XXキロ</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="telop-area">
+                <div id="tsunami-info" class="telop tsunami hidden">津波情報が発表されています</div>
+                <div id="eew-info" class="telop eew hidden">緊急地震速報が発表されています</div>
+            </div>
+        </div>
+
+        <div id="status-label">震度速報</div>
+    </div>
+
+    <div id="controls">
+        <button id="btn-update">最新情報に更新</button>
+        <button id="btn-download">画像を保存</button>
     </div>
 
     <script src="js/api.js"></script>
