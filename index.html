@@ -2,18 +2,56 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>震度マップ作画ツール</title>
+    <title>地震情報作画ツール</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="display-area">
-        <div id="map-container"></div>
+    <div id="app">
+        <div id="display-area">
+            <div id="map-container"></div>
+        </div>
 
-        <div id="copyright-label">©Kactuif / 地図データ：気象庁</div>
+        <div id="side-panel">
+            <div class="header-blue">
+                <small>Earthquake Information</small>
+                <h2>地震情報</h2>
+            </div>
+            
+            <div class="info-content">
+                <div class="shindo-display">
+                    <span class="label">最大震度</span>
+                    <span id="max-shindo">X</span>
+                </div>
+
+                <div class="detail-item">
+                    <div class="item-label">発生日時</div>
+                    <div id="quake-time" class="item-value">---</div>
+                </div>
+
+                <div id="hypo-details" class="hidden">
+                    <div class="detail-item">
+                        <div class="item-label">震源地</div>
+                        <div id="hypo-name" class="item-value">---</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="item-label">地震の規模</div>
+                        <div id="mag-value" class="item-value">M0.0</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="item-label">地震の深さ</div>
+                        <div id="depth-value" class="item-value">約XXキロ</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="telop-area">
+                <div id="tsunami-info" class="telop tsunami hidden">津波情報が発表されています</div>
+            </div>
+        </div>
     </div>
 
     <div id="controls">
-        <button id="btn-update">最新の震度情報を取得</button>
+        <button id="btn-update">最新の地震情報を取得</button>
         <button id="btn-download">画像を保存 (PNG)</button>
         <div id="status-message">準備完了</div>
     </div>
