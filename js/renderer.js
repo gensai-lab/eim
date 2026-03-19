@@ -1,4 +1,4 @@
-// P2Pの「地域名」と、地図の「ID（番号）」を結びつける辞書（全国網羅版）
+// 地域名とIDの対応辞書
 const AREA_DICTIONARY = {
     "石狩地方北部": "100", "石狩地方中部": "101", "石狩地方南部": "102",
     "渡島地方北部": "105", "渡島地方東部": "106", "渡島地方西部": "107",
@@ -53,180 +53,70 @@ const AREA_DICTIONARY = {
     "沖縄県本島北部": "800", "沖縄県本島中南部": "801", "沖縄県久米島": "802", "沖縄県大東島": "803", "沖縄県宮古島": "804", "沖縄県石垣島": "805", "沖縄県与那国島": "806", "沖縄県西表島": "807"
 };
 
-// アイコン Data URL キャッシュ用
-const iconDataUrls = {};
+// アイコン画像を事前にData URL化して保持する
+const iconCache = {};
+const scales = ["1", "2", "3", "4", "5-", "5+", "6-", "6+", "7"];
 
-// アイコンを Data URL に変換してキャッシュする
-async function fetchAllIconDataUrls() {
-    const scales = ["1", "2", "3", "4", "5-", "5+", "6-", "6+", "7"];
-    for (const scale of scales) {
+async function preloadIcons() {
+    for (const s of scales) {
         try {
-            const response = await fetch(`assets/${scale}.svg`);
-            const svgText = await response.text();
-            iconDataUrls[scale] = "data:image/svg+xml;base64," + btoa(unescape(encodeURIComponent(svgText)));
-        } catch (e) {
-            console.error(`アイコンの読み込みに失敗しました: assets/${scale}.svg`, e);
-        }
+            const res = await fetch(`assets/${s}.svg`);
+            const svgText = await res.text();
+            iconCache[s] = "data:image/svg+xml;base64," + btoa(unescape(encodeURIComponent(svgText)));
+        } catch (e) { console.error("Icon load error:", s); }
     }
 }
 
-// P2Pの震度数値から Data URL を取得する
-function getIconDataUrl(scale) {
-    const scaleMap = {
-        10: "1", 20: "2", 30: "3", 40: "4",
-        45: "5-", 50: "5+", 55: "6-", 60: "6+", 70: "7"
-    };
-    const key = scaleMap[scale];
-    return iconDataUrls[key] || null;
+function getIconUrl(p2pScale) {
+    const map = { 10:"1", 20:"2", 30:"3", 40:"4", 45:"5-", 50:"5+", 55:"6-", 60:"6+", 70:"7" };
+    return iconCache[map[p2pScale]] || null;
 }
 
-// 地図上にアイコンを描画するメイン機能（ `<path id="ID">` 方式）
+// アイコン描画のメイン関数
 window.drawShindoIcons = async function(points) {
-    console.log("地図への描画を開始します...", points);
-    const status = document.getElementById('status-message');
+    const svg = document.querySelector('#map-container svg');
+    if (!svg) return;
 
-    const svgElement = document.querySelector('#map-container svg');
-    if (!svgElement) {
-        console.error("地図のSVGが見つかりません。");
-        status.innerText = "エラー: 地図SVGが見つかりません";
-        return;
-    }
+    // 古いアイコンを削除
+    document.querySelectorAll('.dynamic-icon').forEach(el => el.remove());
 
-    // 以前に描画した本物のアイコンがあれば、一旦すべて消す
-    const oldIcons = document.querySelectorAll('.dynamic-icon');
-    oldIcons.forEach(icon => icon.remove());
+    if (Object.keys(iconCache).length === 0) await preloadIcons();
 
-    // アイコンのData URLがまだキャッシュされていなければ取得
-    if (Object.keys(iconDataUrls).length === 0) {
-        status.innerText = "アイコンを準備中...";
-        await fetchAllIconDataUrls();
-    }
-
-    // ズーム用の範囲計算
     let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
-    let hasValidPoint = false;
+    let hasPoint = false;
 
-    // P2Pから送られてきた各地域のデータを1つずつ処理
-    points.forEach(point => {
-        const areaName = point.addr;
-        const targetId = AREA_DICTIONARY[areaName];
+    points.forEach(p => {
+        const targetId = AREA_DICTIONARY[p.addr];
+        if (!targetId) return;
 
-        if (!targetId) {
-            console.log(`辞書未登録: ${areaName}`);
-            return;
-        }
-
-        const iconDataUrl = getIconDataUrl(point.scale);
-        if (!iconDataUrl) return;
-
-        // 地図の `<path id="ID">` 要素を探す
+        const iconUrl = getIconUrl(p.scale);
         const areaPath = document.getElementById(targetId);
-        if (!areaPath) {
-            // 地図上にそのIDの区域がない場合はスキップ
-            console.warn(`ID: ${targetId} (${areaName}) がSVG地図内に見つかりません`);
-            return;
-        }
+        if (!areaPath || !iconUrl) return;
 
-        // 区域の「中心座標」を計算
         const bbox = areaPath.getBBox();
         const centerX = bbox.x + bbox.width / 2;
         const centerY = bbox.y + bbox.height / 2;
+        const size = 24; // アイコンの大きさ
 
-        // アイコンのサイズ（地図上の大きさに合わせて調整してください）
-        const iconSize = 30; // 例：30px x 30px
+        const img = document.createElementNS('http://www.w3.org/2000/svg', 'image');
+        img.setAttribute('href', iconUrl);
+        img.setAttribute('x', centerX - size / 2);
+        img.setAttribute('y', centerY - size / 2);
+        img.setAttribute('width', size);
+        img.setAttribute('height', size);
+        img.setAttribute('class', 'dynamic-icon');
+        svg.appendChild(img);
 
-        // 新しい画像（本物の震度アイコン）を作る
-        const newIcon = document.createElementNS('http://www.w3.org/2000/svg', 'image');
-        newIcon.setAttribute('href', iconDataUrl);
-        newIcon.setAttribute('x', centerX - iconSize / 2); // 中心を合わせる
-        newIcon.setAttribute('y', centerY - iconSize / 2); // 中心を合わせる
-        newIcon.setAttribute('width', iconSize);
-        newIcon.setAttribute('height', iconSize);
-        newIcon.setAttribute('class', 'dynamic-icon');
-
-        // 地図に追加
-        svgElement.appendChild(newIcon);
-
-        // ズーム用の範囲を更新
-        hasValidPoint = true;
-        minX = Math.min(minX, bbox.x);
-        minY = Math.min(minY, bbox.y);
-        maxX = Math.max(maxX, bbox.x + bbox.width);
-        maxY = Math.max(maxY, bbox.y + bbox.height);
+        hasPoint = true;
+        minX = Math.min(minX, bbox.x); minY = Math.min(minY, bbox.y);
+        maxX = Math.max(maxX, bbox.x + bbox.width); maxY = Math.max(maxY, bbox.y + bbox.height);
     });
 
-    // ズーム（ViewBoxの設定）
-    if (hasValidPoint) {
-        status.innerText = "地図をズーム中...";
-        
-        // 少しマージンを追加
-        const marginPercent = 0.1; // 10%
-        const width = maxX - minX;
-        const height = maxY - minY;
-        const zoomWidth = width * (1 + marginPercent * 2);
-        const zoomHeight = height * (1 + marginPercent * 2);
-        const zoomX = minX - width * marginPercent;
-        const zoomY = minY - height * marginPercent;
-
-        // SVGのviewBoxを設定（x y width height）
-        const newViewBox = `${zoomX} ${zoomY} ${zoomWidth} ${zoomHeight}`;
-        svgElement.setAttribute('viewBox', newViewBox);
-
-        console.log(`ViewBox更新: ${newViewBox}`);
-    } else {
-        // 震度があった区域がなかった（または地図上にない）場合は、全体表示に戻す
-        // 元のviewBoxがわかる場合は、それを設定する
-        console.log("ズーム対象なし、全体表示のまま");
+    // ズーム処理
+    if (hasPoint) {
+        const w = maxX - minX, h = maxY - minY;
+        const margin = 0.2;
+        const vb = `${minX - w*margin} ${minY - h*margin} ${w*(1+margin*2)} ${h*(1+margin*2)}`;
+        svg.setAttribute('viewBox', vb);
     }
-
-    status.innerText = "描画完了";
-    console.log("アイコンの配置とズームが完了しました！");
 };
-
-// 地震情報パネル（HTML）を更新する機能
-window.updateQuakeDetails = function(data) {
-    const eq = data.earthquake;
-    
-    // 1. 最大震度の反映
-    const rawScale = eq.maxScale;
-    document.getElementById('max-shindo').innerText = formatShindo(rawScale);
-
-    // 2. 発生日時の反映
-    const timeStr = eq.time;
-    // P2Pの形式 "2026/03/17 12:30:45" を "2026年03月17日 12時30分ごろ" に加工
-    const processedTime = timeStr.replace(/\//g, '年').replace(' ', '月') + '日';
-    // さらなる加工（時・分を抽出して「ごろ」を付けるなど）は、後ほどきれいに調整可能です
-    document.getElementById('quake-time').innerText = eq.time;
-
-    // 3. 震源情報の表示切り替え
-    const hypoDetails = document.getElementById('hypo-details');
-    if (eq.hypocenter.name) {
-        // 震源地がある場合（震源情報）
-        hypoDetails.classList.remove('hidden');
-        document.getElementById('hypo-name').innerText = eq.hypocenter.name;
-        document.getElementById('mag-value').innerText = "M" + eq.magnitude.toFixed(1);
-        document.getElementById('depth-value').innerText = "約" + eq.hypocenter.depth + "km";
-    } else {
-        // 震源地がない場合（震度速報のみなど）
-        hypoDetails.classList.add('hidden');
-    }
-
-    // 4. テロップ（津波）の制御
-    const tsunamiInfo = document.getElementById('tsunami-info');
-    if (data.issue.type === "Foreign" || eq.domesticTsunami !== "None") {
-        tsunamiInfo.classList.remove('hidden');
-    } else {
-        tsunamiInfo.classList.add('hidden');
-    }
-}
-
-/**
- * P2Pの震度数値を「5+」などの形式に変換する補助関数
- */
-function formatShindo(scale) {
-    const shindoMap = {
-        10: "1", 20: "2", 30: "3", 40: "4",
-        45: "5-", 50: "5+", 55: "6-", 60: "6+", 70: "7"
-    };
-    return shindoMap[scale] || "X";
-}
