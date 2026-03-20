@@ -1,28 +1,94 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Kactuif 地震情報作画ツール</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <title>Kactuif Earthquake Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; background: #1a1a1a; }
+        #map { height: 100%; width: 100%; }
+        /* 震度アイコンのスタイル */
+        .int-icon {
+            border-radius: 50%;
+            border: 2px solid #fff;
+            text-align: center;
+            font-weight: bold;
+            color: #fff;
+            line-height: 24px;
+            font-size: 14px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.5);
+        }
+        /* 震源 ×印のスタイル */
+        .epicenter {
+            color: #ff0000;
+            font-size: 32px;
+            font-weight: bold;
+            text-shadow: 0 0 5px #fff;
+            transform: translate(-50%, -50%);
+        }
+    </style>
 </head>
 <body>
-    <div id="app">
-        <div id="display-area">
-            <div id="map-container">
-                <p id="loading-text" style="color: white; text-align: center; padding-top: 300px;">地図を読み込んでいます...</p>
-            </div>
-        </div>
-    </div>
+    <div id="map"></div>
+    <script>
+        const GAS_URL = "ここにあなたのGASのデプロイURLを貼る";
 
-    <div id="controls">
-        <button id="btn-update">最新の地震情報を取得</button>
-        <button id="btn-download">画像を保存 (PNG)</button>
-        <div id="status-message">準備完了</div>
-    </div>
+        // 地図の初期化（日本全体が見えるように）
+        const map = L.map('map', { zoomControl: false }).setView([35.0, 137.0], 5);
 
-    <script src="js/renderer.js"></script>
-    <script src="js/api.js"></script>
-    <script src="main.js"></script>
+        // 背景地図（NHK風に暗めのトーン）
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png').addTo(map);
+
+        async function updateMap() {
+            try {
+                const res = await fetch(GAS_URL);
+                const data = await res.json();
+                const latest = data.items[0]; // 最新の地震
+
+                if (!latest) return;
+
+                // 震源地(×印)の描画
+                if (latest.lat && latest.lng) {
+                    const xIcon = L.divIcon({
+                        className: 'epicenter',
+                        html: '×',
+                        iconSize: [32, 32]
+                    });
+                    L.marker([latest.lat, latest.lng], { icon: xIcon }).addTo(map);
+                    map.setView([latest.lat, latest.lng], 7); // 震源地にズーム
+                }
+
+                // 各地の震度を描画
+                const colors = {
+                    10: "#347FC1", 20: "#108452", 30: "#E5C510", 40: "#E55E10",
+                    45: "#C4151A", 50: "#8B0303", 55: "#711686", 60: "#510063", 70: "#3E003F"
+                };
+                const labels = { 10:"1", 20:"2", 30:"3", 40:"4", 45:"5-", 50:"5+", 55:"6-", 60:"6+", 70:"7" };
+
+                latest.points.forEach(p => {
+                    if (p.latitude && p.longitude) {
+                        const icon = L.divIcon({
+                            className: 'int-icon',
+                            html: labels[p.scale] || "",
+                            iconSize: [24, 24],
+                            iconAnchor: [12, 12]
+                        });
+                        
+                        const circle = L.circleMarker([p.latitude, p.longitude], {
+                            radius: 12,
+                            fillColor: colors[p.scale] || "#7F7F7F",
+                            fillOpacity: 1,
+                            color: "#fff",
+                            weight: 2
+                        }).addTo(map);
+                    }
+                });
+
+            } catch (e) { console.error("Map Load Error:", e); }
+        }
+
+        updateMap();
+    </script>
 </body>
 </html>
