@@ -2,93 +2,118 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Kactuif Earthquake Map</title>
+    <title>Kactuif Dynamic Earthquake Map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; background: #1a1a1a; }
-        #map { height: 100%; width: 100%; }
-        /* 震度アイコンのスタイル */
-        .int-icon {
-            border-radius: 50%;
-            border: 2px solid #fff;
-            text-align: center;
-            font-weight: bold;
-            color: #fff;
-            line-height: 24px;
-            font-size: 14px;
-            box-shadow: 0 0 5px rgba(0,0,0,0.5);
-        }
-        /* 震源 ×印のスタイル */
-        .epicenter {
+        body, html { margin: 0; padding: 0; height: 100%; background: #000b1a; }
+        #map { height: 100%; width: 100%; background: #000b1a; }
+        
+        /* 震源 ×印 */
+        .epicenter-mark {
             color: #ff0000;
-            font-size: 32px;
+            font-size: 40px;
             font-weight: bold;
-            text-shadow: 0 0 5px #fff;
-            transform: translate(-50%, -50%);
+            text-shadow: 0 0 8px #fff, 0 0 12px #ff0000;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        /* 震度アイコン共通設定 */
+        .intensity-label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1.5px solid #ffffff;
+            border-radius: 4px; /* NHK風に少し角丸の四角 */
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 14px;
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
         }
     </style>
 </head>
 <body>
     <div id="map"></div>
     <script>
-        const GAS_URL = "ここにあなたのGASのデプロイURLを貼る";
+        // 【重要】ここにあなたのGASデプロイURLを貼り付けてください
+        const GAS_URL = "https://script.google.com/macros/s/AKfycbwbdGLuMEycKlmf4MqpX9SzsDCjnDx40thWYcS6WfswTEqFHkMn0pzX2ScCD5ljx_-p7w/exec";
 
-        // 地図の初期化（日本全体が見えるように）
-        const map = L.map('map', { zoomControl: false }).setView([35.0, 137.0], 5);
+        const map = L.map('map', { 
+            zoomControl: false,
+            attributionControl: false 
+        }).setView([36.0, 137.0], 5);
 
-        // 背景地図（NHK風に暗めのトーン）
+        // ダークモード系の地図タイル（地理院地図なども選択可能）
         L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png').addTo(map);
 
-        async function updateMap() {
+        // 震度ごとの設定（色の定義）
+        const intensityStyles = {
+            10: { bg: "#347FC1", label: "1" },
+            20: { bg: "#108452", label: "2" },
+            30: { bg: "#E5C510", label: "3" },
+            40: { bg: "#E55E10", label: "4" },
+            45: { bg: "#C4151A", label: "5-" },
+            50: { bg: "#8B0303", label: "5+" },
+            55: { bg: "#711686", label: "6-" },
+            60: { bg: "#510063", label: "6+" },
+            70: { bg: "#3E003F", label: "7" }
+        };
+
+        async function loadEarthquakeData() {
             try {
-                const res = await fetch(GAS_URL);
-                const data = await res.json();
-                const latest = data.items[0]; // 最新の地震
+                const response = await fetch(GAS_URL);
+                const json = await response.json();
+                if (!json.items || json.items.length === 0) return;
 
-                if (!latest) return;
+                const latest = json.items[0]; // 最新の地震データ
+                const markers = []; // ズーム範囲計算用の配列
 
-                // 震源地(×印)の描画
+                // 1. 震源地(×印)の描画
                 if (latest.lat && latest.lng) {
-                    const xIcon = L.divIcon({
-                        className: 'epicenter',
+                    const epiIcon = L.divIcon({
+                        className: 'epicenter-mark',
                         html: '×',
-                        iconSize: [32, 32]
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
                     });
-                    L.marker([latest.lat, latest.lng], { icon: xIcon }).addTo(map);
-                    map.setView([latest.lat, latest.lng], 7); // 震源地にズーム
+                    L.marker([latest.lat, latest.lng], { icon: epiIcon }).addTo(map);
+                    markers.push([latest.lat, latest.lng]);
                 }
 
-                // 各地の震度を描画
-                const colors = {
-                    10: "#347FC1", 20: "#108452", 30: "#E5C510", 40: "#E55E10",
-                    45: "#C4151A", 50: "#8B0303", 55: "#711686", 60: "#510063", 70: "#3E003F"
-                };
-                const labels = { 10:"1", 20:"2", 30:"3", 40:"4", 45:"5-", 50:"5+", 55:"6-", 60:"6+", 70:"7" };
+                // 2. 各観測地点の震度アイコン描画
+                if (latest.points && latest.points.length > 0) {
+                    latest.points.forEach(p => {
+                        const style = intensityStyles[p.scale];
+                        if (style && p.latitude && p.longitude) {
+                            const icon = L.divIcon({
+                                className: 'intensity-label',
+                                html: style.label,
+                                iconSize: [22, 22],
+                                iconAnchor: [11, 11]
+                            });
 
-                latest.points.forEach(p => {
-                    if (p.latitude && p.longitude) {
-                        const icon = L.divIcon({
-                            className: 'int-icon',
-                            html: labels[p.scale] || "",
-                            iconSize: [24, 24],
-                            iconAnchor: [12, 12]
-                        });
-                        
-                        const circle = L.circleMarker([p.latitude, p.longitude], {
-                            radius: 12,
-                            fillColor: colors[p.scale] || "#7F7F7F",
-                            fillOpacity: 1,
-                            color: "#fff",
-                            weight: 2
-                        }).addTo(map);
-                    }
-                });
+                            // 背景色を動的に設定
+                            const marker = L.marker([p.latitude, p.longitude], { icon: icon }).addTo(map);
+                            marker._icon.style.backgroundColor = style.bg;
+                            
+                            markers.push([p.latitude, p.longitude]);
+                        }
+                    });
+                }
 
-            } catch (e) { console.error("Map Load Error:", e); }
+                // 3. 【最重要】データがある場所に自動ズーム
+                if (markers.length > 0) {
+                    const bounds = L.latLngBounds(markers);
+                    map.fitBounds(bounds, { padding: [50, 50], maxZoom: 10 });
+                }
+
+            } catch (error) {
+                console.error("データの読み込みに失敗しました:", error);
+            }
         }
 
-        updateMap();
+        loadEarthquakeData();
     </script>
 </body>
 </html>
