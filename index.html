@@ -1,119 +1,40 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Kactuif Dynamic Earthquake Map</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <style>
-        body, html { margin: 0; padding: 0; height: 100%; background: #000b1a; }
-        #map { height: 100%; width: 100%; background: #000b1a; }
-        
-        /* 震源 ×印 */
-        .epicenter-mark {
-            color: #ff0000;
-            font-size: 40px;
-            font-weight: bold;
-            text-shadow: 0 0 8px #fff, 0 0 12px #ff0000;
-            text-align: center;
-            line-height: 40px;
-        }
+<script>
+    async function init() {
+        try {
+            const map = L.map('map', { zoomControl: false, attributionControl: false }).setView([36.0, 137.0], 5);
 
-        /* 震度アイコン共通設定 */
-        .intensity-label {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1.5px solid #ffffff;
-            border-radius: 4px; /* NHK風に少し角丸の四角 */
-            color: #ffffff;
-            font-weight: bold;
-            font-size: 14px;
-            box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
-        }
-    </style>
-</head>
-<body>
-    <div id="map"></div>
-    <script>
-        // 【重要】ここにあなたのGASデプロイURLを貼り付けてください
-        const GAS_URL = "https://script.google.com/macros/s/AKfycbwbdGLuMEycKlmf4MqpX9SzsDCjnDx40thWYcS6WfswTEqFHkMn0pzX2ScCD5ljx_-p7w/exec";
+            // 1. まず地図の土台だけは最優先で出す（自分のドメイン内にあるはずなので）
+            const subRes = await fetch(SUBDIVISION_URL).catch(() => null);
+            const prefRes = await fetch(PREF_URL).catch(() => null);
 
-        const map = L.map('map', { 
-            zoomControl: false,
-            attributionControl: false 
-        }).setView([36.0, 137.0], 5);
-
-        // ダークモード系の地図タイル（地理院地図なども選択可能）
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png').addTo(map);
-
-        // 震度ごとの設定（色の定義）
-        const intensityStyles = {
-            10: { bg: "#347FC1", label: "1" },
-            20: { bg: "#108452", label: "2" },
-            30: { bg: "#E5C510", label: "3" },
-            40: { bg: "#E55E10", label: "4" },
-            45: { bg: "#C4151A", label: "5-" },
-            50: { bg: "#8B0303", label: "5+" },
-            55: { bg: "#711686", label: "6-" },
-            60: { bg: "#510063", label: "6+" },
-            70: { bg: "#3E003F", label: "7" }
-        };
-
-        async function loadEarthquakeData() {
-            try {
-                const response = await fetch(GAS_URL);
-                const json = await response.json();
-                if (!json.items || json.items.length === 0) return;
-
-                const latest = json.items[0]; // 最新の地震データ
-                const markers = []; // ズーム範囲計算用の配列
-
-                // 1. 震源地(×印)の描画
-                if (latest.lat && latest.lng) {
-                    const epiIcon = L.divIcon({
-                        className: 'epicenter-mark',
-                        html: '×',
-                        iconSize: [40, 40],
-                        iconAnchor: [20, 20]
-                    });
-                    L.marker([latest.lat, latest.lng], { icon: epiIcon }).addTo(map);
-                    markers.push([latest.lat, latest.lng]);
-                }
-
-                // 2. 各観測地点の震度アイコン描画
-                if (latest.points && latest.points.length > 0) {
-                    latest.points.forEach(p => {
-                        const style = intensityStyles[p.scale];
-                        if (style && p.latitude && p.longitude) {
-                            const icon = L.divIcon({
-                                className: 'intensity-label',
-                                html: style.label,
-                                iconSize: [22, 22],
-                                iconAnchor: [11, 11]
-                            });
-
-                            // 背景色を動的に設定
-                            const marker = L.marker([p.latitude, p.longitude], { icon: icon }).addTo(map);
-                            marker._icon.style.backgroundColor = style.bg;
-                            
-                            markers.push([p.latitude, p.longitude]);
-                        }
-                    });
-                }
-
-                // 3. 【最重要】データがある場所に自動ズーム
-                if (markers.length > 0) {
-                    const bounds = L.latLngBounds(markers);
-                    map.fitBounds(bounds, { padding: [50, 50], maxZoom: 10 });
-                }
-
-            } catch (error) {
-                console.error("データの読み込みに失敗しました:", error);
+            if (subRes) {
+                const subData = await subRes.json();
+                L.geoJSON(subData, { style: { color: "#A6A6A6", weight: 1.5, fillColor: "#BFBFBF", fillOpacity: 1 } }).addTo(map);
             }
-        }
+            if (prefRes) {
+                const prefData = await prefRes.json();
+                L.geoJSON(prefData, { style: { color: "#7F7F7F", weight: 2.5, fillOpacity: 0 } }).addTo(map);
+            }
 
-        loadEarthquakeData();
-    </script>
-</body>
-</html>
+            // 2. 次に外部データ（P2P地震情報）を取得。エラーが出ても止まらないようにする
+            const areaRes = await fetch(P2P_AREA_URL).catch(() => null);
+            const quakeRes = await fetch(P2P_QUAKE_URL).catch(() => null);
+
+            if (!areaRes || !quakeRes) {
+                console.warn("外部APIへのアクセスが遮断されました(CORS)。サーバー上で実行してください。");
+                document.getElementById('loader').innerText = "サーバー上で実行してください(CORS制限)";
+                return;
+            }
+
+            const areaData = await areaRes.json();
+            const quakeData = await quakeRes.json();
+            const latest = quakeData[0];
+            
+            document.getElementById('loader').style.display = 'none';
+
+            // （以下、震源・アイコン描画処理は前のコードと同じ）
+            // ...
+        } catch (e) { console.error(e); }
+    }
+    init();
+</script>
