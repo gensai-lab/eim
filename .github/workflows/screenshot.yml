@@ -1,0 +1,59 @@
+name: Disaster Map Screenshot
+
+on:
+  workflow_dispatch: # これを入れると「手動実行ボタン」が出ます
+  schedule:
+    - cron: '0 * * * *' # 1時間に1回、自動で動きます
+
+jobs:
+  take-screenshot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # 日本語フォントをインストール（これがないと文字化けします）
+      - name: Install Japanese Fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-cjk
+
+      - name: Install Puppeteer
+        run: npm install puppeteer
+
+      - name: Run Screenshot Script
+        run: |
+          node -e "
+          const puppeteer = require('puppeteer');
+          (async () => {
+            const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
+            const page = await browser.newPage();
+            await page.setViewport({ width: 1920, height: 1080 });
+            // ↓ ここをStudioのURLに変えてください
+            await page.goto('https://tan172074.studio.site/', { waitUntil: 'networkidle0', timeout: 60000 });
+            
+            const fs = require('fs');
+            if (!fs.existsSync('screenshots')) fs.mkdirSync('screenshots');
+            
+            // ファイル名に日付を入れる
+            const now = new Date();
+            const filename = 'eq_' + now.getFullYear() + (now.getMonth()+1).toString().padStart(2,'0') + now.getDate().toString().padStart(2,'0') + '_' + now.getHours().toString().padStart(2,'0') + now.getMinutes().toString().padStart(2,'0') + '.png';
+            
+            await page.screenshot({ path: 'screenshots/' + filename });
+            await page.screenshot({ path: 'screenshots/latest.png' }); // 常に最新版として上書き
+            await browser.close();
+          })();
+          "
+
+      - name: Save Screenshot to Repo
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add screenshots/*.png
+          git commit -m "Update earthquake screenshot" || exit 0
+          git push
