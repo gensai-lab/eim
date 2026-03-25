@@ -1,4 +1,33 @@
-- name: Run Smart Screenshot with Banner Removal
+name: Disaster Map Screenshot
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+  screenshot:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install Japanese Fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-cjk
+
+      - name: Install Puppeteer
+        run: npm install puppeteer
+
+      - name: Run Smart Screenshot
         run: |
           node -e "
           const puppeteer = require('puppeteer');
@@ -6,70 +35,61 @@
 
           (async () => {
             try {
-              // 1. 最新の地震IDをチェック（更新判定）
+              // 1. 地震情報のIDチェック（URLから _ts を削除して修正）
               const response = await fetch('https://api.p2pquake.net/v2/history?codes=551&limit=1');
+              if (!response.ok) throw new Error('API Error: ' + response.status);
               const quakeData = await response.json();
-              const latestQuake = quakeData[0];
-              const latestId = latestQuake.id;
+              const latestId = quakeData[0].id;
 
               let lastId = '';
               if (fs.existsSync('last_id.txt')) lastId = fs.readFileSync('last_id.txt', 'utf8').trim();
 
-              if (latestId === lastId) {
-                console.log('更新がないため、終了します。');
+              // 手動実行(workflow_dispatch)時は強制的に撮る、またはIDが変わった時のみ実行
+              if (latestId === lastId && process.env.GITHUB_EVENT_NAME !== 'workflow_dispatch') {
+                console.log('更新がないため終了します。');
                 return;
               }
 
-              // 2. スクリーンショット処理
-              console.log('スクショを開始します。');
-              const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+              // 2. ブラウザ起動
+              const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
               const page = await browser.newPage();
-              
-              // 1280x720 (16:9) に設定（ deviceScaleFactor: 2 で高画質化）
               await page.setViewport({ width: 1280, height: 720, deviceScaleFactor: 2 });
 
-              // 代表のStudio URLへアクセス
-              const url = 'https://tan172074.studio.site/';
-              console.log('URLへアクセス中...');
-              await page.goto(url, { waitUntil: 'networkidle0', timeout: 60000 });
+              console.log('サイトへアクセス中...');
+              await page.goto('https://tan172074.studio.site/', { waitUntil: 'networkidle0', timeout: 60000 });
               
-              // 全体の読み込みを待つ
-              console.log('5秒待機中...');
+              // 読み込み待ち
               await new Promise(r => setTimeout(r, 5000));
 
-              // --- ★追加：左下のStudioバナーを消すCSSを注入★ ---
-              console.log('Studioバナーを削除します...');
+              // 3. Studioバナーを完全に消去
               await page.evaluate(() => {
-                // 'Created in Studio'バナーを見つけるためのCSSセレクタ
-                const banner = document.querySelector('div[id^="created-by-studio"]');
-                if (banner) {
-                  banner.style.display = 'none'; // 非表示にする
-                }
+                const selectors = ['div[id^=\"created-by-studio\"]', 'div[class*=\"studio-banner\"]', 'iframe[id^=\"studio-banner\"]'];
+                selectors.forEach(s => {
+                  const el = document.querySelector(s);
+                  if (el) el.style.display = 'none';
+                });
               });
 
-              // データ保存用フォルダ作成
               if (!fs.existsSync('screenshots')) fs.mkdirSync('screenshots');
               
               const filename = 'quake_' + latestId + '.png';
-              
-              // 撮影（1280x720 でトリミング）
-              await page.screenshot({ 
-                path: 'screenshots/' + filename, 
-                clip: { x: 0, y: 0, width: 1280, height: 720 } 
-              });
-              await page.screenshot({ 
-                path: 'screenshots/latest.png', 
-                clip: { x: 0, y: 0, width: 1280, height: 720 } 
-              });
+              await page.screenshot({ path: 'screenshots/' + filename, clip: { x: 0, y: 0, width: 1280, height: 720 } });
+              await page.screenshot({ path: 'screenshots/latest.png', clip: { x: 0, y: 0, width: 1280, height: 720 } });
 
-              // IDを保存
               fs.writeFileSync('last_id.txt', latestId);
-              
               await browser.close();
-              console.log('保存完了: ' + filename);
+              console.log('完了しました。');
             } catch (err) {
-              console.error('エラー発生:', err);
+              console.error('エラー:', err);
               process.exit(1);
             }
           })();
           "
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add screenshots/*.png last_id.txt
+          git commit -m "Update screenshot" || exit 0
+          git push
