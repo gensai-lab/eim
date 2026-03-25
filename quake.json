@@ -35,7 +35,7 @@
       "intensity_text": "#FFFFFF",
       "magnitude": "M2.2",
       "depth": "ごく浅い",
-      "tsunami_text": "なし",
+      "tsunami_text": "津波の心配なし",
       "tsunami_bg": "#7F7F7F",
       "is_eew": true
     },
@@ -48,7 +48,7 @@
       "intensity_text": "#FFFFFF",
       "magnitude": "M4.3",
       "depth": "約10キロ",
-      "tsunami_text": "なし",
+      "tsunami_text": "津波の心配なし",
       "tsunami_bg": "#7F7F7F",
       "is_eew": true
     },
@@ -61,7 +61,7 @@
       "intensity_text": "#FFFFFF",
       "magnitude": "M1.7",
       "depth": "ごく浅い",
-      "tsunami_text": "なし",
+      "tsunami_text": "津波の心配なし",
       "tsunami_bg": "#7F7F7F",
       "is_eew": true
     }
