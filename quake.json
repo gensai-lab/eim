@@ -1,14 +1,44 @@
 {
   "items": [
     {
-      "id": "test001",
-      "time": "2026/03/25 23:00",
-      "hypocenter": "テスト震源地",
+      "id": "69c3c903e88ee598246beb62",
+      "time": "2026/03/25 20:33:00",
+      "hypocenter": "福岡県筑後地方",
       "max_intensity": "3",
-      "magnitude": "M4.5",
-      "depth": "約10km",
-      "tsunami_text": "津波の心配なし",
-      "tsunami_bg": "#7F7F7F"
+      "magnitude": "M4.0",
+      "tsunami_text": "津波の心配なし"
+    },
+    {
+      "id": "69c3c8bae88ee598246beb61",
+      "time": "2026/03/25 20:33:00",
+      "hypocenter": "福岡県筑後地方",
+      "max_intensity": "調査中",
+      "magnitude": "M4.0",
+      "tsunami_text": "津波の心配なし"
+    },
+    {
+      "id": "69c3c86ee88ee598246beb60",
+      "time": "2026/03/25 20:31:00",
+      "hypocenter": "兵庫県南東部",
+      "max_intensity": "3",
+      "magnitude": "M4.2",
+      "tsunami_text": "津波の心配なし"
+    },
+    {
+      "id": "69c3c864e88ee598246beb5f",
+      "time": "2026/03/25 20:33:00",
+      "hypocenter": "",
+      "max_intensity": "3",
+      "magnitude": "M-1.0",
+      "tsunami_text": "津波の心配なし"
+    },
+    {
+      "id": "69c3c81ee88ee598246beb5e",
+      "time": "2026/03/25 20:31:00",
+      "hypocenter": "兵庫県南東部",
+      "max_intensity": "調査中",
+      "magnitude": "M4.2",
+      "tsunami_text": "津波の心配なし"
     }
   ]
 }
