@@ -3,42 +3,62 @@
     {
       "id": "69c3c903e88ee598246beb62",
       "time": "2026/03/25 20:33:00",
-      "hypocenter": "福岡県筑後地方",
+      "hypocenter": "調査中",
       "max_intensity": "3",
-      "magnitude": "M4.0",
-      "tsunami_text": "津波の心配なし"
-    },
-    {
-      "id": "69c3c8bae88ee598246beb61",
-      "time": "2026/03/25 20:33:00",
-      "hypocenter": "福岡県筑後地方",
-      "max_intensity": "調査中",
-      "magnitude": "M4.0",
-      "tsunami_text": "津波の心配なし"
+      "intensity_bg": "#E5C510",
+      "intensity_text": "#0D0D0D",
+      "magnitude": "調査中",
+      "depth": "調査中",
+      "tsunami_text": "調査中",
+      "tsunami_bg": "#7F7F7F"
     },
     {
       "id": "69c3c86ee88ee598246beb60",
       "time": "2026/03/25 20:31:00",
-      "hypocenter": "兵庫県南東部",
+      "hypocenter": "調査中",
       "max_intensity": "3",
-      "magnitude": "M4.2",
-      "tsunami_text": "津波の心配なし"
+      "intensity_bg": "#E5C510",
+      "intensity_text": "#0D0D0D",
+      "magnitude": "調査中",
+      "depth": "調査中",
+      "tsunami_text": "調査中",
+      "tsunami_bg": "#7F7F7F"
     },
     {
-      "id": "69c3c864e88ee598246beb5f",
-      "time": "2026/03/25 20:33:00",
-      "hypocenter": "",
-      "max_intensity": "3",
-      "magnitude": "M-1.0",
-      "tsunami_text": "津波の心配なし"
+      "id": "69c3c284e88ee598246beb5c",
+      "time": "2026/03/25 20:06:00",
+      "hypocenter": "新島・神津島近海",
+      "max_intensity": "1",
+      "intensity_bg": "#347FC1",
+      "intensity_text": "#FFFFFF",
+      "magnitude": "M2.2",
+      "depth": "ごく浅い",
+      "tsunami_text": "津波の心配なし",
+      "tsunami_bg": "#7F7F7F"
     },
     {
-      "id": "69c3c81ee88ee598246beb5e",
-      "time": "2026/03/25 20:31:00",
-      "hypocenter": "兵庫県南東部",
-      "max_intensity": "調査中",
-      "magnitude": "M4.2",
-      "tsunami_text": "津波の心配なし"
+      "id": "69c38479e88ee598246beb5b",
+      "time": "2026/03/25 15:42:00",
+      "hypocenter": "宮古島近海",
+      "max_intensity": "1",
+      "intensity_bg": "#347FC1",
+      "intensity_text": "#FFFFFF",
+      "magnitude": "M4.3",
+      "depth": "約10キロ",
+      "tsunami_text": "津波の心配なし",
+      "tsunami_bg": "#7F7F7F"
+    },
+    {
+      "id": "69c35371e88ee598246beb5a",
+      "time": "2026/03/25 12:12:00",
+      "hypocenter": "熊本県天草・芦北地方",
+      "max_intensity": "1",
+      "intensity_bg": "#347FC1",
+      "intensity_text": "#FFFFFF",
+      "magnitude": "M1.7",
+      "depth": "ごく浅い",
+      "tsunami_text": "津波の心配なし",
+      "tsunami_bg": "#7F7F7F"
     }
   ]
 }
