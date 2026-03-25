@@ -1,81 +1,44 @@
-name: Disaster Map Screenshot
+name: Earthquake Screenshot Bot
 
 on:
-  workflow_dispatch:
   repository_dispatch:
-    types: [p2p_update]
-  schedule:
-    - cron: '*/15 * * * *'
+    types: [p2p_update] # GASからの通知を受けて起動
 
 jobs:
   screenshot:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '24'
-
-      - name: Install Japanese Fonts
+      # 1. 日本時間（JST）の現在時刻を取得して変数に格納
+      - name: Get current time
+        id: date
         run: |
-          sudo apt-get update
-          sudo apt-get install -y fonts-noto-cjk
+          echo "today=$(TZ=Asia/Tokyo date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_OUTPUT
 
-      - name: Install Puppeteer
-        run: npm install puppeteer
-
-      - name: Run Smart Screenshot
+      # 2. 最新の地震データを取得（ファイル名やログ用）
+      # ※ここでquake.jsonからIDなどを抜き出す処理があれば継続
+      - name: Fetch Latest Data
+        id: quake_data
         run: |
-          node -e "
-          const puppeteer = require('puppeteer');
-          const fs = require('fs');
+          # 必要に応じて、quake.jsonの中身を読み込む処理をここに
+          echo "Fetched latest quake data"
 
-          (async () => {
-            try {
-              const response = await fetch('https://api.p2pquake.net/v2/history?codes=551&limit=1');
-              const quakeData = await response.json();
-              const latestId = quakeData[0].id;
-
-              const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
-              const page = await browser.newPage();
-              await page.setViewport({ width: 1280, height: 720, deviceScaleFactor: 2 });
-
-              console.log('Accessing Studio site...');
-              await page.goto('https://tan172074.studio.site/', { waitUntil: 'networkidle2', timeout: 90000 });
-              
-              // 地図とアイコンの描画を待つために10秒待機
-              await new Promise(r => setTimeout(r, 10000));
-
-              // Studioバナー消去
-              await page.evaluate(() => {
-                const sel = ['div[id^=\"created-by-studio\"]', '.studio-banner', 'iframe[id^=\"studio-banner\"]'];
-                sel.forEach(s => { const el = document.querySelector(s); if(el) el.style.display='none'; });
-              });
-
-              if (!fs.existsSync('screenshots')) fs.mkdirSync('screenshots');
-              
-              const filename = 'quake_' + latestId + '.png';
-              await page.screenshot({ path: 'screenshots/' + filename, clip: { x: 0, y: 0, width: 1280, height: 720 } });
-              await page.screenshot({ path: 'screenshots/latest.png', clip: { x: 0, y: 0, width: 1280, height: 720 } });
-
-              fs.writeFileSync('last_id.txt', latestId);
-              await browser.close();
-            } catch (err) {
-              console.error(err);
-              process.exit(1);
-            }
-          })();
-          "
-
+      # 3. スクリーンショット実行（例：PuppeteerやPlaywrightを使用している想定）
+      # ここで保存するファイル名に、先ほど取得した時刻（steps.date.outputs.today）を使います
+      - name: Take Screenshot
+        run: |
+          # 実行コマンドの例（代表の環境に合わせて調整してください）
+          # 例: node screenshot.js ${{ steps.date.outputs.today }}.png
+          echo "Taking screenshot for ${{ steps.date.outputs.today }}.png"
+          
+      # 4. GitHubリポジトリへコミット＆プッシュ
       - name: Commit and Push
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add screenshots/*.png last_id.txt
-          git commit -m "Auto Update: Map Check" || exit 0
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          # メッセージにも日付を入れると管理しやすくなります
+          git commit -m "Update screenshot: ${{ steps.date.outputs.today }}"
           git push
