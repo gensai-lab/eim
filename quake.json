@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "id": "test001",
+      "time": "2026/03/25 23:00",
+      "hypocenter": "テスト震源地",
+      "max_intensity": "3",
+      "magnitude": "M4.5",
+      "depth": "約10km",
+      "tsunami_text": "津波の心配なし",
+      "tsunami_bg": "#7F7F7F"
+    }
+  ]
+}
