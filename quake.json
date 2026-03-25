@@ -1,7 +1,7 @@
 {
   "items": [
     {
-      "id": "69c3c8bae88ee598246beb61",
+      "id": "69c3c903e88ee598246beb62",
       "time": "2026/03/25 20:33:00",
       "hypocenter": "福岡県筑後地方",
       "max_intensity": "3",
@@ -9,11 +9,12 @@
       "intensity_text": "#0D0D0D",
       "magnitude": "M4.0",
       "depth": "約10キロ",
-      "tsunami_text": "津波の心配なし",
-      "tsunami_bg": "#7F7F7F"
+      "tsunami_text": "調査中",
+      "tsunami_bg": "#7F7F7F",
+      "is_eew": true
     },
     {
-      "id": "69c3c81ee88ee598246beb5e",
+      "id": "69c3c86ee88ee598246beb60",
       "time": "2026/03/25 20:31:00",
       "hypocenter": "兵庫県南東部",
       "max_intensity": "3",
@@ -21,8 +22,9 @@
       "intensity_text": "#0D0D0D",
       "magnitude": "M4.2",
       "depth": "約20キロ",
-      "tsunami_text": "津波の心配なし",
-      "tsunami_bg": "#7F7F7F"
+      "tsunami_text": "調査中",
+      "tsunami_bg": "#7F7F7F",
+      "is_eew": true
     },
     {
       "id": "69c3c284e88ee598246beb5c",
@@ -34,7 +36,8 @@
       "magnitude": "M2.2",
       "depth": "ごく浅い",
       "tsunami_text": "津波の心配なし",
-      "tsunami_bg": "#7F7F7F"
+      "tsunami_bg": "#7F7F7F",
+      "is_eew": true
     },
     {
       "id": "69c38479e88ee598246beb5b",
@@ -46,7 +49,8 @@
       "magnitude": "M4.3",
       "depth": "約10キロ",
       "tsunami_text": "津波の心配なし",
-      "tsunami_bg": "#7F7F7F"
+      "tsunami_bg": "#7F7F7F",
+      "is_eew": true
     },
     {
       "id": "69c35371e88ee598246beb5a",
@@ -58,7 +62,8 @@
       "magnitude": "M1.7",
       "depth": "ごく浅い",
       "tsunami_text": "津波の心配なし",
-      "tsunami_bg": "#7F7F7F"
+      "tsunami_bg": "#7F7F7F",
+      "is_eew": true
     }
   ]
 }
