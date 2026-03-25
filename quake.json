@@ -9,7 +9,7 @@
       "intensity_text": "#0D0D0D",
       "magnitude": "M4.0",
       "depth": "約10キロ",
-      "tsunami_text": "調査中",
+      "tsunami_text": "なし",
       "tsunami_bg": "#7F7F7F",
       "is_eew": true
     },
@@ -22,7 +22,7 @@
       "intensity_text": "#0D0D0D",
       "magnitude": "M4.2",
       "depth": "約20キロ",
-      "tsunami_text": "調査中",
+      "tsunami_text": "なし",
       "tsunami_bg": "#7F7F7F",
       "is_eew": true
     },
