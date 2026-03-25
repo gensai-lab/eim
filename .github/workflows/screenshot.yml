@@ -1,33 +1,4 @@
-name: Smart Disaster Map Screenshot
-
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: '*/5 * * * *' # 5分おきにチェック
-
-jobs:
-  screenshot:
-    runs-on: ubuntu-latest
-    permissions: # ジョブ内で権限を明示的に指定
-      contents: write
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install Japanese Fonts
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y fonts-noto-cjk
-
-      - name: Install Puppeteer
-        run: npm install puppeteer
-
-      - name: Run Smart Screenshot
+- name: Run Smart Screenshot with Banner Removal
         run: |
           node -e "
           const puppeteer = require('puppeteer');
@@ -35,7 +6,7 @@ jobs:
 
           (async () => {
             try {
-              // 地震情報をチェック
+              // 1. 最新の地震IDをチェック（更新判定）
               const response = await fetch('https://api.p2pquake.net/v2/history?codes=551&limit=1');
               const quakeData = await response.json();
               const latestQuake = quakeData[0];
@@ -45,29 +16,55 @@ jobs:
               if (fs.existsSync('last_id.txt')) lastId = fs.readFileSync('last_id.txt', 'utf8').trim();
 
               if (latestId === lastId) {
-                console.log('更新なし。終了します。');
+                console.log('更新がないため、終了します。');
                 return;
               }
 
+              // 2. スクリーンショット処理
+              console.log('スクショを開始します。');
               const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
               const page = await browser.newPage();
+              
+              // 1280x720 (16:9) に設定（ deviceScaleFactor: 2 で高画質化）
               await page.setViewport({ width: 1280, height: 720, deviceScaleFactor: 2 });
 
-              // ★ここを実際のStudio URLに必ず書き換えてください★
-              const url = 'https://tan172074.studio.site/'; 
+              // 代表のStudio URLへアクセス
+              const url = 'https://tan172074.studio.site/';
               console.log('URLへアクセス中...');
               await page.goto(url, { waitUntil: 'networkidle0', timeout: 60000 });
               
+              // 全体の読み込みを待つ
               console.log('5秒待機中...');
               await new Promise(r => setTimeout(r, 5000));
 
+              // --- ★追加：左下のStudioバナーを消すCSSを注入★ ---
+              console.log('Studioバナーを削除します...');
+              await page.evaluate(() => {
+                // 'Created in Studio'バナーを見つけるためのCSSセレクタ
+                const banner = document.querySelector('div[id^="created-by-studio"]');
+                if (banner) {
+                  banner.style.display = 'none'; // 非表示にする
+                }
+              });
+
+              // データ保存用フォルダ作成
               if (!fs.existsSync('screenshots')) fs.mkdirSync('screenshots');
               
               const filename = 'quake_' + latestId + '.png';
-              await page.screenshot({ path: 'screenshots/' + filename, clip: { x: 0, y: 0, width: 1280, height: 720 } });
-              await page.screenshot({ path: 'screenshots/latest.png', clip: { x: 0, y: 0, width: 1280, height: 720 } });
+              
+              // 撮影（1280x720 でトリミング）
+              await page.screenshot({ 
+                path: 'screenshots/' + filename, 
+                clip: { x: 0, y: 0, width: 1280, height: 720 } 
+              });
+              await page.screenshot({ 
+                path: 'screenshots/latest.png', 
+                clip: { x: 0, y: 0, width: 1280, height: 720 } 
+              });
 
+              // IDを保存
               fs.writeFileSync('last_id.txt', latestId);
+              
               await browser.close();
               console.log('保存完了: ' + filename);
             } catch (err) {
@@ -76,11 +73,3 @@ jobs:
             }
           })();
           "
-
-      - name: Commit and Push
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add screenshots/*.png last_id.txt
-          git commit -m "Auto Update: Earthquake Screenshot" || exit 0
-          git push
