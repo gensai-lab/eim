@@ -1,27 +1,27 @@
 {
   "items": [
     {
-      "id": "69c3c903e88ee598246beb62",
+      "id": "69c3c8bae88ee598246beb61",
       "time": "2026/03/25 20:33:00",
-      "hypocenter": "調査中",
+      "hypocenter": "福岡県筑後地方",
       "max_intensity": "3",
       "intensity_bg": "#E5C510",
       "intensity_text": "#0D0D0D",
-      "magnitude": "調査中",
-      "depth": "調査中",
-      "tsunami_text": "調査中",
+      "magnitude": "M4.0",
+      "depth": "約10キロ",
+      "tsunami_text": "津波の心配なし",
       "tsunami_bg": "#7F7F7F"
     },
     {
-      "id": "69c3c86ee88ee598246beb60",
+      "id": "69c3c81ee88ee598246beb5e",
       "time": "2026/03/25 20:31:00",
-      "hypocenter": "調査中",
+      "hypocenter": "兵庫県南東部",
       "max_intensity": "3",
       "intensity_bg": "#E5C510",
       "intensity_text": "#0D0D0D",
-      "magnitude": "調査中",
-      "depth": "調査中",
-      "tsunami_text": "調査中",
+      "magnitude": "M4.2",
+      "depth": "約20キロ",
+      "tsunami_text": "津波の心配なし",
       "tsunami_bg": "#7F7F7F"
     },
     {
