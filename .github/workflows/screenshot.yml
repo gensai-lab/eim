@@ -1,11 +1,11 @@
 name: Disaster Map Screenshot
 
 on:
-  workflow_dispatch:        # 手動実行用
-  repository_dispatch:      # GASからの自動信号を受け取る設定
+  workflow_dispatch:
+  repository_dispatch:
     types: [p2p_update]
   schedule:
-    - cron: '*/15 * * * *'  # 予備として15分おきにチェック
+    - cron: '*/15 * * * *'
 
 jobs:
   screenshot:
@@ -37,70 +37,36 @@ jobs:
 
           (async () => {
             try {
-              // 1. 最新の地震IDをチェック
               const response = await fetch('https://api.p2pquake.net/v2/history?codes=551&limit=1');
-              if (!response.ok) throw new Error('API Error: ' + response.status);
               const quakeData = await response.json();
               const latestId = quakeData[0].id;
 
-              let lastId = '';
-              if (fs.existsSync('last_id.txt')) lastId = fs.readFileSync('last_id.txt', 'utf8').trim();
-
-              // 手動実行またはGASからの信号(repository_dispatch)の場合は、IDが同じでも強制的に撮る
-              const isForced = process.env.GITHUB_EVENT_NAME === 'workflow_dispatch' || process.env.GITHUB_EVENT_NAME === 'repository_dispatch';
-              
-              if (latestId === lastId && !isForced) {
-                console.log('更新がないため終了します。');
-                return;
-              }
-
-              // 2. ブラウザ起動設定（16:9 / 高画質）
-              const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+              const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
               const page = await browser.newPage();
               await page.setViewport({ width: 1280, height: 720, deviceScaleFactor: 2 });
 
-              console.log('Studioサイトへアクセス中...');
-              await page.goto('https://tan172074.studio.site/', { waitUntil: 'networkidle0', timeout: 60000 });
+              console.log('Accessing Studio site...');
+              await page.goto('https://tan172074.studio.site/', { waitUntil: 'networkidle2', timeout: 90000 });
               
-              // 描画待ち（5秒）
-              await new Promise(r => setTimeout(r, 5000));
+              // 地図とアイコンの描画を待つために10秒待機
+              await new Promise(r => setTimeout(r, 10000));
 
-              // 3. Studioバナーを削除する魔法
-              console.log('Studioバナーを消去中...');
+              // Studioバナー消去
               await page.evaluate(() => {
-                const bannerSelectors = [
-                  'div[id^=\"created-by-studio\"]',
-                  'div[class*=\"studio-banner\"]',
-                  'iframe[id^=\"studio-banner\"]',
-                  '.studio-badge'
-                ];
-                bannerSelectors.forEach(selector => {
-                  const el = document.querySelector(selector);
-                  if (el) el.style.display = 'none';
-                });
+                const sel = ['div[id^=\"created-by-studio\"]', '.studio-banner', 'iframe[id^=\"studio-banner\"]'];
+                sel.forEach(s => { const el = document.querySelector(s); if(el) el.style.display='none'; });
               });
 
-              // フォルダ作成
               if (!fs.existsSync('screenshots')) fs.mkdirSync('screenshots');
               
-              // 4. 撮影と保存
               const filename = 'quake_' + latestId + '.png';
-              await page.screenshot({ 
-                path: 'screenshots/' + filename, 
-                clip: { x: 0, y: 0, width: 1280, height: 720 } 
-              });
-              await page.screenshot({ 
-                path: 'screenshots/latest.png', 
-                clip: { x: 0, y: 0, width: 1280, height: 720 } 
-              });
+              await page.screenshot({ path: 'screenshots/' + filename, clip: { x: 0, y: 0, width: 1280, height: 720 } });
+              await page.screenshot({ path: 'screenshots/latest.png', clip: { x: 0, y: 0, width: 1280, height: 720 } });
 
-              // IDを記録
               fs.writeFileSync('last_id.txt', latestId);
-              
               await browser.close();
-              console.log('保存完了: ' + filename);
             } catch (err) {
-              console.error('エラー発生:', err);
+              console.error(err);
               process.exit(1);
             }
           })();
@@ -111,5 +77,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add screenshots/*.png last_id.txt
-          git commit -m "Auto Update: Disaster Map Screenshot" || exit 0
+          git commit -m "Auto Update: Map Check" || exit 0
           git push
