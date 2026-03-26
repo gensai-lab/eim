@@ -1,13 +1,13 @@
 {
   "items": [
     {
-      "id": "69c54199e88ee598246beb6f",
-      "time": "2026/03/26 23:24:25",
+      "id": "69c543f8e88ee598246beb70",
+      "time": "2026/03/26 23:34:32",
       "hypocenter": "三陸沖",
       "max_intensity": "4",
       "intensity_bg": "#E55E10",
       "intensity_text": "#FFFFFF",
-      "magnitude": "M6.4",
+      "magnitude": "M6.5",
       "depth": "約10キロ",
       "tsunami_text": "若干の海面変動あり",
       "tsunami_bg": "#1EB4E6",
