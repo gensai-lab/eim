@@ -18,18 +18,14 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Node.js
-        # 警告が出ないよう、2026年の推奨バージョン 24 に指定
         uses: actions/setup-node@v4
         with:
-          node-version: '24'
+          node-version: '20'
 
       - name: Install Puppeteer
         run: npm install puppeteer
 
       - name: Take Screenshot
-        env:
-          # Node 24環境での警告を抑制するおまじない
-          ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
         run: |
           node -e "
           const puppeteer = require('puppeteer');
@@ -41,23 +37,27 @@ jobs:
               const page = await browser.newPage();
               await page.setViewport({ width: 1280, height: 720 });
               
-              console.log('Opening URL...');
               await page.goto('https://tan172074.studio.site/', { 
                 waitUntil: 'networkidle2', 
                 timeout: 60000 
               });
               
-              console.log('Waiting for map to render...');
-              await new Promise(r => setTimeout(r, 15000));
+              // 地図やデータの読み込みを待つ
+              await new Promise(r => setTimeout(r, 10000));
+              
+              // ★ここがバナーを消す魔法のコードです
+              await page.evaluate(() => {
+                const badge = document.querySelector('div[class*=\"studio-badge\"]') || 
+                              document.querySelector('a[href*=\"studio.design\"]')?.parentElement;
+                if (badge) badge.style.display = 'none';
+              });
               
               const fname = '${{ github.event.client_payload.filename }}' || '${{ github.event.inputs.filename }}' || 'screenshot';
-              console.log('Saving as: ' + fname + '.png');
-              
               await page.screenshot({ path: 'screenshots/' + fname + '.png' });
+              
               await browser.close();
-              console.log('Done!');
             } catch (e) {
-              console.error('Screenshot Failed: ' + e.message);
+              console.error(e);
               process.exit(1);
             }
           })();"
@@ -68,5 +68,5 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           mkdir -p screenshots
           git add screenshots/
-          git commit -m "Update Screenshot" || exit 0
+          git commit -m "Update Screenshot (Banner Removed)" || exit 0
           git push
