@@ -3,7 +3,6 @@ name: Automatic Screenshot
 on:
   repository_dispatch:
     types: [p2p_update]
-  # ★ここを追加：これでGitHubの画面から手動実行できるようになります
   workflow_dispatch:
     inputs:
       filename:
@@ -18,15 +17,34 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Take Screenshot
-        uses: flameddd/screenshot-action@v1.4.2
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          url: https://tan172074.studio.site/
-          width: 1280
-          height: 720
-          # GASからの信号（client_payload）か、手動入力（inputs）のどちらかを使う設定
-          output: screenshots/${{ github.event.client_payload.filename || github.event.inputs.filename }}.png
-          delay: 10000 
+          node-version: '20'
+
+      - name: Install Puppeteer
+        run: npm install puppeteer
+
+      - name: Take Screenshot
+        run: |
+          node -e "
+          const puppeteer = require('puppeteer');
+          (async () => {
+            const browser = await puppeteer.launch({
+              args: ['--no-sandbox', '--disable-setuid-sandbox']
+            });
+            const page = await browser.newPage();
+            // 指定のサイズ
+            await page.setViewport({ width: 1280, height: 720 });
+            // 指定のURL
+            await page.goto('https://tan172074.studio.site/', { waitUntil: 'networkidle2', timeout: 60000 });
+            // 地図などの描画待ち（10秒）
+            await new Promise(r => setTimeout(r, 10000));
+            // ファイル名決定
+            const fname = '${{ github.event.client_payload.filename }}' || '${{ github.event.inputs.filename }}' || 'screenshot';
+            await page.screenshot({ path: 'screenshots/' + fname + '.png' });
+            await browser.close();
+          })();"
 
       - name: Commit and Push
         run: |
@@ -34,5 +52,5 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           mkdir -p screenshots
           git add screenshots/
-          git commit -m "Add screenshot: ${{ github.event.client_payload.filename || github.event.inputs.filename }}" || exit 0
+          git commit -m "Add screenshot" || exit 0
           git push
