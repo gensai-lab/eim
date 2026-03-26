@@ -1,8 +1,8 @@
 {
   "items": [
     {
-      "id": "69c547a4e88ee598246beb72",
-      "time": "2026/03/26 23:50:12",
+      "id": "69c55daae88ee598246beb73",
+      "time": "2026/03/27 01:24:10",
       "hypocenter": "三陸沖",
       "max_intensity": "1",
       "intensity_bg": "#347FC1",
@@ -13,9 +13,33 @@
       "tsunami_bg": "#7F7F7F",
       "points": [
         {
+          "addr": "宮古市田老",
+          "isArea": false,
+          "pref": "岩手県",
+          "scale": 10
+        },
+        {
+          "addr": "釜石市中妻町",
+          "isArea": false,
+          "pref": "岩手県",
+          "scale": 10
+        },
+        {
+          "addr": "盛岡市山王町",
+          "isArea": false,
+          "pref": "岩手県",
+          "scale": 10
+        },
+        {
           "addr": "盛岡市薮川",
           "isArea": false,
           "pref": "岩手県",
+          "scale": 10
+        },
+        {
+          "addr": "登米市迫町",
+          "isArea": false,
+          "pref": "宮城県",
           "scale": 10
         }
       ]
