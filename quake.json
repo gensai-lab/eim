@@ -1,6 +1,23 @@
 {
   "items": [
     {
+      "id": "69c510e8e88ee598246beb6b",
+      "time": "2026/03/26 19:54:00",
+      "hypocenter": "???????",
+      "max_intensity": "1",
+      "magnitude": "M3.0",
+      "depth": "?50??",
+      "tsunami_text": "???????",
+      "points": [
+        {
+          "addr": "?????????",
+          "isArea": false,
+          "pref": "???",
+          "scale": 10
+        }
+      ]
+    },
+    {
       "id": "69c4f467e88ee598246beb6a",
       "time": "2026/03/26 17:51:00",
       "hypocenter": "???",
@@ -785,41 +802,6 @@
           "isArea": false,
           "pref": "???",
           "scale": 10
-        }
-      ]
-    },
-    {
-      "id": "69c487ade88ee598246beb64",
-      "time": "2026/03/26 10:08:00",
-      "hypocenter": "??????????",
-      "max_intensity": "2",
-      "magnitude": "M2.3",
-      "depth": "?10??",
-      "tsunami_text": "???????",
-      "points": [
-        {
-          "addr": "??????",
-          "isArea": false,
-          "pref": "???",
-          "scale": 10
-        },
-        {
-          "addr": "????????",
-          "isArea": false,
-          "pref": "???",
-          "scale": 10
-        },
-        {
-          "addr": "????",
-          "isArea": false,
-          "pref": "???",
-          "scale": 10
-        },
-        {
-          "addr": "?????",
-          "isArea": false,
-          "pref": "???",
-          "scale": 20
         }
       ]
     }
