@@ -1,114 +1,17 @@
 {
   "items": [
     {
-      "id": "69c540ebe88ee598246beb6d",
-      "time": "2026/03/26 23:21:31",
-      "hypocenter": "調査中",
-      "max_intensity": "4",
-      "intensity_bg": "#E55E10",
+      "id": "69c54127e88ee598246beb6e",
+      "time": "2026/03/26 23:22:31",
+      "hypocenter": "三陸沖",
+      "max_intensity": "調査中",
+      "intensity_bg": "#7F7F7F",
       "intensity_text": "#FFFFFF",
-      "magnitude": "調査中",
-      "depth": "調査中",
-      "tsunami_text": "津波の心配なし",
-      "tsunami_bg": "#7F7F7F",
-      "points": [
-        {
-          "addr": "岩手県内陸北部",
-          "isArea": true,
-          "pref": "岩手県",
-          "scale": 40
-        },
-        {
-          "addr": "岩手県沿岸北部",
-          "isArea": true,
-          "pref": "岩手県",
-          "scale": 30
-        },
-        {
-          "addr": "岩手県沿岸南部",
-          "isArea": true,
-          "pref": "岩手県",
-          "scale": 30
-        },
-        {
-          "addr": "岩手県内陸南部",
-          "isArea": true,
-          "pref": "岩手県",
-          "scale": 30
-        },
-        {
-          "addr": "渡島地方東部",
-          "isArea": true,
-          "pref": "北海道",
-          "scale": 30
-        },
-        {
-          "addr": "青森県津軽北部",
-          "isArea": true,
-          "pref": "青森県",
-          "scale": 30
-        },
-        {
-          "addr": "青森県三八上北",
-          "isArea": true,
-          "pref": "青森県",
-          "scale": 30
-        },
-        {
-          "addr": "青森県下北",
-          "isArea": true,
-          "pref": "青森県",
-          "scale": 30
-        },
-        {
-          "addr": "宮城県北部",
-          "isArea": true,
-          "pref": "宮城県",
-          "scale": 30
-        },
-        {
-          "addr": "宮城県南部",
-          "isArea": true,
-          "pref": "宮城県",
-          "scale": 30
-        },
-        {
-          "addr": "宮城県中部",
-          "isArea": true,
-          "pref": "宮城県",
-          "scale": 30
-        },
-        {
-          "addr": "秋田県沿岸北部",
-          "isArea": true,
-          "pref": "秋田県",
-          "scale": 30
-        },
-        {
-          "addr": "秋田県沿岸南部",
-          "isArea": true,
-          "pref": "秋田県",
-          "scale": 30
-        },
-        {
-          "addr": "秋田県内陸南部",
-          "isArea": true,
-          "pref": "秋田県",
-          "scale": 30
-        },
-        {
-          "addr": "山形県庄内",
-          "isArea": true,
-          "pref": "山形県",
-          "scale": 30
-        },
-        {
-          "addr": "山形県村山",
-          "isArea": true,
-          "pref": "山形県",
-          "scale": 30
-        }
-      ]
+      "magnitude": "M6.4",
+      "depth": "約10キロ",
+      "tsunami_text": "若干の海面変動あり",
+      "tsunami_bg": "#1EB4E6",
+      "points": []
     }
   ]
 }
