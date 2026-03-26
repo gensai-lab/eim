@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "69c4f467e88ee598246beb6a",
+      "time": "2026/03/26 17:51:00",
+      "hypocenter": "三陸沖",
+      "max_intensity": "1",
+      "intensity_bg": "#347FC1",
+      "intensity_text": "#FFFFFF",
+      "magnitude": "M4.6",
+      "depth": "約10キロ",
+      "tsunami_text": "津波の心配なし",
+      "tsunami_bg": "#7F7F7F",
+      "is_eew": true,
+      "points": [
+        {
+          "addr": "宮古市五月町",
+          "isArea": false,
+          "pref": "岩手県",
+          "scale": 10
+        },
+        {
+          "addr": "宮古市田老",
+          "isArea": false,
+          "pref": "岩手県",
+          "scale": 10
+        },
+        {
+          "addr": "盛岡市薮川",
+          "isArea": false,
+          "pref": "岩手県",
+          "scale": 10
+        }
+      ]
+    },
+    {
       "id": "69c4e34de88ee598246beb69",
       "time": "2026/03/26 16:37:00",
       "hypocenter": "青森県東方沖",
@@ -807,27 +840,6 @@
           "isArea": false,
           "pref": "熊本県",
           "scale": 20
-        }
-      ]
-    },
-    {
-      "id": "69c403a2e88ee598246beb63",
-      "time": "2026/03/26 00:43:00",
-      "hypocenter": "新島・神津島近海",
-      "max_intensity": "1",
-      "intensity_bg": "#347FC1",
-      "intensity_text": "#FFFFFF",
-      "magnitude": "M2.2",
-      "depth": "ごく浅い",
-      "tsunami_text": "津波の心配なし",
-      "tsunami_bg": "#7F7F7F",
-      "is_eew": true,
-      "points": [
-        {
-          "addr": "新島村大原",
-          "isArea": false,
-          "pref": "東京都",
-          "scale": 10
         }
       ]
     }
