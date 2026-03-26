@@ -1,6 +1,19 @@
 {
   "items": [
     {
+      "id": "69c487ade88ee598246beb64",
+      "time": "2026/03/26 10:08:00",
+      "hypocenter": "熊本県天草・芦北地方",
+      "max_intensity": "2",
+      "intensity_bg": "#108452",
+      "intensity_text": "#FFFFFF",
+      "magnitude": "M2.3",
+      "depth": "約10キロ",
+      "tsunami_text": "津波の心配なし",
+      "tsunami_bg": "#7F7F7F",
+      "is_eew": true
+    },
+    {
       "id": "69c403a2e88ee598246beb63",
       "time": "2026/03/26 00:43:00",
       "hypocenter": "新島・神津島近海",
@@ -48,19 +61,6 @@
       "intensity_text": "#FFFFFF",
       "magnitude": "M2.2",
       "depth": "ごく浅い",
-      "tsunami_text": "津波の心配なし",
-      "tsunami_bg": "#7F7F7F",
-      "is_eew": true
-    },
-    {
-      "id": "69c38479e88ee598246beb5b",
-      "time": "2026/03/25 15:42:00",
-      "hypocenter": "宮古島近海",
-      "max_intensity": "1",
-      "intensity_bg": "#347FC1",
-      "intensity_text": "#FFFFFF",
-      "magnitude": "M4.3",
-      "depth": "約10キロ",
       "tsunami_text": "津波の心配なし",
       "tsunami_bg": "#7F7F7F",
       "is_eew": true
