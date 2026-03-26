@@ -11,23 +11,33 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Create Directory
-        run: mkdir -p screenshots
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install Puppeteer
+        run: npm install puppeteer
 
       - name: Take Screenshot
-        uses: swinton/screenshot-action@v2.1.0
-        with:
-          # ★ここにStudioの地図が表示されているURL（プレビューURLなど）を貼ってください
-          url: https://tan172074.studio.site/  
-          filename: screenshots/${{ github.event.client_payload.filename }}.png
-          width: 1280
-          height: 720
-          delay: 5 # 地図の読み込み待ち時間（秒）
+        run: |
+          node -e "
+          const puppeteer = require('puppeteer');
+          (async () => {
+            const browser = await puppeteer.launch();
+            const page = await browser.newPage();
+            await page.setViewport({ width: 1280, height: 720 });
+            await page.goto('https://tan172074.studio.site/', { waitUntil: 'networkidle2' });
+            await new Promise(r => setTimeout(r, 5000)); // 読み込み待ち
+            await page.screenshot({ path: 'screenshots/${{ github.event.client_payload.filename }}.png' });
+            await browser.close();
+          })();"
 
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          mkdir -p screenshots
           git add screenshots/
           git commit -m "Add screenshot: ${{ github.event.client_payload.filename }}"
           git push
