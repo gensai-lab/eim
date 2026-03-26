@@ -1,42 +1,18 @@
 {
   "items": [
     {
-      "id": "69c55daae88ee598246beb73",
-      "time": "2026/03/27 01:24:10",
+      "id": "69c565fde88ee598246beb74",
+      "time": "2026/03/27 01:59:41",
       "hypocenter": "三陸沖",
       "max_intensity": "1",
-      "magnitude": "M4.5",
+      "magnitude": "M4.3",
       "depth": "約10キロ",
       "tsunami_text": "津波の心配なし",
       "points": [
         {
-          "addr": "宮古市田老",
-          "isArea": false,
-          "pref": "岩手県",
-          "scale": 10
-        },
-        {
-          "addr": "釜石市中妻町",
-          "isArea": false,
-          "pref": "岩手県",
-          "scale": 10
-        },
-        {
-          "addr": "盛岡市山王町",
-          "isArea": false,
-          "pref": "岩手県",
-          "scale": 10
-        },
-        {
           "addr": "盛岡市薮川",
           "isArea": false,
           "pref": "岩手県",
-          "scale": 10
-        },
-        {
-          "addr": "登米市迫町",
-          "isArea": false,
-          "pref": "宮城県",
           "scale": 10
         }
       ]
