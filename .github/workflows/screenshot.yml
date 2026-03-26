@@ -1,44 +1,40 @@
-name: Earthquake Screenshot Bot
+name: Automatic Screenshot
 
 on:
   repository_dispatch:
-    types: [p2p_update] # GASからの通知を受けて起動
+    types: [p2p_update] # GASの event_type と一致させる
 
 jobs:
   screenshot:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      # 1. 日本時間（JST）の現在時刻を取得して変数に格納
-      - name: Get current time
-        id: date
-        run: |
-          echo "today=$(TZ=Asia/Tokyo date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_OUTPUT
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
 
-      # 2. 最新の地震データを取得（ファイル名やログ用）
-      # ※ここでquake.jsonからIDなどを抜き出す処理があれば継続
-      - name: Fetch Latest Data
-        id: quake_data
-        run: |
-          # 必要に応じて、quake.jsonの中身を読み込む処理をここに
-          echo "Fetched latest quake data"
+      - name: Install Puppeteer
+        run: npm install puppeteer
 
-      # 3. スクリーンショット実行（例：PuppeteerやPlaywrightを使用している想定）
-      # ここで保存するファイル名に、先ほど取得した時刻（steps.date.outputs.today）を使います
       - name: Take Screenshot
-        run: |
-          # 実行コマンドの例（代表の環境に合わせて調整してください）
-          # 例: node screenshot.js ${{ steps.date.outputs.today }}.png
-          echo "Taking screenshot for ${{ steps.date.outputs.today }}.png"
-          
-      # 4. GitHubリポジトリへコミット＆プッシュ
+        uses: swinton/screenshot-action@v2.1.0
+        with:
+          # ★ここにStudioの公開URLを貼ってください
+          url: https://tan172074.studio.site/  
+          # GASから送られてきたタイムスタンプをファイル名にする
+          filename: screenshots/${{ github.event.client_payload.filename }}.png
+          # 画面サイズ（必要に応じて調整してください）
+          width: 1280
+          height: 720
+
       - name: Commit and Push
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add .
-          # メッセージにも日付を入れると管理しやすくなります
-          git commit -m "Update screenshot: ${{ steps.date.outputs.today }}"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          mkdir -p screenshots
+          git add screenshots/
+          git commit -m "Add screenshot: ${{ github.event.client_payload.filename }}"
           git push
