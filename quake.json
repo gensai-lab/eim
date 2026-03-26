@@ -5,12 +5,9 @@
       "time": "2026/03/27 01:24:10",
       "hypocenter": "三陸沖",
       "max_intensity": "1",
-      "intensity_bg": "#347FC1",
-      "intensity_text": "#FFFFFF",
       "magnitude": "M4.5",
       "depth": "約10キロ",
       "tsunami_text": "津波の心配なし",
-      "tsunami_bg": "#7F7F7F",
       "points": [
         {
           "addr": "宮古市田老",
