@@ -1,18 +1,48 @@
 {
   "items": [
     {
-      "id": "69c565fde88ee598246beb74",
-      "time": "2026/03/27 01:59:41",
+      "id": "69c5902fe88ee598246beb75",
+      "time": "2026/03/27 04:59:43",
       "hypocenter": "三陸沖",
       "max_intensity": "1",
-      "magnitude": "M4.3",
+      "magnitude": "M4.9",
       "depth": "約10キロ",
       "tsunami_text": "津波の心配なし",
       "points": [
         {
+          "addr": "八戸市南郷",
+          "isArea": false,
+          "pref": "青森県",
+          "scale": 10
+        },
+        {
+          "addr": "五戸町古舘",
+          "isArea": false,
+          "pref": "青森県",
+          "scale": 10
+        },
+        {
+          "addr": "宮古市田老",
+          "isArea": false,
+          "pref": "岩手県",
+          "scale": 10
+        },
+        {
           "addr": "盛岡市薮川",
           "isArea": false,
           "pref": "岩手県",
+          "scale": 10
+        },
+        {
+          "addr": "八幡平市田頭",
+          "isArea": false,
+          "pref": "岩手県",
+          "scale": 10
+        },
+        {
+          "addr": "登米市迫町",
+          "isArea": false,
+          "pref": "宮城県",
           "scale": 10
         }
       ]
