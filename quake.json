@@ -1,14 +1,14 @@
 {
   "items": [
     {
-      "id": "69c4e2b7e88ee598246beb67",
+      "id": "69c4e311e88ee598246beb68",
       "time": "2026/03/26 16:37:00",
-      "hypocenter": "調査中",
+      "hypocenter": "青森県東方沖",
       "max_intensity": "3",
       "intensity_bg": "#E5C510",
       "intensity_text": "#0D0D0D",
-      "magnitude": "調査中",
-      "depth": "調査中",
+      "magnitude": "M4.7",
+      "depth": "約40キロ",
       "tsunami_text": "調査中",
       "tsunami_bg": "#7F7F7F",
       "is_eew": true
