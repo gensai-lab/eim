@@ -1,19 +1,112 @@
 {
   "items": [
     {
-      "id": "69c510e8e88ee598246beb6b",
-      "time": "2026/03/26 19:56:40",
-      "hypocenter": "岩手県沿岸北部",
-      "max_intensity": "1",
-      "magnitude": "M3.0",
-      "depth": "約50キロ",
+      "id": "69c540ebe88ee598246beb6d",
+      "time": "2026/03/26 23:21:31",
+      "hypocenter": "調査中",
+      "max_intensity": "4",
+      "intensity_bg": "#E55E10",
+      "intensity_text": "#FFFFFF",
+      "magnitude": "調査中",
+      "depth": "調査中",
       "tsunami_text": "津波の心配なし",
+      "tsunami_bg": "#7F7F7F",
       "points": [
         {
-          "addr": "花巻市大迫総合支所",
-          "isArea": false,
+          "addr": "岩手県内陸北部",
+          "isArea": true,
           "pref": "岩手県",
-          "scale": 10
+          "scale": 40
+        },
+        {
+          "addr": "岩手県沿岸北部",
+          "isArea": true,
+          "pref": "岩手県",
+          "scale": 30
+        },
+        {
+          "addr": "岩手県沿岸南部",
+          "isArea": true,
+          "pref": "岩手県",
+          "scale": 30
+        },
+        {
+          "addr": "岩手県内陸南部",
+          "isArea": true,
+          "pref": "岩手県",
+          "scale": 30
+        },
+        {
+          "addr": "渡島地方東部",
+          "isArea": true,
+          "pref": "北海道",
+          "scale": 30
+        },
+        {
+          "addr": "青森県津軽北部",
+          "isArea": true,
+          "pref": "青森県",
+          "scale": 30
+        },
+        {
+          "addr": "青森県三八上北",
+          "isArea": true,
+          "pref": "青森県",
+          "scale": 30
+        },
+        {
+          "addr": "青森県下北",
+          "isArea": true,
+          "pref": "青森県",
+          "scale": 30
+        },
+        {
+          "addr": "宮城県北部",
+          "isArea": true,
+          "pref": "宮城県",
+          "scale": 30
+        },
+        {
+          "addr": "宮城県南部",
+          "isArea": true,
+          "pref": "宮城県",
+          "scale": 30
+        },
+        {
+          "addr": "宮城県中部",
+          "isArea": true,
+          "pref": "宮城県",
+          "scale": 30
+        },
+        {
+          "addr": "秋田県沿岸北部",
+          "isArea": true,
+          "pref": "秋田県",
+          "scale": 30
+        },
+        {
+          "addr": "秋田県沿岸南部",
+          "isArea": true,
+          "pref": "秋田県",
+          "scale": 30
+        },
+        {
+          "addr": "秋田県内陸南部",
+          "isArea": true,
+          "pref": "秋田県",
+          "scale": 30
+        },
+        {
+          "addr": "山形県庄内",
+          "isArea": true,
+          "pref": "山形県",
+          "scale": 30
+        },
+        {
+          "addr": "山形県村山",
+          "isArea": true,
+          "pref": "山形県",
+          "scale": 30
         }
       ]
     }
