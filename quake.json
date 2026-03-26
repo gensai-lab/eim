@@ -2,63 +2,20 @@
   "items": [
     {
       "id": "69c510e8e88ee598246beb6b",
-      "time": "2026/03/26 19:54:00",
+      "time": "2026/03/26 19:56:40",
       "hypocenter": "岩手県沿岸北部",
       "max_intensity": "1",
-      "intensity_bg": "#347FC1",
-      "intensity_text": "#FFFFFF",
       "magnitude": "M3.0",
       "depth": "約50キロ",
       "tsunami_text": "津波の心配なし",
-      "tsunami_bg": "#7F7F7F"
-    },
-    {
-      "id": "69c4f467e88ee598246beb6a",
-      "time": "2026/03/26 17:51:00",
-      "hypocenter": "三陸沖",
-      "max_intensity": "1",
-      "intensity_bg": "#347FC1",
-      "intensity_text": "#FFFFFF",
-      "magnitude": "M4.6",
-      "depth": "約10キロ",
-      "tsunami_text": "津波の心配なし",
-      "tsunami_bg": "#7F7F7F"
-    },
-    {
-      "id": "69c4e34de88ee598246beb69",
-      "time": "2026/03/26 16:37:00",
-      "hypocenter": "青森県東方沖",
-      "max_intensity": "3",
-      "intensity_bg": "#E5C510",
-      "intensity_text": "#0D0D0D",
-      "magnitude": "M4.7",
-      "depth": "約40キロ",
-      "tsunami_text": "津波の心配なし",
-      "tsunami_bg": "#7F7F7F"
-    },
-    {
-      "id": "69c4c371e88ee598246beb66",
-      "time": "2026/03/26 14:23:00",
-      "hypocenter": "熊本県天草・芦北地方",
-      "max_intensity": "1",
-      "intensity_bg": "#347FC1",
-      "intensity_text": "#FFFFFF",
-      "magnitude": "M2.0",
-      "depth": "約10キロ",
-      "tsunami_text": "津波の心配なし",
-      "tsunami_bg": "#7F7F7F"
-    },
-    {
-      "id": "69c4b055e88ee598246beb65",
-      "time": "2026/03/26 13:01:00",
-      "hypocenter": "熊本県天草・芦北地方",
-      "max_intensity": "1",
-      "intensity_bg": "#347FC1",
-      "intensity_text": "#FFFFFF",
-      "magnitude": "M1.9",
-      "depth": "約10キロ",
-      "tsunami_text": "津波の心配なし",
-      "tsunami_bg": "#7F7F7F"
+      "points": [
+        {
+          "addr": "花巻市大迫総合支所",
+          "isArea": false,
+          "pref": "岩手県",
+          "scale": 10
+        }
+      ]
     }
   ]
 }
