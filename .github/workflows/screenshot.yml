@@ -3,6 +3,13 @@ name: Automatic Screenshot
 on:
   repository_dispatch:
     types: [p2p_update]
+  # ★ここを追加：これでGitHubの画面から手動実行できるようになります
+  workflow_dispatch:
+    inputs:
+      filename:
+        description: '保存するファイル名（拡張子なし）'
+        required: false
+        default: 'manual-test'
 
 jobs:
   screenshot:
@@ -12,14 +19,13 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Take Screenshot
-        # 公式のスクショツールを使用（追加インストール不要で高速）
         uses: flameddd/screenshot-action@v1.4.2
         with:
           url: https://tan172074.studio.site/
           width: 1280
           height: 720
-          output: screenshots/${{ github.event.client_payload.filename }}.png
-          # 地図の読み込みを待つための秒数（ミリ秒指定）
+          # GASからの信号（client_payload）か、手動入力（inputs）のどちらかを使う設定
+          output: screenshots/${{ github.event.client_payload.filename || github.event.inputs.filename }}.png
           delay: 10000 
 
       - name: Commit and Push
@@ -28,5 +34,5 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           mkdir -p screenshots
           git add screenshots/
-          git commit -m "Add screenshot: ${{ github.event.client_payload.filename }}" || exit 0
+          git commit -m "Add screenshot: ${{ github.event.client_payload.filename || github.event.inputs.filename }}" || exit 0
           git push
