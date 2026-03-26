@@ -2,39 +2,32 @@ name: Automatic Screenshot
 
 on:
   repository_dispatch:
-    types: [p2p_update] # GASの event_type と一致させる
+    types: [p2p_update]
 
 jobs:
   screenshot:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-
-      - name: Install Puppeteer
-        run: npm install puppeteer
+      - name: Create Directory
+        run: mkdir -p screenshots
 
       - name: Take Screenshot
         uses: swinton/screenshot-action@v2.1.0
         with:
-          # ★ここにStudioの公開URLを貼ってください
+          # ★ここにStudioの地図が表示されているURL（プレビューURLなど）を貼ってください
           url: https://tan172074.studio.site/  
-          # GASから送られてきたタイムスタンプをファイル名にする
           filename: screenshots/${{ github.event.client_payload.filename }}.png
-          # 画面サイズ（必要に応じて調整してください）
           width: 1280
           height: 720
+          delay: 5 # 地図の読み込み待ち時間（秒）
 
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          mkdir -p screenshots
           git add screenshots/
           git commit -m "Add screenshot: ${{ github.event.client_payload.filename }}"
           git push
