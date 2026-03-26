@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       filename:
-        description: '保存するファイル名（拡張子なし）'
+        description: '保存するファイル名'
         required: false
         default: 'manual-test'
 
@@ -18,32 +18,48 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Node.js
+        # 警告が出ないよう、2026年の推奨バージョン 24 に指定
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
 
       - name: Install Puppeteer
         run: npm install puppeteer
 
       - name: Take Screenshot
+        env:
+          # Node 24環境での警告を抑制するおまじない
+          ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
         run: |
           node -e "
           const puppeteer = require('puppeteer');
           (async () => {
-            const browser = await puppeteer.launch({
-              args: ['--no-sandbox', '--disable-setuid-sandbox']
-            });
-            const page = await browser.newPage();
-            // 指定のサイズ
-            await page.setViewport({ width: 1280, height: 720 });
-            // 指定のURL
-            await page.goto('https://tan172074.studio.site/', { waitUntil: 'networkidle2', timeout: 60000 });
-            // 地図などの描画待ち（10秒）
-            await new Promise(r => setTimeout(r, 10000));
-            // ファイル名決定
-            const fname = '${{ github.event.client_payload.filename }}' || '${{ github.event.inputs.filename }}' || 'screenshot';
-            await page.screenshot({ path: 'screenshots/' + fname + '.png' });
-            await browser.close();
+            try {
+              const browser = await puppeteer.launch({
+                args: ['--no-sandbox', '--disable-setuid-sandbox']
+              });
+              const page = await browser.newPage();
+              await page.setViewport({ width: 1280, height: 720 });
+              
+              console.log('Opening URL...');
+              await page.goto('https://tan172074.studio.site/', { 
+                waitUntil: 'networkidle2', 
+                timeout: 60000 
+              });
+              
+              console.log('Waiting for map to render...');
+              await new Promise(r => setTimeout(r, 15000));
+              
+              const fname = '${{ github.event.client_payload.filename }}' || '${{ github.event.inputs.filename }}' || 'screenshot';
+              console.log('Saving as: ' + fname + '.png');
+              
+              await page.screenshot({ path: 'screenshots/' + fname + '.png' });
+              await browser.close();
+              console.log('Done!');
+            } catch (e) {
+              console.error('Screenshot Failed: ' + e.message);
+              process.exit(1);
+            }
           })();"
 
       - name: Commit and Push
@@ -52,5 +68,5 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           mkdir -p screenshots
           git add screenshots/
-          git commit -m "Add screenshot" || exit 0
+          git commit -m "Update Screenshot" || exit 0
           git push
