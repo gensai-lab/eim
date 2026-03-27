@@ -1,14 +1,14 @@
 {
   "items": [
     {
-      "id": "69c5e920e88ee598246beb77",
-      "time": "2026/03/27 11:19:11",
-      "hypocenter": "岩手県沖",
+      "id": "69c62c00e88ee598246beb78",
+      "time": "2026/03/27 16:04:32",
+      "hypocenter": "宮古島近海",
       "max_intensity": "1",
       "intensity_bg": "#347FC1",
       "intensity_text": "#FFF",
-      "magnitude": "M3.9",
-      "depth": "約50キロ",
+      "magnitude": "M4.0",
+      "depth": "約30キロ",
       "tsunami_text": "津波の心配なし",
       "tsunami_bg": "#7F7F7F",
       "latest_lpgm_class": "なし",
@@ -18,129 +18,9 @@
       "is_eew_warning": false,
       "points": [
         {
-          "pref": "岩手県",
-          "addr": "宮古市鍬ヶ崎",
-          "region": "宮古市鍬ヶ崎",
-          "scale": "1"
-        },
-        {
-          "pref": "岩手県",
-          "addr": "宮古市川井",
-          "region": "宮古市川井",
-          "scale": "1"
-        },
-        {
-          "pref": "岩手県",
-          "addr": "宮古市区界",
-          "region": "宮古市区界",
-          "scale": "1"
-        },
-        {
-          "pref": "岩手県",
-          "addr": "宮古市茂市",
-          "region": "宮古市茂市",
-          "scale": "1"
-        },
-        {
-          "pref": "岩手県",
-          "addr": "山田町大沢",
-          "region": "山田町大沢",
-          "scale": "1"
-        },
-        {
-          "pref": "岩手県",
-          "addr": "大船渡市大船渡町",
-          "region": "大船渡市大船渡町",
-          "scale": "1"
-        },
-        {
-          "pref": "岩手県",
-          "addr": "大船渡市猪川町",
-          "region": "大船渡市猪川町",
-          "scale": "1"
-        },
-        {
-          "pref": "岩手県",
-          "addr": "陸前高田市高田町",
-          "region": "陸前高田市高田町",
-          "scale": "1"
-        },
-        {
-          "pref": "岩手県",
-          "addr": "釜石市只越町",
-          "region": "釜石市只越町",
-          "scale": "1"
-        },
-        {
-          "pref": "岩手県",
-          "addr": "釜石市中妻町",
-          "region": "釜石市中妻町",
-          "scale": "1"
-        },
-        {
-          "pref": "岩手県",
-          "addr": "住田町世田米",
-          "region": "住田町世田米",
-          "scale": "1"
-        },
-        {
-          "pref": "岩手県",
-          "addr": "大槌町上町",
-          "region": "大槌町上町",
-          "scale": "1"
-        },
-        {
-          "pref": "岩手県",
-          "addr": "遠野市青笹町",
-          "region": "遠野市青笹町",
-          "scale": "1"
-        },
-        {
-          "pref": "岩手県",
-          "addr": "一関市大東町",
-          "region": "一関市大東町",
-          "scale": "1"
-        },
-        {
-          "pref": "岩手県",
-          "addr": "一関市千厩町",
-          "region": "一関市千厩町",
-          "scale": "1"
-        },
-        {
-          "pref": "岩手県",
-          "addr": "一関市東山町",
-          "region": "一関市東山町",
-          "scale": "1"
-        },
-        {
-          "pref": "岩手県",
-          "addr": "一関市室根町",
-          "region": "一関市室根町",
-          "scale": "1"
-        },
-        {
-          "pref": "宮城県",
-          "addr": "気仙沼市赤岩",
-          "region": "気仙沼市赤岩",
-          "scale": "1"
-        },
-        {
-          "pref": "宮城県",
-          "addr": "気仙沼市笹が陣",
-          "region": "気仙沼市笹が陣",
-          "scale": "1"
-        },
-        {
-          "pref": "宮城県",
-          "addr": "気仙沼市唐桑町",
-          "region": "気仙沼市唐桑町",
-          "scale": "1"
-        },
-        {
-          "pref": "宮城県",
-          "addr": "登米市中田町",
-          "region": "登米市中田町",
+          "pref": "沖縄県",
+          "addr": "宮古島市城辺福北",
+          "region": "宮古島市城辺福北",
           "scale": "1"
         }
       ]
