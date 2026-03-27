@@ -1,12 +1,12 @@
 {
   "list": [
     {
-      "time": "2026/03/28 00:40:00",
-      "hypocenter": "福島県会津",
-      "magnitude": "2.2",
-      "depth": "約0km",
-      "lat": 37.1,
-      "lng": 139.3,
+      "time": "2026/03/28 02:19:00",
+      "hypocenter": "青森県東方沖",
+      "magnitude": "4.1",
+      "depth": "約20km",
+      "lat": 41,
+      "lng": 142.8,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -20,8 +20,33 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "福島県",
-          "addr": "福島県会津",
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 10
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 10
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 10
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 10
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県内陸北部",
           "scale": 10
         }
       ]
