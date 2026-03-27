@@ -25,6 +25,11 @@ jobs:
       - name: Install Puppeteer
         run: npm install puppeteer
 
+      # --- ここから追加 ---
+      - name: Wait for Information Update (5 minutes)
+        run: sleep 300
+      # --- ここまで追加 ---
+
       - name: Take Screenshot
         run: |
           node -e "
@@ -42,10 +47,10 @@ jobs:
                 timeout: 60000 
               });
               
-              // 地図やデータの読み込みを待つ
+              // 地図やデータの読み込み（レンダリング）を待つ
               await new Promise(r => setTimeout(r, 10000));
               
-              // ★ここがバナーを消す魔法のコードです
+              // ★Studioバナーを消す処理
               await page.evaluate(() => {
                 const badge = document.querySelector('div[class*=\"studio-badge\"]') || 
                               document.querySelector('a[href*=\"studio.design\"]')?.parentElement;
@@ -68,5 +73,5 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           mkdir -p screenshots
           git add screenshots/
-          git commit -m "Update Screenshot (Banner Removed)" || exit 0
+          git commit -m "Update Screenshot (Delayed 5m for Data Stability)" || exit 0
           git push
