@@ -1,24 +1,138 @@
 {
   "items": [
     {
-      "id": "69c5b075e88ee598246beb76",
-      "time": "2026/03/27 07:17:25",
-      "hypocenter": "福島県沖",
+      "id": "69c5e920e88ee598246beb77",
+      "time": "2026/03/27 11:19:11",
+      "hypocenter": "岩手県沖",
       "max_intensity": "1",
-      "magnitude": "M3.2",
-      "depth": "約30キロ",
+      "magnitude": "M3.9",
+      "depth": "約50キロ",
       "tsunami_text": "津波の心配なし",
       "points": [
         {
-          "addr": "福島広野町下北迫大谷地原",
+          "addr": "宮古市鍬ヶ崎",
           "isArea": false,
-          "pref": "福島県",
+          "pref": "岩手県",
           "scale": 10
         },
         {
-          "addr": "楢葉町北田",
+          "addr": "宮古市川井",
           "isArea": false,
-          "pref": "福島県",
+          "pref": "岩手県",
+          "scale": 10
+        },
+        {
+          "addr": "宮古市区界",
+          "isArea": false,
+          "pref": "岩手県",
+          "scale": 10
+        },
+        {
+          "addr": "宮古市茂市",
+          "isArea": false,
+          "pref": "岩手県",
+          "scale": 10
+        },
+        {
+          "addr": "山田町大沢",
+          "isArea": false,
+          "pref": "岩手県",
+          "scale": 10
+        },
+        {
+          "addr": "大船渡市大船渡町",
+          "isArea": false,
+          "pref": "岩手県",
+          "scale": 10
+        },
+        {
+          "addr": "大船渡市猪川町",
+          "isArea": false,
+          "pref": "岩手県",
+          "scale": 10
+        },
+        {
+          "addr": "陸前高田市高田町",
+          "isArea": false,
+          "pref": "岩手県",
+          "scale": 10
+        },
+        {
+          "addr": "釜石市只越町",
+          "isArea": false,
+          "pref": "岩手県",
+          "scale": 10
+        },
+        {
+          "addr": "釜石市中妻町",
+          "isArea": false,
+          "pref": "岩手県",
+          "scale": 10
+        },
+        {
+          "addr": "住田町世田米",
+          "isArea": false,
+          "pref": "岩手県",
+          "scale": 10
+        },
+        {
+          "addr": "大槌町上町",
+          "isArea": false,
+          "pref": "岩手県",
+          "scale": 10
+        },
+        {
+          "addr": "遠野市青笹町",
+          "isArea": false,
+          "pref": "岩手県",
+          "scale": 10
+        },
+        {
+          "addr": "一関市大東町",
+          "isArea": false,
+          "pref": "岩手県",
+          "scale": 10
+        },
+        {
+          "addr": "一関市千厩町",
+          "isArea": false,
+          "pref": "岩手県",
+          "scale": 10
+        },
+        {
+          "addr": "一関市東山町",
+          "isArea": false,
+          "pref": "岩手県",
+          "scale": 10
+        },
+        {
+          "addr": "一関市室根町",
+          "isArea": false,
+          "pref": "岩手県",
+          "scale": 10
+        },
+        {
+          "addr": "気仙沼市赤岩",
+          "isArea": false,
+          "pref": "宮城県",
+          "scale": 10
+        },
+        {
+          "addr": "気仙沼市笹が陣",
+          "isArea": false,
+          "pref": "宮城県",
+          "scale": 10
+        },
+        {
+          "addr": "気仙沼市唐桑町",
+          "isArea": false,
+          "pref": "宮城県",
+          "scale": 10
+        },
+        {
+          "addr": "登米市中田町",
+          "isArea": false,
+          "pref": "宮城県",
           "scale": 10
         }
       ]
