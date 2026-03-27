@@ -1,12 +1,12 @@
 {
   "list": [
     {
-      "time": "2026/03/27 19:51:00",
-      "hypocenter": "熊本県天草・芦北地方",
-      "magnitude": "2.3",
+      "time": "2026/03/27 22:08:00",
+      "hypocenter": "和歌山県北部",
+      "magnitude": "2.8",
       "depth": "約10km",
-      "lat": 32.3,
-      "lng": 130.4,
+      "lat": 34.1,
+      "lng": 135.3,
       "maxScale": "2",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#00aaff",
@@ -20,24 +20,9 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "熊本県",
-          "addr": "熊本県天草・芦北",
+          "pref": "和歌山県",
+          "addr": "和歌山県北部",
           "scale": 20
-        },
-        {
-          "pref": "熊本県",
-          "addr": "熊本県天草・芦北",
-          "scale": 10
-        },
-        {
-          "pref": "熊本県",
-          "addr": "熊本県天草・芦北",
-          "scale": 10
-        },
-        {
-          "pref": "熊本県",
-          "addr": "熊本県球磨",
-          "scale": 10
         }
       ]
     }
