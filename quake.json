@@ -1,12 +1,12 @@
 {
   "list": [
     {
-      "time": "2026/03/28 02:19:00",
-      "hypocenter": "青森県東方沖",
-      "magnitude": "4.1",
-      "depth": "約20km",
-      "lat": 41,
-      "lng": 142.8,
+      "time": "2026/03/28 02:53:00",
+      "hypocenter": "石川県能登地方",
+      "magnitude": "3.1",
+      "depth": "約10km",
+      "lat": 37.5,
+      "lng": 137.2,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -20,33 +20,8 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "岩手県",
-          "addr": "岩手県内陸北部",
+          "pref": "石川県",
+          "addr": "石川県能登",
           "scale": 10
         }
       ]
