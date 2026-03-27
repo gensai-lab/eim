@@ -1,13 +1,13 @@
 {
-  "hypocenter": "宮古島近海",
-  "magnitude": "4.0",
-  "depth": "約30km",
-  "time": "2026/03/27 16:01:00",
-  "lat": 24.3,
-  "lng": 125.2,
-  "maxScale": "1",
+  "hypocenter": "熊本県天草・芦北地方",
+  "magnitude": "2.3",
+  "depth": "約10km",
+  "time": "2026/03/27 19:51:00",
+  "lat": 32.3,
+  "lng": 130.4,
+  "maxScale": "2",
   "maxScaleColor": "#1b1b1b",
-  "maxScaleBg": "#f2f2ff",
+  "maxScaleBg": "#00aaff",
   "tsunamiText": "津波の心配なし",
   "tsunamiColor": "#ffffff",
   "tsunamiBg": "#7a7a7a",
@@ -17,8 +17,23 @@
   "maxLpgmBg": "#333333",
   "points": [
     {
-      "pref": "沖縄県",
-      "addr": "沖縄県宮古島",
+      "pref": "熊本県",
+      "addr": "熊本県天草・芦北",
+      "scale": 20
+    },
+    {
+      "pref": "熊本県",
+      "addr": "熊本県天草・芦北",
+      "scale": 10
+    },
+    {
+      "pref": "熊本県",
+      "addr": "熊本県天草・芦北",
+      "scale": 10
+    },
+    {
+      "pref": "熊本県",
+      "addr": "熊本県球磨",
       "scale": 10
     }
   ]
