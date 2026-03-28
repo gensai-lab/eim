@@ -1,12 +1,12 @@
 {
   "list": [
     {
-      "time": "2026/03/28 21:33:00",
-      "hypocenter": "茨城県北部",
-      "magnitude": "2.5",
-      "depth": "約10km",
-      "lat": 36.6,
-      "lng": 140.6,
+      "time": "2026/03/29 02:59:00",
+      "hypocenter": "与那国島近海",
+      "magnitude": "4.3",
+      "depth": "約50km",
+      "lat": 24.2,
+      "lng": 123.2,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -20,13 +20,18 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "茨城県",
-          "addr": "茨城県北部",
+          "pref": "沖縄県",
+          "addr": "沖縄県西表島",
           "scale": 10
         },
         {
-          "pref": "茨城県",
-          "addr": "茨城県北部",
+          "pref": "沖縄県",
+          "addr": "沖縄県西表島",
+          "scale": 10
+        },
+        {
+          "pref": "沖縄県",
+          "addr": "沖縄県西表島",
           "scale": 10
         }
       ]
