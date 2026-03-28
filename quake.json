@@ -1,12 +1,12 @@
 {
   "list": [
     {
-      "time": "2026/03/28 10:35:00",
-      "hypocenter": "熊本県天草・芦北地方",
-      "magnitude": "2.0",
+      "time": "2026/03/28 14:34:00",
+      "hypocenter": "宮古島近海",
+      "magnitude": "4.7",
       "depth": "約10km",
-      "lat": 32.2,
-      "lng": 130.4,
+      "lat": 25.3,
+      "lng": 125.2,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -20,13 +20,43 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "熊本県",
-          "addr": "熊本県天草・芦北",
+          "pref": "沖縄県",
+          "addr": "沖縄県宮古島",
           "scale": 10
         },
         {
-          "pref": "熊本県",
-          "addr": "熊本県天草・芦北",
+          "pref": "沖縄県",
+          "addr": "沖縄県宮古島",
+          "scale": 10
+        },
+        {
+          "pref": "沖縄県",
+          "addr": "沖縄県宮古島",
+          "scale": 10
+        },
+        {
+          "pref": "沖縄県",
+          "addr": "沖縄県宮古島",
+          "scale": 10
+        },
+        {
+          "pref": "沖縄県",
+          "addr": "沖縄県宮古島",
+          "scale": 10
+        },
+        {
+          "pref": "沖縄県",
+          "addr": "沖縄県宮古島",
+          "scale": 10
+        },
+        {
+          "pref": "沖縄県",
+          "addr": "沖縄県宮古島",
+          "scale": 10
+        },
+        {
+          "pref": "沖縄県",
+          "addr": "沖縄県宮古島",
           "scale": 10
         }
       ]
