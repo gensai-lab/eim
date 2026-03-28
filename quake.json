@@ -1,12 +1,12 @@
 {
   "list": [
     {
-      "time": "2026/03/28 02:53:00",
-      "hypocenter": "石川県能登地方",
-      "magnitude": "3.1",
+      "time": "2026/03/28 10:35:00",
+      "hypocenter": "熊本県天草・芦北地方",
+      "magnitude": "2.0",
       "depth": "約10km",
-      "lat": 37.5,
-      "lng": 137.2,
+      "lat": 32.2,
+      "lng": 130.4,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -20,8 +20,13 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "石川県",
-          "addr": "石川県能登",
+          "pref": "熊本県",
+          "addr": "熊本県天草・芦北",
+          "scale": 10
+        },
+        {
+          "pref": "熊本県",
+          "addr": "熊本県天草・芦北",
           "scale": 10
         }
       ]
