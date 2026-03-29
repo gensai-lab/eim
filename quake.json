@@ -1,12 +1,12 @@
 {
   "list": [
     {
-      "time": "2026/03/29 17:42:00",
-      "hypocenter": "トカラ列島近海",
-      "magnitude": "2.1",
+      "time": "2026/03/29 23:53:00",
+      "hypocenter": "熊本県天草・芦北地方",
+      "magnitude": "2.2",
       "depth": "約10km",
-      "lat": 29.3,
-      "lng": 129.5,
+      "lat": 32.2,
+      "lng": 130.4,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -20,8 +20,13 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "鹿児島県",
-          "addr": "鹿児島県十島村",
+          "pref": "熊本県",
+          "addr": "熊本県天草・芦北",
+          "scale": 10
+        },
+        {
+          "pref": "熊本県",
+          "addr": "熊本県天草・芦北",
           "scale": 10
         }
       ]
