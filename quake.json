@@ -1,15 +1,15 @@
 {
   "list": [
     {
-      "time": "2026/03/29 08:15:00",
-      "hypocenter": "青森県東方沖",
-      "magnitude": "3.0",
-      "depth": "約60km",
-      "lat": 41,
-      "lng": 142,
-      "maxScale": "1",
+      "time": "2026/03/29 15:56:00",
+      "hypocenter": "山梨県中・西部",
+      "magnitude": "3.3",
+      "depth": "約10km",
+      "lat": 35.7,
+      "lng": 138.7,
+      "maxScale": "2",
       "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#f2f2ff",
+      "maxScaleBg": "#00aaff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
@@ -20,8 +20,153 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
+          "pref": "山梨県",
+          "addr": "山梨県中・西部",
+          "scale": 20
+        },
+        {
+          "pref": "山梨県",
+          "addr": "山梨県中・西部",
+          "scale": 10
+        },
+        {
+          "pref": "山梨県",
+          "addr": "山梨県中・西部",
+          "scale": 20
+        },
+        {
+          "pref": "山梨県",
+          "addr": "山梨県中・西部",
+          "scale": 20
+        },
+        {
+          "pref": "山梨県",
+          "addr": "山梨県中・西部",
+          "scale": 10
+        },
+        {
+          "pref": "山梨県",
+          "addr": "千葉県北東部",
+          "scale": 20
+        },
+        {
+          "pref": "山梨県",
+          "addr": "山梨県中・西部",
+          "scale": 20
+        },
+        {
+          "pref": "山梨県",
+          "addr": "山梨県中・西部",
+          "scale": 20
+        },
+        {
+          "pref": "山梨県",
+          "addr": "山梨県中・西部",
+          "scale": 20
+        },
+        {
+          "pref": "山梨県",
+          "addr": "山梨県中・西部",
+          "scale": 10
+        },
+        {
+          "pref": "山梨県",
+          "addr": "山梨県中・西部",
+          "scale": 10
+        },
+        {
+          "pref": "山梨県",
+          "addr": "山梨県中・西部",
+          "scale": 20
+        },
+        {
+          "pref": "山梨県",
+          "addr": "山梨県中・西部",
+          "scale": 20
+        },
+        {
+          "pref": "山梨県",
+          "addr": "山梨県中・西部",
+          "scale": 20
+        },
+        {
+          "pref": "山梨県",
+          "addr": "山梨県中・西部",
+          "scale": 20
+        },
+        {
+          "pref": "山梨県",
+          "addr": "宮城県中部",
+          "scale": 10
+        },
+        {
+          "pref": "山梨県",
+          "addr": "山梨県中・西部",
+          "scale": 10
+        },
+        {
+          "pref": "山梨県",
+          "addr": "山梨県中・西部",
+          "scale": 10
+        },
+        {
+          "pref": "山梨県",
+          "addr": "山梨県中・西部",
+          "scale": 10
+        },
+        {
+          "pref": "山梨県",
+          "addr": "山梨県東部・富士五湖",
+          "scale": 20
+        },
+        {
+          "pref": "山梨県",
+          "addr": "山梨県東部・富士五湖",
+          "scale": 10
+        },
+        {
+          "pref": "山梨県",
+          "addr": "山梨県東部・富士五湖",
+          "scale": 10
+        },
+        {
+          "pref": "山梨県",
+          "addr": "山梨県東部・富士五湖",
+          "scale": 10
+        },
+        {
+          "pref": "山梨県",
+          "addr": "山梨県東部・富士五湖",
+          "scale": 10
+        },
+        {
+          "pref": "山梨県",
+          "addr": "山梨県東部・富士五湖",
+          "scale": 10
+        },
+        {
+          "pref": "山梨県",
+          "addr": "山梨県東部・富士五湖",
+          "scale": 10
+        },
+        {
+          "pref": "山梨県",
+          "addr": "山梨県東部・富士五湖",
+          "scale": 10
+        },
+        {
+          "pref": "山梨県",
+          "addr": "山梨県東部・富士五湖",
+          "scale": 10
+        },
+        {
+          "pref": "山梨県",
+          "addr": "山梨県東部・富士五湖",
+          "scale": 10
+        },
+        {
+          "pref": "山梨県",
+          "addr": "山梨県東部・富士五湖",
           "scale": 10
         }
       ]
