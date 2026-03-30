@@ -1,15 +1,15 @@
 {
   "list": [
     {
-      "time": "2026/03/30 17:44:00",
-      "hypocenter": "バヌアツ諸島",
-      "magnitude": "7.3",
-      "depth": "約120km",
-      "lat": -15.3,
-      "lng": 167.4,
-      "maxScale": "-1",
-      "maxScaleColor": "#ffffff",
-      "maxScaleBg": "#333333",
+      "time": "2026/03/30 20:23:00",
+      "hypocenter": "岩手県内陸北部",
+      "magnitude": "2.5",
+      "depth": "約10km",
+      "lat": 40.2,
+      "lng": 141.2,
+      "maxScale": "2",
+      "maxScaleColor": "#1b1b1b",
+      "maxScaleBg": "#00aaff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
@@ -18,7 +18,13 @@
       "tsunamiColor": "#ffffff",
       "tsunamiBg": "#7a7a7a",
       "isEEW": false,
-      "points": []
+      "points": [
+        {
+          "pref": "岩手県",
+          "addr": "岩手県内陸北部",
+          "scale": 20
+        }
+      ]
     }
   ]
 }
