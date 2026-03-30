@@ -1,12 +1,12 @@
 {
   "list": [
     {
-      "time": "2026/03/30 15:12:00",
-      "hypocenter": "十勝地方中部",
-      "magnitude": "3.3",
-      "depth": "約70km",
-      "lat": 42.7,
-      "lng": 143.5,
+      "time": "2026/03/30 16:47:00",
+      "hypocenter": "岩手県沖",
+      "magnitude": "4.3",
+      "depth": "約20km",
+      "lat": 40.4,
+      "lng": 143,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -20,28 +20,8 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "北海道",
-          "addr": "十勝地方中部",
-          "scale": 10
-        },
-        {
-          "pref": "北海道",
-          "addr": "十勝地方中部",
-          "scale": 10
-        },
-        {
-          "pref": "北海道",
-          "addr": "十勝地方中部",
-          "scale": 10
-        },
-        {
-          "pref": "北海道",
-          "addr": "十勝地方中部",
-          "scale": 10
-        },
-        {
-          "pref": "北海道",
-          "addr": "十勝地方中部",
+          "pref": "岩手県",
+          "addr": "岩手県内陸北部",
           "scale": 10
         }
       ]
