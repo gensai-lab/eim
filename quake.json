@@ -1,15 +1,15 @@
 {
   "list": [
     {
-      "time": "2026/03/30 10:05:00",
-      "hypocenter": "宮城県沖",
-      "magnitude": "3.9",
-      "depth": "約50km",
-      "lat": 38.3,
-      "lng": 141.9,
-      "maxScale": "2",
+      "time": "2026/03/30 10:12:00",
+      "hypocenter": "沖縄本島近海",
+      "magnitude": "4.9",
+      "depth": "約10km",
+      "lat": 26.3,
+      "lng": 129.1,
+      "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#00aaff",
+      "maxScaleBg": "#f2f2ff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
@@ -20,173 +20,28 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "宮城県",
-          "addr": "宮城県中部",
-          "scale": 20
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県中部",
-          "scale": 20
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県中部",
+          "pref": "鹿児島県",
+          "addr": "鹿児島県奄美南部",
           "scale": 10
         },
         {
-          "pref": "宮城県",
-          "addr": "宮城県中部",
+          "pref": "沖縄県",
+          "addr": "沖縄県本島北部",
           "scale": 10
         },
         {
-          "pref": "宮城県",
-          "addr": "宮城県中部",
+          "pref": "沖縄県",
+          "addr": "沖縄県本島北部",
           "scale": 10
         },
         {
-          "pref": "宮城県",
-          "addr": "宮城県中部",
+          "pref": "沖縄県",
+          "addr": "沖縄県本島北部",
           "scale": 10
         },
         {
-          "pref": "宮城県",
-          "addr": "宮城県中部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県中部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県中部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県中部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県北部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県北部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県北部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県北部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県北部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県北部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県北部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県南部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県南部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県南部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県南部",
-          "scale": 10
-        },
-        {
-          "pref": "岩手県",
-          "addr": "岩手県沿岸南部",
-          "scale": 10
-        },
-        {
-          "pref": "岩手県",
-          "addr": "岩手県沿岸南部",
-          "scale": 10
-        },
-        {
-          "pref": "岩手県",
-          "addr": "岩手県沿岸南部",
-          "scale": 10
-        },
-        {
-          "pref": "岩手県",
-          "addr": "岩手県沿岸南部",
-          "scale": 10
-        },
-        {
-          "pref": "岩手県",
-          "addr": "岩手県内陸南部",
-          "scale": 10
-        },
-        {
-          "pref": "岩手県",
-          "addr": "岩手県内陸南部",
-          "scale": 10
-        },
-        {
-          "pref": "岩手県",
-          "addr": "岩手県内陸南部",
-          "scale": 10
-        },
-        {
-          "pref": "岩手県",
-          "addr": "岩手県内陸南部",
-          "scale": 10
-        },
-        {
-          "pref": "岩手県",
-          "addr": "岩手県内陸南部",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県中通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県浜通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県浜通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県浜通り",
+          "pref": "沖縄県",
+          "addr": "沖縄県本島中南部",
           "scale": 10
         }
       ]
