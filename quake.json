@@ -1,12 +1,12 @@
 {
   "list": [
     {
-      "time": "2026/03/30 12:31:00",
-      "hypocenter": "沖縄本島近海",
-      "magnitude": "4.5",
-      "depth": "約10km",
-      "lat": 26.4,
-      "lng": 129,
+      "time": "2026/03/30 15:12:00",
+      "hypocenter": "十勝地方中部",
+      "magnitude": "3.3",
+      "depth": "約70km",
+      "lat": 42.7,
+      "lng": 143.5,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -20,8 +20,28 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "鹿児島県",
-          "addr": "鹿児島県奄美南部",
+          "pref": "北海道",
+          "addr": "十勝地方中部",
+          "scale": 10
+        },
+        {
+          "pref": "北海道",
+          "addr": "十勝地方中部",
+          "scale": 10
+        },
+        {
+          "pref": "北海道",
+          "addr": "十勝地方中部",
+          "scale": 10
+        },
+        {
+          "pref": "北海道",
+          "addr": "十勝地方中部",
+          "scale": 10
+        },
+        {
+          "pref": "北海道",
+          "addr": "十勝地方中部",
           "scale": 10
         }
       ]
