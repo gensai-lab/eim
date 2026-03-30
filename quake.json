@@ -1,12 +1,12 @@
 {
   "list": [
     {
-      "time": "2026/03/30 10:12:00",
+      "time": "2026/03/30 12:31:00",
       "hypocenter": "沖縄本島近海",
-      "magnitude": "4.9",
+      "magnitude": "4.5",
       "depth": "約10km",
-      "lat": 26.3,
-      "lng": 129.1,
+      "lat": 26.4,
+      "lng": 129,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -22,26 +22,6 @@
         {
           "pref": "鹿児島県",
           "addr": "鹿児島県奄美南部",
-          "scale": 10
-        },
-        {
-          "pref": "沖縄県",
-          "addr": "沖縄県本島北部",
-          "scale": 10
-        },
-        {
-          "pref": "沖縄県",
-          "addr": "沖縄県本島北部",
-          "scale": 10
-        },
-        {
-          "pref": "沖縄県",
-          "addr": "沖縄県本島北部",
-          "scale": 10
-        },
-        {
-          "pref": "沖縄県",
-          "addr": "沖縄県本島中南部",
           "scale": 10
         }
       ]
