@@ -2,34 +2,23 @@
   "list": [
     {
       "time": "2026/03/31 04:06:00",
-      "hypocenter": "",
-      "magnitude": "---",
-      "depth": "ごく浅い",
-      "lat": -200,
-      "lng": -200,
-      "maxScale": "3",
+      "hypocenter": "宮城県沖",
+      "magnitude": "4.3",
+      "depth": "約70km",
+      "lat": 38.3,
+      "lng": 141.9,
+      "maxScale": "-1",
       "maxScaleColor": "#ffffff",
-      "maxScaleBg": "#005aff",
+      "maxScaleBg": "#333333",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
       "maxLpgmBg": "#333333",
-      "tsunamiText": "津波調査中",
+      "tsunamiText": "津波の心配なし",
       "tsunamiColor": "#ffffff",
       "tsunamiBg": "#7a7a7a",
       "isEEW": false,
-      "points": [
-        {
-          "pref": "岩手県",
-          "addr": "岩手県内陸南部",
-          "scale": 30
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県北部",
-          "scale": 30
-        }
-      ]
+      "points": []
     }
   ]
 }
