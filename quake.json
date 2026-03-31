@@ -1,12 +1,12 @@
 {
   "list": [
     {
-      "time": "2026/04/01 00:39:00",
-      "hypocenter": "房総半島南方沖",
-      "magnitude": "4.4",
-      "depth": "約90km",
-      "lat": 33.9,
-      "lng": 140.1,
+      "time": "2026/04/01 03:57:00",
+      "hypocenter": "島根県東部",
+      "magnitude": "2.6",
+      "depth": "約10km",
+      "lat": 35.3,
+      "lng": 133.2,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -20,13 +20,8 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "東京都",
-          "addr": "三宅島",
-          "scale": 10
-        },
-        {
-          "pref": "東京都",
-          "addr": "三宅島",
+          "pref": "鳥取県",
+          "addr": "鳥取県西部",
           "scale": 10
         }
       ]
