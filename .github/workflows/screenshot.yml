@@ -75,3 +75,22 @@ jobs:
           git add screenshots/
           git commit -m "Update Screenshot (Delayed 5m for Data Stability)" || exit 0
           git push
+
+      - name: Send Image to Discord
+        run: |
+          # ファイル名を特定（GASからの指示 or 手動入力 or デフォルト）
+          FILENAME="${{ github.event.client_payload.filename }}"
+          if [ -z "$FILENAME" ]; then FILENAME="${{ github.event.inputs.filename }}"; fi
+          if [ -z "$FILENAME" ]; then FILENAME="screenshot"; fi
+          
+          FILE_PATH="screenshots/${FILENAME}.png"
+          
+          # 通知本文を特定
+          TWEET_BODY="${{ github.event.client_payload.tweet_body }}"
+          if [ -z "$TWEET_BODY" ]; then TWEET_BODY="${{ github.event.inputs.tweet_body }}"; fi
+
+          # Discord Webhookへ画像とテキストを同時送信
+          curl -X POST \
+            -F "payload_json={\"content\": \"$TWEET_BODY\"}" \
+            -F "file=@$FILE_PATH" \
+            ${{ secrets.DISCORD_WEBHOOK_URL }}
