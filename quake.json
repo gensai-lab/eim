@@ -1,12 +1,12 @@
 {
   "list": [
     {
-      "time": "2026/03/31 20:22:00",
-      "hypocenter": "福島県会津",
-      "magnitude": "2.3",
-      "depth": "約10km",
-      "lat": 37,
-      "lng": 139.4,
+      "time": "2026/04/01 00:39:00",
+      "hypocenter": "房総半島南方沖",
+      "magnitude": "4.4",
+      "depth": "約90km",
+      "lat": 33.9,
+      "lng": 140.1,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -20,8 +20,13 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "福島県",
-          "addr": "福島県会津",
+          "pref": "東京都",
+          "addr": "三宅島",
+          "scale": 10
+        },
+        {
+          "pref": "東京都",
+          "addr": "三宅島",
           "scale": 10
         }
       ]
