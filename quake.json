@@ -1,12 +1,12 @@
 {
   "list": [
     {
-      "time": "2026/04/02 00:59:00",
-      "hypocenter": "紀伊水道",
-      "magnitude": "3.0",
-      "depth": "約10km",
-      "lat": 34.2,
-      "lng": 135.1,
+      "time": "2026/04/02 01:28:00",
+      "hypocenter": "埼玉県北部",
+      "magnitude": "3.4",
+      "depth": "約60km",
+      "lat": 36.1,
+      "lng": 139.7,
       "maxScale": "2",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#00aaff",
@@ -20,18 +20,93 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "和歌山県",
-          "addr": "和歌山県北部",
+          "pref": "埼玉県",
+          "addr": "埼玉県北部",
           "scale": 20
         },
         {
-          "pref": "和歌山県",
-          "addr": "和歌山県北部",
-          "scale": 20
+          "pref": "埼玉県",
+          "addr": "埼玉県北部",
+          "scale": 10
         },
         {
-          "pref": "大阪府",
-          "addr": "大阪府南部",
+          "pref": "栃木県",
+          "addr": "栃木県南部",
+          "scale": 10
+        },
+        {
+          "pref": "栃木県",
+          "addr": "栃木県南部",
+          "scale": 10
+        },
+        {
+          "pref": "栃木県",
+          "addr": "栃木県南部",
+          "scale": 10
+        },
+        {
+          "pref": "栃木県",
+          "addr": "栃木県南部",
+          "scale": 10
+        },
+        {
+          "pref": "栃木県",
+          "addr": "栃木県南部",
+          "scale": 10
+        },
+        {
+          "pref": "栃木県",
+          "addr": "栃木県南部",
+          "scale": 10
+        },
+        {
+          "pref": "栃木県",
+          "addr": "栃木県南部",
+          "scale": 10
+        },
+        {
+          "pref": "栃木県",
+          "addr": "栃木県南部",
+          "scale": 10
+        },
+        {
+          "pref": "栃木県",
+          "addr": "栃木県南部",
+          "scale": 10
+        },
+        {
+          "pref": "栃木県",
+          "addr": "栃木県南部",
+          "scale": 10
+        },
+        {
+          "pref": "群馬県",
+          "addr": "群馬県南部",
+          "scale": 10
+        },
+        {
+          "pref": "群馬県",
+          "addr": "群馬県南部",
+          "scale": 10
+        },
+        {
+          "pref": "群馬県",
+          "addr": "群馬県南部",
+          "scale": 10
+        },
+        {
+          "pref": "群馬県",
+          "addr": "群馬県南部",
+          "scale": 10
+        },
+        {
+          "pref": "群馬県",
+          "addr": "群馬県南部",
+          "scale": 10
+        },
+        {
+          "pref": "群馬県",
+          "addr": "群馬県南部",
           "scale": 10
         }
       ]
