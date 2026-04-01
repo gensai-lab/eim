@@ -1,28 +1,58 @@
 {
   "list": [
     {
-      "time": "2026/04/01 03:57:00",
-      "hypocenter": "島根県東部",
-      "magnitude": "2.6",
-      "depth": "約10km",
-      "lat": 35.3,
-      "lng": 133.2,
-      "maxScale": "1",
+      "time": "2026/04/01 10:06:00",
+      "hypocenter": "",
+      "magnitude": "---",
+      "depth": "ごく浅い",
+      "lat": -200,
+      "lng": -200,
+      "maxScale": "5弱",
       "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#f2f2ff",
+      "maxScaleBg": "#ffb41a",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
       "maxLpgmBg": "#333333",
-      "tsunamiText": "津波の心配なし",
+      "tsunamiText": "津波調査中",
       "tsunamiColor": "#ffffff",
       "tsunamiBg": "#7a7a7a",
       "isEEW": false,
       "points": [
         {
-          "pref": "鳥取県",
-          "addr": "鳥取県西部",
-          "scale": 10
+          "pref": "栃木県",
+          "addr": "栃木県南部",
+          "scale": 45
+        },
+        {
+          "pref": "茨城県",
+          "addr": "茨城県北部",
+          "scale": 40
+        },
+        {
+          "pref": "茨城県",
+          "addr": "茨城県南部",
+          "scale": 40
+        },
+        {
+          "pref": "埼玉県",
+          "addr": "埼玉県南部",
+          "scale": 40
+        },
+        {
+          "pref": "埼玉県",
+          "addr": "埼玉県北部",
+          "scale": 30
+        },
+        {
+          "pref": "群馬県",
+          "addr": "群馬県南部",
+          "scale": 30
+        },
+        {
+          "pref": "千葉県",
+          "addr": "千葉県北西部",
+          "scale": 30
         }
       ]
     }
