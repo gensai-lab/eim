@@ -1,15 +1,15 @@
 {
   "list": [
     {
-      "time": "2026/04/02 01:28:00",
-      "hypocenter": "埼玉県北部",
-      "magnitude": "3.4",
-      "depth": "約60km",
-      "lat": 36.1,
-      "lng": 139.7,
-      "maxScale": "2",
+      "time": "2026/04/02 02:38:00",
+      "hypocenter": "瀬戸内海中部",
+      "magnitude": "3.2",
+      "depth": "約40km",
+      "lat": 34.1,
+      "lng": 133.6,
+      "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#00aaff",
+      "maxScaleBg": "#f2f2ff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
@@ -20,93 +20,78 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "埼玉県",
-          "addr": "埼玉県北部",
-          "scale": 20
-        },
-        {
-          "pref": "埼玉県",
-          "addr": "埼玉県北部",
+          "pref": "岡山県",
+          "addr": "岡山県南部",
           "scale": 10
         },
         {
-          "pref": "栃木県",
-          "addr": "栃木県南部",
+          "pref": "岡山県",
+          "addr": "岡山県南部",
           "scale": 10
         },
         {
-          "pref": "栃木県",
-          "addr": "栃木県南部",
+          "pref": "岡山県",
+          "addr": "岡山県南部",
           "scale": 10
         },
         {
-          "pref": "栃木県",
-          "addr": "栃木県南部",
+          "pref": "岡山県",
+          "addr": "岡山県南部",
           "scale": 10
         },
         {
-          "pref": "栃木県",
-          "addr": "栃木県南部",
+          "pref": "岡山県",
+          "addr": "岡山県南部",
           "scale": 10
         },
         {
-          "pref": "栃木県",
-          "addr": "栃木県南部",
+          "pref": "広島県",
+          "addr": "広島県南東部",
           "scale": 10
         },
         {
-          "pref": "栃木県",
-          "addr": "栃木県南部",
+          "pref": "徳島県",
+          "addr": "徳島県北部",
           "scale": 10
         },
         {
-          "pref": "栃木県",
-          "addr": "栃木県南部",
+          "pref": "徳島県",
+          "addr": "徳島県北部",
           "scale": 10
         },
         {
-          "pref": "栃木県",
-          "addr": "栃木県南部",
+          "pref": "香川県",
+          "addr": "香川県西部",
           "scale": 10
         },
         {
-          "pref": "栃木県",
-          "addr": "栃木県南部",
+          "pref": "香川県",
+          "addr": "香川県西部",
           "scale": 10
         },
         {
-          "pref": "栃木県",
-          "addr": "栃木県南部",
+          "pref": "香川県",
+          "addr": "香川県西部",
           "scale": 10
         },
         {
-          "pref": "群馬県",
-          "addr": "群馬県南部",
+          "pref": "香川県",
+          "addr": "香川県西部",
           "scale": 10
         },
         {
-          "pref": "群馬県",
-          "addr": "群馬県南部",
+          "pref": "香川県",
+          "addr": "香川県西部",
           "scale": 10
         },
         {
-          "pref": "群馬県",
-          "addr": "群馬県南部",
+          "pref": "香川県",
+          "addr": "香川県西部",
           "scale": 10
         },
         {
-          "pref": "群馬県",
-          "addr": "群馬県南部",
-          "scale": 10
-        },
-        {
-          "pref": "群馬県",
-          "addr": "群馬県南部",
-          "scale": 10
-        },
-        {
-          "pref": "群馬県",
-          "addr": "群馬県南部",
+          "pref": "香川県",
+          "addr": "香川県西部",
           "scale": 10
         }
       ]
