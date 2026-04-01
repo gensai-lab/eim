@@ -1,100 +1,24 @@
 {
   "list": [
     {
-      "time": "2026/04/02 02:38:00",
-      "hypocenter": "瀬戸内海中部",
-      "magnitude": "3.2",
-      "depth": "約40km",
-      "lat": 34.1,
-      "lng": 133.6,
-      "maxScale": "1",
-      "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#f2f2ff",
+      "time": "2026/04/02 07:48:00",
+      "hypocenter": "モルッカ海",
+      "magnitude": "7.6",
+      "depth": "ごく浅い",
+      "lat": 1.2,
+      "lng": 126.3,
+      "maxScale": "-1",
+      "maxScaleColor": "#ffffff",
+      "maxScaleBg": "#333333",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
       "maxLpgmBg": "#333333",
-      "tsunamiText": "津波の心配なし",
+      "tsunamiText": "若干の海面変動あり",
       "tsunamiColor": "#ffffff",
-      "tsunamiBg": "#7a7a7a",
+      "tsunamiBg": "#1eb4e6",
       "isEEW": false,
-      "points": [
-        {
-          "pref": "岡山県",
-          "addr": "岡山県南部",
-          "scale": 10
-        },
-        {
-          "pref": "岡山県",
-          "addr": "岡山県南部",
-          "scale": 10
-        },
-        {
-          "pref": "岡山県",
-          "addr": "岡山県南部",
-          "scale": 10
-        },
-        {
-          "pref": "岡山県",
-          "addr": "岡山県南部",
-          "scale": 10
-        },
-        {
-          "pref": "岡山県",
-          "addr": "岡山県南部",
-          "scale": 10
-        },
-        {
-          "pref": "広島県",
-          "addr": "広島県南東部",
-          "scale": 10
-        },
-        {
-          "pref": "徳島県",
-          "addr": "徳島県北部",
-          "scale": 10
-        },
-        {
-          "pref": "徳島県",
-          "addr": "徳島県北部",
-          "scale": 10
-        },
-        {
-          "pref": "香川県",
-          "addr": "香川県西部",
-          "scale": 10
-        },
-        {
-          "pref": "香川県",
-          "addr": "香川県西部",
-          "scale": 10
-        },
-        {
-          "pref": "香川県",
-          "addr": "香川県西部",
-          "scale": 10
-        },
-        {
-          "pref": "香川県",
-          "addr": "香川県西部",
-          "scale": 10
-        },
-        {
-          "pref": "香川県",
-          "addr": "香川県西部",
-          "scale": 10
-        },
-        {
-          "pref": "香川県",
-          "addr": "香川県西部",
-          "scale": 10
-        },
-        {
-          "pref": "香川県",
-          "addr": "香川県西部",
-          "scale": 10
-        }
-      ]
+      "points": []
     }
   ]
 }
