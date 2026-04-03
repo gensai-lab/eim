@@ -1,16 +1,16 @@
 {
   "list": [
     {
-      "id": "69cf8ecae88ee598246bebb1",
-      "time": "2026/04/03 18:53:00",
-      "hypocenter": "宮古島近海",
-      "magnitude": "4.2",
-      "depth": "約50km",
-      "lat": 25,
-      "lng": 125.6,
-      "maxScale": "1",
+      "id": "69cfd144e88ee598246bebb2",
+      "time": "2026/04/03 23:37:00",
+      "hypocenter": "岐阜県美濃中西部",
+      "magnitude": "3.2",
+      "depth": "約40km",
+      "lat": 35.4,
+      "lng": 136.9,
+      "maxScale": "2",
       "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#f2f2ff",
+      "maxScaleBg": "#00aaff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
@@ -21,38 +21,148 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "沖縄県",
-          "addr": "沖縄県宮古島",
+          "pref": "愛知県",
+          "addr": "愛知県西部",
+          "scale": 20
+        },
+        {
+          "pref": "愛知県",
+          "addr": "愛知県西部",
           "scale": 10
         },
         {
-          "pref": "沖縄県",
-          "addr": "沖縄県宮古島",
+          "pref": "愛知県",
+          "addr": "愛知県西部",
           "scale": 10
         },
         {
-          "pref": "沖縄県",
-          "addr": "沖縄県宮古島",
+          "pref": "愛知県",
+          "addr": "愛知県西部",
           "scale": 10
         },
         {
-          "pref": "沖縄県",
-          "addr": "沖縄県宮古島",
+          "pref": "愛知県",
+          "addr": "愛知県西部",
           "scale": 10
         },
         {
-          "pref": "沖縄県",
-          "addr": "沖縄県宮古島",
+          "pref": "愛知県",
+          "addr": "愛知県西部",
           "scale": 10
         },
         {
-          "pref": "沖縄県",
-          "addr": "沖縄県宮古島",
+          "pref": "愛知県",
+          "addr": "愛知県西部",
           "scale": 10
         },
         {
-          "pref": "沖縄県",
-          "addr": "沖縄県宮古島",
+          "pref": "愛知県",
+          "addr": "愛知県西部",
+          "scale": 10
+        },
+        {
+          "pref": "愛知県",
+          "addr": "愛知県西部",
+          "scale": 10
+        },
+        {
+          "pref": "愛知県",
+          "addr": "愛知県西部",
+          "scale": 10
+        },
+        {
+          "pref": "愛知県",
+          "addr": "愛知県西部",
+          "scale": 10
+        },
+        {
+          "pref": "愛知県",
+          "addr": "愛知県西部",
+          "scale": 10
+        },
+        {
+          "pref": "愛知県",
+          "addr": "愛知県西部",
+          "scale": 10
+        },
+        {
+          "pref": "岐阜県",
+          "addr": "新潟県中越",
+          "scale": 10
+        },
+        {
+          "pref": "岐阜県",
+          "addr": "新潟県中越",
+          "scale": 10
+        },
+        {
+          "pref": "岐阜県",
+          "addr": "岐阜県美濃東部",
+          "scale": 10
+        },
+        {
+          "pref": "岐阜県",
+          "addr": "岐阜県美濃東部",
+          "scale": 10
+        },
+        {
+          "pref": "岐阜県",
+          "addr": "岐阜県美濃東部",
+          "scale": 10
+        },
+        {
+          "pref": "岐阜県",
+          "addr": "岐阜県美濃東部",
+          "scale": 10
+        },
+        {
+          "pref": "岐阜県",
+          "addr": "岐阜県美濃中西部",
+          "scale": 10
+        },
+        {
+          "pref": "岐阜県",
+          "addr": "岐阜県美濃中西部",
+          "scale": 10
+        },
+        {
+          "pref": "岐阜県",
+          "addr": "岐阜県美濃中西部",
+          "scale": 10
+        },
+        {
+          "pref": "岐阜県",
+          "addr": "岐阜県美濃中西部",
+          "scale": 10
+        },
+        {
+          "pref": "岐阜県",
+          "addr": "岐阜県美濃中西部",
+          "scale": 10
+        },
+        {
+          "pref": "岐阜県",
+          "addr": "岐阜県美濃中西部",
+          "scale": 10
+        },
+        {
+          "pref": "岐阜県",
+          "addr": "岐阜県美濃中西部",
+          "scale": 10
+        },
+        {
+          "pref": "岐阜県",
+          "addr": "岐阜県美濃中西部",
+          "scale": 10
+        },
+        {
+          "pref": "岐阜県",
+          "addr": "岐阜県美濃中西部",
+          "scale": 10
+        },
+        {
+          "pref": "三重県",
+          "addr": "三重県北部",
           "scale": 10
         }
       ]
