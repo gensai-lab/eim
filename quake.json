@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69cfe344e88ee598246bebb4",
-      "time": "2026/04/04 00:53:00",
-      "hypocenter": "大阪湾",
-      "magnitude": "3.1",
-      "depth": "約20km",
-      "lat": 34.5,
-      "lng": 135,
+      "id": "69d002aee88ee598246bebb5",
+      "time": "2026/04/04 03:08:00",
+      "hypocenter": "釧路沖",
+      "magnitude": "3.3",
+      "depth": "約40km",
+      "lat": 42.9,
+      "lng": 145.4,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,53 +21,18 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "大阪府",
-          "addr": "大阪府南部",
+          "pref": "北海道",
+          "addr": "釧路地方中南部",
           "scale": 10
         },
         {
-          "pref": "兵庫県",
-          "addr": "兵庫県南東部",
+          "pref": "北海道",
+          "addr": "根室地方南部",
           "scale": 10
         },
         {
-          "pref": "兵庫県",
-          "addr": "兵庫県南東部",
-          "scale": 10
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県南東部",
-          "scale": 10
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県淡路島",
-          "scale": 10
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県淡路島",
-          "scale": 10
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県淡路島",
-          "scale": 10
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県淡路島",
-          "scale": 10
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県淡路島",
-          "scale": 10
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県淡路島",
+          "pref": "北海道",
+          "addr": "根室地方南部",
           "scale": 10
         }
       ]
