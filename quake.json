@@ -1,16 +1,16 @@
 {
   "list": [
     {
-      "id": "69cfd144e88ee598246bebb2",
-      "time": "2026/04/03 23:37:00",
-      "hypocenter": "岐阜県美濃中西部",
-      "magnitude": "3.2",
-      "depth": "約40km",
-      "lat": 35.4,
-      "lng": 136.9,
-      "maxScale": "2",
+      "id": "69cfd868e88ee598246bebb3",
+      "time": "2026/04/04 00:06:00",
+      "hypocenter": "和歌山県北部",
+      "magnitude": "2.4",
+      "depth": "約0km",
+      "lat": 34.3,
+      "lng": 135.1,
+      "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#00aaff",
+      "maxScaleBg": "#f2f2ff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
@@ -21,148 +21,8 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "愛知県",
-          "addr": "愛知県西部",
-          "scale": 20
-        },
-        {
-          "pref": "愛知県",
-          "addr": "愛知県西部",
-          "scale": 10
-        },
-        {
-          "pref": "愛知県",
-          "addr": "愛知県西部",
-          "scale": 10
-        },
-        {
-          "pref": "愛知県",
-          "addr": "愛知県西部",
-          "scale": 10
-        },
-        {
-          "pref": "愛知県",
-          "addr": "愛知県西部",
-          "scale": 10
-        },
-        {
-          "pref": "愛知県",
-          "addr": "愛知県西部",
-          "scale": 10
-        },
-        {
-          "pref": "愛知県",
-          "addr": "愛知県西部",
-          "scale": 10
-        },
-        {
-          "pref": "愛知県",
-          "addr": "愛知県西部",
-          "scale": 10
-        },
-        {
-          "pref": "愛知県",
-          "addr": "愛知県西部",
-          "scale": 10
-        },
-        {
-          "pref": "愛知県",
-          "addr": "愛知県西部",
-          "scale": 10
-        },
-        {
-          "pref": "愛知県",
-          "addr": "愛知県西部",
-          "scale": 10
-        },
-        {
-          "pref": "愛知県",
-          "addr": "愛知県西部",
-          "scale": 10
-        },
-        {
-          "pref": "愛知県",
-          "addr": "愛知県西部",
-          "scale": 10
-        },
-        {
-          "pref": "岐阜県",
-          "addr": "新潟県中越",
-          "scale": 10
-        },
-        {
-          "pref": "岐阜県",
-          "addr": "新潟県中越",
-          "scale": 10
-        },
-        {
-          "pref": "岐阜県",
-          "addr": "岐阜県美濃東部",
-          "scale": 10
-        },
-        {
-          "pref": "岐阜県",
-          "addr": "岐阜県美濃東部",
-          "scale": 10
-        },
-        {
-          "pref": "岐阜県",
-          "addr": "岐阜県美濃東部",
-          "scale": 10
-        },
-        {
-          "pref": "岐阜県",
-          "addr": "岐阜県美濃東部",
-          "scale": 10
-        },
-        {
-          "pref": "岐阜県",
-          "addr": "岐阜県美濃中西部",
-          "scale": 10
-        },
-        {
-          "pref": "岐阜県",
-          "addr": "岐阜県美濃中西部",
-          "scale": 10
-        },
-        {
-          "pref": "岐阜県",
-          "addr": "岐阜県美濃中西部",
-          "scale": 10
-        },
-        {
-          "pref": "岐阜県",
-          "addr": "岐阜県美濃中西部",
-          "scale": 10
-        },
-        {
-          "pref": "岐阜県",
-          "addr": "岐阜県美濃中西部",
-          "scale": 10
-        },
-        {
-          "pref": "岐阜県",
-          "addr": "岐阜県美濃中西部",
-          "scale": 10
-        },
-        {
-          "pref": "岐阜県",
-          "addr": "岐阜県美濃中西部",
-          "scale": 10
-        },
-        {
-          "pref": "岐阜県",
-          "addr": "岐阜県美濃中西部",
-          "scale": 10
-        },
-        {
-          "pref": "岐阜県",
-          "addr": "岐阜県美濃中西部",
-          "scale": 10
-        },
-        {
-          "pref": "三重県",
-          "addr": "三重県北部",
+          "pref": "和歌山県",
+          "addr": "和歌山県北部",
           "scale": 10
         }
       ]
