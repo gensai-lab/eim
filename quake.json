@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69cf805be88ee598246bebb0",
-      "time": "2026/04/03 17:51:00",
-      "hypocenter": "岩手県沖",
+      "id": "69cf8ecae88ee598246bebb1",
+      "time": "2026/04/03 18:53:00",
+      "hypocenter": "宮古島近海",
       "magnitude": "4.2",
-      "depth": "約30km",
-      "lat": 39.4,
-      "lng": 142.6,
+      "depth": "約50km",
+      "lat": 25,
+      "lng": 125.6,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,33 +21,38 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "岩手県",
-          "addr": "岩手県沿岸北部",
+          "pref": "沖縄県",
+          "addr": "沖縄県宮古島",
           "scale": 10
         },
         {
-          "pref": "岩手県",
-          "addr": "岩手県沿岸北部",
+          "pref": "沖縄県",
+          "addr": "沖縄県宮古島",
           "scale": 10
         },
         {
-          "pref": "岩手県",
-          "addr": "岩手県沿岸北部",
+          "pref": "沖縄県",
+          "addr": "沖縄県宮古島",
           "scale": 10
         },
         {
-          "pref": "岩手県",
-          "addr": "岩手県沿岸南部",
+          "pref": "沖縄県",
+          "addr": "沖縄県宮古島",
           "scale": 10
         },
         {
-          "pref": "岩手県",
-          "addr": "岩手県沿岸南部",
+          "pref": "沖縄県",
+          "addr": "沖縄県宮古島",
           "scale": 10
         },
         {
-          "pref": "岩手県",
-          "addr": "岩手県内陸北部",
+          "pref": "沖縄県",
+          "addr": "沖縄県宮古島",
+          "scale": 10
+        },
+        {
+          "pref": "沖縄県",
+          "addr": "沖縄県宮古島",
           "scale": 10
         }
       ]
