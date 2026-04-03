@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69cfd868e88ee598246bebb3",
-      "time": "2026/04/04 00:06:00",
-      "hypocenter": "和歌山県北部",
-      "magnitude": "2.4",
-      "depth": "約0km",
-      "lat": 34.3,
-      "lng": 135.1,
+      "id": "69cfe344e88ee598246bebb4",
+      "time": "2026/04/04 00:53:00",
+      "hypocenter": "大阪湾",
+      "magnitude": "3.1",
+      "depth": "約20km",
+      "lat": 34.5,
+      "lng": 135,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,8 +21,53 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "和歌山県",
-          "addr": "和歌山県北部",
+          "pref": "大阪府",
+          "addr": "大阪府南部",
+          "scale": 10
+        },
+        {
+          "pref": "兵庫県",
+          "addr": "兵庫県南東部",
+          "scale": 10
+        },
+        {
+          "pref": "兵庫県",
+          "addr": "兵庫県南東部",
+          "scale": 10
+        },
+        {
+          "pref": "兵庫県",
+          "addr": "兵庫県南東部",
+          "scale": 10
+        },
+        {
+          "pref": "兵庫県",
+          "addr": "兵庫県淡路島",
+          "scale": 10
+        },
+        {
+          "pref": "兵庫県",
+          "addr": "兵庫県淡路島",
+          "scale": 10
+        },
+        {
+          "pref": "兵庫県",
+          "addr": "兵庫県淡路島",
+          "scale": 10
+        },
+        {
+          "pref": "兵庫県",
+          "addr": "兵庫県淡路島",
+          "scale": 10
+        },
+        {
+          "pref": "兵庫県",
+          "addr": "兵庫県淡路島",
+          "scale": 10
+        },
+        {
+          "pref": "兵庫県",
+          "addr": "兵庫県淡路島",
           "scale": 10
         }
       ]
