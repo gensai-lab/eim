@@ -1,15 +1,15 @@
 {
   "list": [
     {
-      "time": "2026/04/03 01:41:00",
-      "hypocenter": "兵庫県南東部",
-      "magnitude": "3.1",
-      "depth": "約20km",
-      "lat": 34.9,
-      "lng": 135,
-      "maxScale": "2",
+      "time": "2026/04/03 11:33:00",
+      "hypocenter": "熊本県天草・芦北地方",
+      "magnitude": "2.4",
+      "depth": "約10km",
+      "lat": 32.3,
+      "lng": 130.4,
+      "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#00aaff",
+      "maxScaleBg": "#f2f2ff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
@@ -20,108 +20,18 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "兵庫県",
-          "addr": "兵庫県南東部",
-          "scale": 20
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県南東部",
+          "pref": "熊本県",
+          "addr": "熊本県球磨",
           "scale": 10
         },
         {
-          "pref": "兵庫県",
-          "addr": "兵庫県南東部",
-          "scale": 20
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県南東部",
+          "pref": "熊本県",
+          "addr": "熊本県天草・芦北",
           "scale": 10
         },
         {
-          "pref": "兵庫県",
-          "addr": "兵庫県南東部",
-          "scale": 10
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県南東部",
-          "scale": 10
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県南東部",
-          "scale": 10
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県南東部",
-          "scale": 10
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県南東部",
-          "scale": 10
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県南東部",
-          "scale": 10
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県南東部",
-          "scale": 10
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県南東部",
-          "scale": 10
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県南東部",
-          "scale": 10
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県南東部",
-          "scale": 10
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県南東部",
-          "scale": 10
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県南東部",
-          "scale": 10
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県南西部",
-          "scale": 10
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県南西部",
-          "scale": 10
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県南西部",
-          "scale": 10
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県南西部",
-          "scale": 10
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県南西部",
+          "pref": "熊本県",
+          "addr": "熊本県天草・芦北",
           "scale": 10
         }
       ]
