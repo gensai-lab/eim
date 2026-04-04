@@ -1,21 +1,21 @@
 {
   "list": [
     {
-      "id": "69d0b1b4e88ee598246bebb9",
-      "time": "2026/04/04 15:34:00",
-      "hypocenter": "石川県能登地方",
-      "magnitude": "2.9",
-      "depth": "約10km",
-      "lat": 37.2,
-      "lng": 136.7,
-      "maxScale": "2",
-      "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#00aaff",
+      "id": "69d0b36ce88ee598246bebba",
+      "time": "2026/04/04 15:43:00",
+      "hypocenter": "",
+      "magnitude": "---",
+      "depth": "ごく浅い",
+      "lat": -200,
+      "lng": -200,
+      "maxScale": "3",
+      "maxScaleColor": "#ffffff",
+      "maxScaleBg": "#005aff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
       "maxLpgmBg": "#333333",
-      "tsunamiText": "津波の心配なし",
+      "tsunamiText": "津波 調査中",
       "tsunamiColor": "#ffffff",
       "tsunamiBg": "#7a7a7a",
       "isEEW": false,
@@ -23,12 +23,7 @@
         {
           "pref": "石川県",
           "addr": "石川県能登",
-          "scale": 20
-        },
-        {
-          "pref": "石川県",
-          "addr": "石川県能登",
-          "scale": 10
+          "scale": 30
         }
       ]
     }
