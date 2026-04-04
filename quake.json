@@ -1,16 +1,16 @@
 {
   "list": [
     {
-      "id": "69d0b3dde88ee598246bebbc",
-      "time": "2026/04/04 15:43:00",
-      "hypocenter": "石川県能登地方",
-      "magnitude": "2.8",
+      "id": "69d0c33fe88ee598246bebbd",
+      "time": "2026/04/04 16:49:00",
+      "hypocenter": "茨城県北部",
+      "magnitude": "2.6",
       "depth": "約10km",
-      "lat": 37.2,
-      "lng": 136.7,
-      "maxScale": "3",
-      "maxScaleColor": "#ffffff",
-      "maxScaleBg": "#005aff",
+      "lat": 36.7,
+      "lng": 140.7,
+      "maxScale": "1",
+      "maxScaleColor": "#1b1b1b",
+      "maxScaleBg": "#f2f2ff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
@@ -21,13 +21,8 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "石川県",
-          "addr": "石川県能登",
-          "scale": 30
-        },
-        {
-          "pref": "石川県",
-          "addr": "石川県能登",
+          "pref": "茨城県",
+          "addr": "茨城県北部",
           "scale": 10
         }
       ]
