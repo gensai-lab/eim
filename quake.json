@@ -1,29 +1,49 @@
 {
   "list": [
     {
-      "id": "69d0c33fe88ee598246bebbd",
-      "time": "2026/04/04 16:49:00",
-      "hypocenter": "茨城県北部",
-      "magnitude": "2.6",
-      "depth": "約10km",
-      "lat": 36.7,
-      "lng": 140.7,
-      "maxScale": "1",
-      "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#f2f2ff",
+      "id": "69d0ea31e88ee598246bebbe",
+      "time": "2026/04/04 19:36:00",
+      "hypocenter": "",
+      "magnitude": "---",
+      "depth": "ごく浅い",
+      "lat": -200,
+      "lng": -200,
+      "maxScale": "3",
+      "maxScaleColor": "#ffffff",
+      "maxScaleBg": "#005aff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
       "maxLpgmBg": "#333333",
-      "tsunamiText": "津波の心配なし",
+      "tsunamiText": "津波 調査中",
       "tsunamiColor": "#ffffff",
       "tsunamiBg": "#7a7a7a",
       "isEEW": false,
       "points": [
         {
-          "pref": "茨城県",
-          "addr": "茨城県北部",
-          "scale": 10
+          "pref": "岩手県",
+          "addr": "岩手県沿岸南部",
+          "scale": 30
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県内陸南部",
+          "scale": 30
+        },
+        {
+          "pref": "宮城県",
+          "addr": "宮城県北部",
+          "scale": 30
+        },
+        {
+          "pref": "宮城県",
+          "addr": "宮城県南部",
+          "scale": 30
+        },
+        {
+          "pref": "宮城県",
+          "addr": "宮城県中部",
+          "scale": 30
         }
       ]
     }
