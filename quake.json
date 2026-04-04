@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69d08360e88ee598246bebb7",
-      "time": "2026/04/04 12:16:00",
-      "hypocenter": "宮城県沖",
-      "magnitude": "3.8",
-      "depth": "約60km",
-      "lat": 38.4,
-      "lng": 141.7,
+      "id": "69d0a245e88ee598246bebb8",
+      "time": "2026/04/04 14:29:00",
+      "hypocenter": "千葉県北西部",
+      "magnitude": "3.1",
+      "depth": "約70km",
+      "lat": 35.7,
+      "lng": 140.2,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,108 +21,13 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "岩手県",
-          "addr": "岩手県沿岸南部",
+          "pref": "千葉県",
+          "addr": "千葉県北西部",
           "scale": 10
         },
         {
-          "pref": "岩手県",
-          "addr": "岩手県内陸南部",
-          "scale": 10
-        },
-        {
-          "pref": "岩手県",
-          "addr": "岩手県内陸南部",
-          "scale": 10
-        },
-        {
-          "pref": "岩手県",
-          "addr": "岩手県内陸南部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県北部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県北部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県北部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県北部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県北部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県南部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県南部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県中部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県中部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県中部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県中部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県中部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県中部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県中部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県中部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県中部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県中部",
+          "pref": "千葉県",
+          "addr": "千葉県北西部",
           "scale": 10
         }
       ]
