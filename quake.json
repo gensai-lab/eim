@@ -1,16 +1,16 @@
 {
   "list": [
     {
-      "id": "69d0a245e88ee598246bebb8",
-      "time": "2026/04/04 14:29:00",
-      "hypocenter": "千葉県北西部",
-      "magnitude": "3.1",
-      "depth": "約70km",
-      "lat": 35.7,
-      "lng": 140.2,
-      "maxScale": "1",
+      "id": "69d0b1b4e88ee598246bebb9",
+      "time": "2026/04/04 15:34:00",
+      "hypocenter": "石川県能登地方",
+      "magnitude": "2.9",
+      "depth": "約10km",
+      "lat": 37.2,
+      "lng": 136.7,
+      "maxScale": "2",
       "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#f2f2ff",
+      "maxScaleBg": "#00aaff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
@@ -21,13 +21,13 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "千葉県",
-          "addr": "千葉県北西部",
-          "scale": 10
+          "pref": "石川県",
+          "addr": "石川県能登",
+          "scale": 20
         },
         {
-          "pref": "千葉県",
-          "addr": "千葉県北西部",
+          "pref": "石川県",
+          "addr": "石川県能登",
           "scale": 10
         }
       ]
