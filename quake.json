@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69d1c7d7e88ee598246bebc4",
-      "time": "2026/04/05 11:21:00",
-      "hypocenter": "岩手県沖",
-      "magnitude": "3.7",
-      "depth": "約40km",
-      "lat": 40.3,
-      "lng": 142.3,
+      "id": "69d1d428e88ee598246bebc5",
+      "time": "2026/04/05 12:13:00",
+      "hypocenter": "千葉県北西部",
+      "magnitude": "2.9",
+      "depth": "約70km",
+      "lat": 35.6,
+      "lng": 140.1,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,48 +21,8 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "岩手県",
-          "addr": "岩手県内陸北部",
+          "pref": "東京都",
+          "addr": "東京都２３区",
           "scale": 10
         }
       ]
