@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69d1399ee88ee598246bebc1",
-      "time": "2026/04/05 01:14:00",
-      "hypocenter": "種子島南東沖",
-      "magnitude": "4.6",
-      "depth": "約20km",
-      "lat": 30.1,
-      "lng": 131.2,
+      "id": "69d1b57ee88ee598246bebc2",
+      "time": "2026/04/05 10:03:00",
+      "hypocenter": "兵庫県南東部",
+      "magnitude": "3.2",
+      "depth": "約10km",
+      "lat": 34.7,
+      "lng": 135.2,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,13 +21,38 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "鹿児島県",
-          "addr": "鹿児島県種子島",
+          "pref": "兵庫県",
+          "addr": "兵庫県南東部",
           "scale": 10
         },
         {
-          "pref": "鹿児島県",
-          "addr": "鹿児島県種子島",
+          "pref": "兵庫県",
+          "addr": "兵庫県南東部",
+          "scale": 10
+        },
+        {
+          "pref": "兵庫県",
+          "addr": "兵庫県南東部",
+          "scale": 10
+        },
+        {
+          "pref": "兵庫県",
+          "addr": "兵庫県南東部",
+          "scale": 10
+        },
+        {
+          "pref": "兵庫県",
+          "addr": "兵庫県南東部",
+          "scale": 10
+        },
+        {
+          "pref": "兵庫県",
+          "addr": "兵庫県南東部",
+          "scale": 10
+        },
+        {
+          "pref": "兵庫県",
+          "addr": "兵庫県南東部",
           "scale": 10
         }
       ]
