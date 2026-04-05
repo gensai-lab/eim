@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69d2ee5fe88ee598246bebc9",
-      "time": "2026/04/06 08:18:00",
-      "hypocenter": "神奈川県西部",
-      "magnitude": "3.5",
-      "depth": "約140km",
-      "lat": 35.6,
-      "lng": 139.2,
+      "id": "69d2f106e88ee598246bebca",
+      "time": "2026/04/06 08:29:00",
+      "hypocenter": "高知県中部",
+      "magnitude": "3.6",
+      "depth": "約40km",
+      "lat": 33.8,
+      "lng": 134,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,8 +21,58 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "栃木県",
-          "addr": "栃木県南部",
+          "pref": "徳島県",
+          "addr": "埼玉県南部",
+          "scale": 10
+        },
+        {
+          "pref": "徳島県",
+          "addr": "徳島県北部",
+          "scale": 10
+        },
+        {
+          "pref": "徳島県",
+          "addr": "徳島県北部",
+          "scale": 10
+        },
+        {
+          "pref": "徳島県",
+          "addr": "徳島県北部",
+          "scale": 10
+        },
+        {
+          "pref": "徳島県",
+          "addr": "徳島県北部",
+          "scale": 10
+        },
+        {
+          "pref": "徳島県",
+          "addr": "徳島県南部",
+          "scale": 10
+        },
+        {
+          "pref": "徳島県",
+          "addr": "徳島県南部",
+          "scale": 10
+        },
+        {
+          "pref": "香川県",
+          "addr": "香川県西部",
+          "scale": 10
+        },
+        {
+          "pref": "香川県",
+          "addr": "香川県西部",
+          "scale": 10
+        },
+        {
+          "pref": "香川県",
+          "addr": "香川県西部",
+          "scale": 10
+        },
+        {
+          "pref": "高知県",
+          "addr": "高知県東部",
           "scale": 10
         }
       ]
