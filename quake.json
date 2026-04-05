@@ -1,16 +1,16 @@
 {
   "list": [
     {
-      "id": "69d29c64e88ee598246bebc8",
-      "time": "2026/04/06 02:28:00",
-      "hypocenter": "福島県沖",
-      "magnitude": "4.1",
-      "depth": "約60km",
-      "lat": 37.5,
-      "lng": 141.5,
-      "maxScale": "2",
+      "id": "69d2ee5fe88ee598246bebc9",
+      "time": "2026/04/06 08:18:00",
+      "hypocenter": "神奈川県西部",
+      "magnitude": "3.5",
+      "depth": "約140km",
+      "lat": 35.6,
+      "lng": 139.2,
+      "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#00aaff",
+      "maxScaleBg": "#f2f2ff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
@@ -21,218 +21,8 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "福島県",
-          "addr": "福島県浜通り",
-          "scale": 20
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県浜通り",
-          "scale": 20
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県浜通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県浜通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県浜通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県浜通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県浜通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県浜通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県浜通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県浜通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県浜通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県浜通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県浜通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県浜通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県浜通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県浜通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県浜通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県中通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県中通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県中通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県中通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県中通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県中通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県中通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県中通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県中通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県中通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県中通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県中通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県中通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県中通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県中通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県中通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県中通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県中通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県中通り",
-          "scale": 10
-        },
-        {
-          "pref": "福島県",
-          "addr": "福島県中通り",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県南部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県南部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県南部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県南部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県南部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県中部",
+          "pref": "栃木県",
+          "addr": "栃木県南部",
           "scale": 10
         }
       ]
