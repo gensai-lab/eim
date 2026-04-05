@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69d1b57ee88ee598246bebc2",
-      "time": "2026/04/05 10:03:00",
-      "hypocenter": "兵庫県南東部",
-      "magnitude": "3.2",
+      "id": "69d1c77ce88ee598246bebc3",
+      "time": "2026/04/05 11:18:00",
+      "hypocenter": "父島近海",
+      "magnitude": "4.8",
       "depth": "約10km",
-      "lat": 34.7,
-      "lng": 135.2,
+      "lat": 27.9,
+      "lng": 142.9,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,38 +21,13 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "兵庫県",
-          "addr": "兵庫県南東部",
+          "pref": "東京都",
+          "addr": "小笠原",
           "scale": 10
         },
         {
-          "pref": "兵庫県",
-          "addr": "兵庫県南東部",
-          "scale": 10
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県南東部",
-          "scale": 10
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県南東部",
-          "scale": 10
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県南東部",
-          "scale": 10
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県南東部",
-          "scale": 10
-        },
-        {
-          "pref": "兵庫県",
-          "addr": "兵庫県南東部",
+          "pref": "東京都",
+          "addr": "小笠原",
           "scale": 10
         }
       ]
