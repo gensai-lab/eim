@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69d3c210e88ee598246bebce",
-      "time": "2026/04/06 23:21:00",
-      "hypocenter": "岩手県沖",
+      "id": "69d40dc5e88ee598246bebcf",
+      "time": "2026/04/07 04:43:00",
+      "hypocenter": "茨城県南部",
       "magnitude": "3.1",
-      "depth": "約10km",
-      "lat": 39.8,
-      "lng": 142.3,
+      "depth": "約60km",
+      "lat": 36,
+      "lng": 140.2,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,8 +21,63 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "岩手県",
-          "addr": "岩手県沿岸北部",
+          "pref": "茨城県",
+          "addr": "茨城県北部",
+          "scale": 10
+        },
+        {
+          "pref": "茨城県",
+          "addr": "茨城県南部",
+          "scale": 10
+        },
+        {
+          "pref": "茨城県",
+          "addr": "茨城県南部",
+          "scale": 10
+        },
+        {
+          "pref": "茨城県",
+          "addr": "茨城県南部",
+          "scale": 10
+        },
+        {
+          "pref": "茨城県",
+          "addr": "茨城県南部",
+          "scale": 10
+        },
+        {
+          "pref": "茨城県",
+          "addr": "茨城県南部",
+          "scale": 10
+        },
+        {
+          "pref": "茨城県",
+          "addr": "茨城県南部",
+          "scale": 10
+        },
+        {
+          "pref": "茨城県",
+          "addr": "茨城県南部",
+          "scale": 10
+        },
+        {
+          "pref": "茨城県",
+          "addr": "茨城県南部",
+          "scale": 10
+        },
+        {
+          "pref": "栃木県",
+          "addr": "栃木県南部",
+          "scale": 10
+        },
+        {
+          "pref": "栃木県",
+          "addr": "栃木県南部",
+          "scale": 10
+        },
+        {
+          "pref": "千葉県",
+          "addr": "千葉県北西部",
           "scale": 10
         }
       ]
