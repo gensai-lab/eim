@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69d40dc5e88ee598246bebcf",
-      "time": "2026/04/07 04:43:00",
-      "hypocenter": "茨城県南部",
-      "magnitude": "3.1",
-      "depth": "約60km",
-      "lat": 36,
-      "lng": 140.2,
+      "id": "69d41b69e88ee598246bebd0",
+      "time": "2026/04/07 05:42:00",
+      "hypocenter": "上川地方南部",
+      "magnitude": "3.0",
+      "depth": "約10km",
+      "lat": 43,
+      "lng": 142.3,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,63 +21,8 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "茨城県",
-          "addr": "茨城県北部",
-          "scale": 10
-        },
-        {
-          "pref": "茨城県",
-          "addr": "茨城県南部",
-          "scale": 10
-        },
-        {
-          "pref": "茨城県",
-          "addr": "茨城県南部",
-          "scale": 10
-        },
-        {
-          "pref": "茨城県",
-          "addr": "茨城県南部",
-          "scale": 10
-        },
-        {
-          "pref": "茨城県",
-          "addr": "茨城県南部",
-          "scale": 10
-        },
-        {
-          "pref": "茨城県",
-          "addr": "茨城県南部",
-          "scale": 10
-        },
-        {
-          "pref": "茨城県",
-          "addr": "茨城県南部",
-          "scale": 10
-        },
-        {
-          "pref": "茨城県",
-          "addr": "茨城県南部",
-          "scale": 10
-        },
-        {
-          "pref": "茨城県",
-          "addr": "茨城県南部",
-          "scale": 10
-        },
-        {
-          "pref": "栃木県",
-          "addr": "栃木県南部",
-          "scale": 10
-        },
-        {
-          "pref": "栃木県",
-          "addr": "栃木県南部",
-          "scale": 10
-        },
-        {
-          "pref": "千葉県",
-          "addr": "千葉県北西部",
+          "pref": "北海道",
+          "addr": "日高地方西部",
           "scale": 10
         }
       ]
