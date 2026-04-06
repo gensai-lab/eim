@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69d32b2be88ee598246bebcc",
-      "time": "2026/04/06 12:37:00",
-      "hypocenter": "徳島県北部",
-      "magnitude": "3.0",
-      "depth": "約0km",
-      "lat": 34,
-      "lng": 133.7,
+      "id": "69d357b5e88ee598246bebcd",
+      "time": "2026/04/06 15:45:00",
+      "hypocenter": "南海道南方沖",
+      "magnitude": "4.6",
+      "depth": "約10km",
+      "lat": 32,
+      "lng": 135.9,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,18 +21,13 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "徳島県",
-          "addr": "徳島県北部",
+          "pref": "和歌山県",
+          "addr": "和歌山県北部",
           "scale": 10
         },
         {
-          "pref": "徳島県",
-          "addr": "徳島県北部",
-          "scale": 10
-        },
-        {
-          "pref": "愛媛県",
-          "addr": "山梨県中・西部",
+          "pref": "和歌山県",
+          "addr": "和歌山県北部",
           "scale": 10
         }
       ]
