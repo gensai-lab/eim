@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69d5f681e88ee598246bebd3",
-      "time": "2026/04/08 15:27:00",
-      "hypocenter": "三陸沖",
-      "magnitude": "4.3",
+      "id": "69d60f4be88ee598246bebd4",
+      "time": "2026/04/08 17:15:00",
+      "hypocenter": "淡路島付近",
+      "magnitude": "2.7",
       "depth": "約10km",
-      "lat": 40,
-      "lng": 143.5,
+      "lat": 34.3,
+      "lng": 134.8,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,13 +21,18 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "岩手県",
-          "addr": "岩手県沿岸北部",
+          "pref": "兵庫県",
+          "addr": "兵庫県淡路島",
           "scale": 10
         },
         {
-          "pref": "岩手県",
-          "addr": "岩手県内陸北部",
+          "pref": "兵庫県",
+          "addr": "兵庫県淡路島",
+          "scale": 10
+        },
+        {
+          "pref": "兵庫県",
+          "addr": "兵庫県淡路島",
           "scale": 10
         }
       ]
