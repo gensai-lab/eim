@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69d5336ae88ee598246bebd2",
-      "time": "2026/04/08 01:36:00",
-      "hypocenter": "十勝沖",
-      "magnitude": "4.6",
-      "depth": "約20km",
-      "lat": 41.8,
-      "lng": 144.3,
+      "id": "69d5f681e88ee598246bebd3",
+      "time": "2026/04/08 15:27:00",
+      "hypocenter": "三陸沖",
+      "magnitude": "4.3",
+      "depth": "約10km",
+      "lat": 40,
+      "lng": 143.5,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,8 +21,13 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "北海道",
-          "addr": "十勝地方中部",
+          "pref": "岩手県",
+          "addr": "岩手県沿岸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県内陸北部",
           "scale": 10
         }
       ]
