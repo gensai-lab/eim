@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69d646fde88ee598246bebd6",
-      "time": "2026/04/08 21:13:00",
-      "hypocenter": "東京都多摩西部",
-      "magnitude": "3.7",
-      "depth": "約110km",
-      "lat": 35.8,
-      "lng": 139.3,
+      "id": "69d6a5cbe88ee598246bebd7",
+      "time": "2026/04/09 03:57:00",
+      "hypocenter": "徳島県北部",
+      "magnitude": "3.2",
+      "depth": "約50km",
+      "lat": 34,
+      "lng": 134.2,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,38 +21,18 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "栃木県",
-          "addr": "栃木県南部",
+          "pref": "徳島県",
+          "addr": "徳島県南部",
           "scale": 10
         },
         {
-          "pref": "栃木県",
-          "addr": "栃木県南部",
+          "pref": "徳島県",
+          "addr": "徳島県南部",
           "scale": 10
         },
         {
-          "pref": "栃木県",
-          "addr": "栃木県南部",
-          "scale": 10
-        },
-        {
-          "pref": "群馬県",
-          "addr": "群馬県南部",
-          "scale": 10
-        },
-        {
-          "pref": "群馬県",
-          "addr": "群馬県南部",
-          "scale": 10
-        },
-        {
-          "pref": "山梨県",
-          "addr": "山梨県中・西部",
-          "scale": 10
-        },
-        {
-          "pref": "山梨県",
-          "addr": "山梨県東部・富士五湖",
+          "pref": "香川県",
+          "addr": "香川県西部",
           "scale": 10
         }
       ]
