@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69d6acefe88ee598246bebd8",
-      "time": "2026/04/09 04:28:00",
-      "hypocenter": "豊後水道",
-      "magnitude": "3.4",
-      "depth": "約40km",
-      "lat": 33,
-      "lng": 132.2,
+      "id": "69d702d8e88ee598246bebd9",
+      "time": "2026/04/09 10:34:00",
+      "hypocenter": "宮古島近海",
+      "magnitude": "4.6",
+      "depth": "約10km",
+      "lat": 25.3,
+      "lng": 125.2,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,68 +21,33 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "愛媛県",
-          "addr": "愛媛県南予",
+          "pref": "沖縄県",
+          "addr": "沖縄県宮古島",
           "scale": 10
         },
         {
-          "pref": "愛媛県",
-          "addr": "愛媛県南予",
+          "pref": "沖縄県",
+          "addr": "沖縄県宮古島",
           "scale": 10
         },
         {
-          "pref": "愛媛県",
-          "addr": "愛媛県南予",
+          "pref": "沖縄県",
+          "addr": "沖縄県宮古島",
           "scale": 10
         },
         {
-          "pref": "愛媛県",
-          "addr": "愛媛県南予",
+          "pref": "沖縄県",
+          "addr": "沖縄県宮古島",
           "scale": 10
         },
         {
-          "pref": "愛媛県",
-          "addr": "愛媛県南予",
+          "pref": "沖縄県",
+          "addr": "沖縄県宮古島",
           "scale": 10
         },
         {
-          "pref": "愛媛県",
-          "addr": "愛媛県南予",
-          "scale": 10
-        },
-        {
-          "pref": "愛媛県",
-          "addr": "愛媛県南予",
-          "scale": 10
-        },
-        {
-          "pref": "高知県",
-          "addr": "高知県西部",
-          "scale": 10
-        },
-        {
-          "pref": "大分県",
-          "addr": "大分県中部",
-          "scale": 10
-        },
-        {
-          "pref": "大分県",
-          "addr": "大分県南部",
-          "scale": 10
-        },
-        {
-          "pref": "宮崎県",
-          "addr": "宮崎県北部平野部",
-          "scale": 10
-        },
-        {
-          "pref": "宮崎県",
-          "addr": "宮崎県北部平野部",
-          "scale": 10
-        },
-        {
-          "pref": "宮崎県",
-          "addr": "宮崎県北部山沿い",
+          "pref": "沖縄県",
+          "addr": "沖縄県宮古島",
           "scale": 10
         }
       ]
