@@ -1,16 +1,16 @@
 {
   "list": [
     {
-      "id": "69d702d8e88ee598246bebd9",
-      "time": "2026/04/09 10:34:00",
-      "hypocenter": "宮古島近海",
-      "magnitude": "4.6",
+      "id": "69d79e9ae88ee598246bebda",
+      "time": "2026/04/09 21:39:00",
+      "hypocenter": "トカラ列島近海",
+      "magnitude": "2.3",
       "depth": "約10km",
-      "lat": 25.3,
-      "lng": 125.2,
-      "maxScale": "1",
+      "lat": 29.9,
+      "lng": 130,
+      "maxScale": "2",
       "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#f2f2ff",
+      "maxScaleBg": "#00aaff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
@@ -21,33 +21,13 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "沖縄県",
-          "addr": "沖縄県宮古島",
-          "scale": 10
+          "pref": "鹿児島県",
+          "addr": "鹿児島県十島村",
+          "scale": 20
         },
         {
-          "pref": "沖縄県",
-          "addr": "沖縄県宮古島",
-          "scale": 10
-        },
-        {
-          "pref": "沖縄県",
-          "addr": "沖縄県宮古島",
-          "scale": 10
-        },
-        {
-          "pref": "沖縄県",
-          "addr": "沖縄県宮古島",
-          "scale": 10
-        },
-        {
-          "pref": "沖縄県",
-          "addr": "沖縄県宮古島",
-          "scale": 10
-        },
-        {
-          "pref": "沖縄県",
-          "addr": "沖縄県宮古島",
+          "pref": "鹿児島県",
+          "addr": "鹿児島県十島村",
           "scale": 10
         }
       ]
