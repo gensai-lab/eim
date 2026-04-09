@@ -1,16 +1,16 @@
 {
   "list": [
     {
-      "id": "69d79e9ae88ee598246bebda",
-      "time": "2026/04/09 21:39:00",
-      "hypocenter": "トカラ列島近海",
-      "magnitude": "2.3",
+      "id": "69d7f0ffe88ee598246bebdb",
+      "time": "2026/04/10 03:30:00",
+      "hypocenter": "大阪府北部",
+      "magnitude": "2.6",
       "depth": "約10km",
-      "lat": 29.9,
-      "lng": 130,
-      "maxScale": "2",
+      "lat": 34.8,
+      "lng": 135.6,
+      "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#00aaff",
+      "maxScaleBg": "#f2f2ff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
@@ -21,13 +21,8 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "鹿児島県",
-          "addr": "鹿児島県十島村",
-          "scale": 20
-        },
-        {
-          "pref": "鹿児島県",
-          "addr": "鹿児島県十島村",
+          "pref": "大阪府",
+          "addr": "大阪府北部",
           "scale": 10
         }
       ]
