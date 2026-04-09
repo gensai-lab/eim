@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69d7f0ffe88ee598246bebdb",
-      "time": "2026/04/10 03:30:00",
-      "hypocenter": "大阪府北部",
-      "magnitude": "2.6",
+      "id": "69d80b7de88ee598246bebdc",
+      "time": "2026/04/10 05:23:00",
+      "hypocenter": "紀伊水道",
+      "magnitude": "2.8",
       "depth": "約10km",
-      "lat": 34.8,
-      "lng": 135.6,
+      "lat": 34,
+      "lng": 135,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,8 +21,8 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "大阪府",
-          "addr": "大阪府北部",
+          "pref": "和歌山県",
+          "addr": "和歌山県北部",
           "scale": 10
         }
       ]
