@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69d8c78ae88ee598246bebde",
-      "time": "2026/04/10 18:46:00",
-      "hypocenter": "島根県東部",
-      "magnitude": "3.5",
+      "id": "69d9708ce88ee598246bebdf",
+      "time": "2026/04/11 06:47:00",
+      "hypocenter": "和歌山県北部",
+      "magnitude": "2.6",
       "depth": "約10km",
-      "lat": 35.3,
-      "lng": 133.2,
+      "lat": 34.2,
+      "lng": 135.2,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,53 +21,13 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "鳥取県",
-          "addr": "鳥取県西部",
+          "pref": "和歌山県",
+          "addr": "和歌山県北部",
           "scale": 10
         },
         {
-          "pref": "鳥取県",
-          "addr": "鳥取県西部",
-          "scale": 10
-        },
-        {
-          "pref": "鳥取県",
-          "addr": "鳥取県西部",
-          "scale": 10
-        },
-        {
-          "pref": "鳥取県",
-          "addr": "鳥取県西部",
-          "scale": 10
-        },
-        {
-          "pref": "鳥取県",
-          "addr": "鳥取県西部",
-          "scale": 10
-        },
-        {
-          "pref": "島根県",
-          "addr": "島根県東部",
-          "scale": 10
-        },
-        {
-          "pref": "島根県",
-          "addr": "島根県東部",
-          "scale": 10
-        },
-        {
-          "pref": "島根県",
-          "addr": "島根県東部",
-          "scale": 10
-        },
-        {
-          "pref": "島根県",
-          "addr": "島根県東部",
-          "scale": 10
-        },
-        {
-          "pref": "島根県",
-          "addr": "島根県西部",
+          "pref": "和歌山県",
+          "addr": "和歌山県北部",
           "scale": 10
         }
       ]
