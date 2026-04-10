@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69d80b7de88ee598246bebdc",
-      "time": "2026/04/10 05:23:00",
-      "hypocenter": "紀伊水道",
-      "magnitude": "2.8",
-      "depth": "約10km",
-      "lat": 34,
-      "lng": 135,
+      "id": "69d8567de88ee598246bebdd",
+      "time": "2026/04/10 10:43:00",
+      "hypocenter": "奄美大島北東沖",
+      "magnitude": "3.4",
+      "depth": "約40km",
+      "lat": 29.5,
+      "lng": 130.1,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,8 +21,8 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "和歌山県",
-          "addr": "和歌山県北部",
+          "pref": "鹿児島県",
+          "addr": "鹿児島県十島村",
           "scale": 10
         }
       ]
