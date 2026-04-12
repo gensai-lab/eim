@@ -1,164 +1,39 @@
 {
   "list": [
     {
-      "id": "69da77ece88ee598246bebe2",
-      "time": "2026/04/12 01:30:00",
-      "hypocenter": "島根県東部",
-      "magnitude": "4.0",
-      "depth": "約10km",
-      "lat": 35.1,
-      "lng": 132.7,
-      "maxScale": "2",
-      "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#00aaff",
+      "id": "69db97e2e88ee598246bebe3",
+      "time": "2026/04/12 22:00:00",
+      "hypocenter": "",
+      "magnitude": "---",
+      "depth": "ごく浅い",
+      "lat": -200,
+      "lng": -200,
+      "maxScale": "3",
+      "maxScaleColor": "#ffffff",
+      "maxScaleBg": "#005aff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
       "maxLpgmBg": "#333333",
-      "tsunamiText": "津波の心配なし",
+      "tsunamiText": "津波 調査中",
       "tsunamiColor": "#ffffff",
       "tsunamiBg": "#7a7a7a",
       "isEEW": false,
       "points": [
         {
-          "pref": "島根県",
-          "addr": "島根県東部",
-          "scale": 20
+          "pref": "岩手県",
+          "addr": "岩手県内陸南部",
+          "scale": 30
         },
         {
-          "pref": "島根県",
-          "addr": "島根県東部",
-          "scale": 10
+          "pref": "宮城県",
+          "addr": "宮城県北部",
+          "scale": 30
         },
         {
-          "pref": "島根県",
-          "addr": "静岡県中部",
-          "scale": 10
-        },
-        {
-          "pref": "島根県",
-          "addr": "島根県東部",
-          "scale": 10
-        },
-        {
-          "pref": "島根県",
-          "addr": "島根県東部",
-          "scale": 20
-        },
-        {
-          "pref": "島根県",
-          "addr": "島根県東部",
-          "scale": 10
-        },
-        {
-          "pref": "島根県",
-          "addr": "島根県東部",
-          "scale": 10
-        },
-        {
-          "pref": "島根県",
-          "addr": "島根県東部",
-          "scale": 10
-        },
-        {
-          "pref": "島根県",
-          "addr": "島根県東部",
-          "scale": 10
-        },
-        {
-          "pref": "島根県",
-          "addr": "島根県東部",
-          "scale": 10
-        },
-        {
-          "pref": "島根県",
-          "addr": "島根県東部",
-          "scale": 10
-        },
-        {
-          "pref": "島根県",
-          "addr": "島根県東部",
-          "scale": 10
-        },
-        {
-          "pref": "島根県",
-          "addr": "島根県西部",
-          "scale": 20
-        },
-        {
-          "pref": "島根県",
-          "addr": "島根県西部",
-          "scale": 20
-        },
-        {
-          "pref": "島根県",
-          "addr": "島根県西部",
-          "scale": 10
-        },
-        {
-          "pref": "島根県",
-          "addr": "島根県西部",
-          "scale": 10
-        },
-        {
-          "pref": "島根県",
-          "addr": "島根県西部",
-          "scale": 20
-        },
-        {
-          "pref": "島根県",
-          "addr": "島根県西部",
-          "scale": 10
-        },
-        {
-          "pref": "島根県",
-          "addr": "島根県西部",
-          "scale": 10
-        },
-        {
-          "pref": "島根県",
-          "addr": "三重県中部",
-          "scale": 10
-        },
-        {
-          "pref": "鳥取県",
-          "addr": "鳥取県西部",
-          "scale": 10
-        },
-        {
-          "pref": "鳥取県",
-          "addr": "鳥取県西部",
-          "scale": 10
-        },
-        {
-          "pref": "鳥取県",
-          "addr": "鳥取県西部",
-          "scale": 10
-        },
-        {
-          "pref": "広島県",
-          "addr": "広島県北部",
-          "scale": 10
-        },
-        {
-          "pref": "広島県",
-          "addr": "広島県北部",
-          "scale": 10
-        },
-        {
-          "pref": "広島県",
-          "addr": "広島県北部",
-          "scale": 10
-        },
-        {
-          "pref": "広島県",
-          "addr": "広島県北部",
-          "scale": 10
-        },
-        {
-          "pref": "広島県",
-          "addr": "和歌山県北部",
-          "scale": 10
+          "pref": "宮城県",
+          "addr": "宮城県中部",
+          "scale": 30
         }
       ]
     }
