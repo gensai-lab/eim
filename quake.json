@@ -1,41 +1,25 @@
 {
   "list": [
     {
-      "id": "69db97e2e88ee598246bebe3",
+      "id": "69db9814e88ee598246bebe4",
       "time": "2026/04/12 22:00:00",
-      "hypocenter": "",
-      "magnitude": "---",
-      "depth": "ごく浅い",
-      "lat": -200,
-      "lng": -200,
-      "maxScale": "3",
+      "hypocenter": "宮城県沖",
+      "magnitude": "4.7",
+      "depth": "約60km",
+      "lat": 38.2,
+      "lng": 141.8,
+      "maxScale": "-1",
       "maxScaleColor": "#ffffff",
-      "maxScaleBg": "#005aff",
+      "maxScaleBg": "#333333",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
       "maxLpgmBg": "#333333",
-      "tsunamiText": "津波 調査中",
+      "tsunamiText": "津波の心配なし",
       "tsunamiColor": "#ffffff",
       "tsunamiBg": "#7a7a7a",
       "isEEW": false,
-      "points": [
-        {
-          "pref": "岩手県",
-          "addr": "岩手県内陸南部",
-          "scale": 30
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県北部",
-          "scale": 30
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県中部",
-          "scale": 30
-        }
-      ]
+      "points": []
     }
   ]
 }
