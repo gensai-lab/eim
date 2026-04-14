@@ -1,16 +1,16 @@
 {
   "list": [
     {
-      "id": "69de4076e88ee598246bebed",
-      "time": "2026/04/14 22:21:00",
-      "hypocenter": "青森県東方沖",
-      "magnitude": "4.2",
-      "depth": "約50km",
-      "lat": 40.6,
-      "lng": 142.4,
-      "maxScale": "2",
+      "id": "69de7d0ce88ee598246bebee",
+      "time": "2026/04/15 02:41:00",
+      "hypocenter": "トカラ列島近海",
+      "magnitude": "2.9",
+      "depth": "約20km",
+      "lat": 29.3,
+      "lng": 129.5,
+      "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#00aaff",
+      "maxScaleBg": "#f2f2ff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
@@ -21,143 +21,8 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "岩手県",
-          "addr": "岩手県内陸北部",
-          "scale": 20
-        },
-        {
-          "pref": "岩手県",
-          "addr": "岩手県内陸北部",
-          "scale": 10
-        },
-        {
-          "pref": "岩手県",
-          "addr": "岩手県内陸北部",
-          "scale": 10
-        },
-        {
-          "pref": "岩手県",
-          "addr": "岩手県内陸北部",
-          "scale": 10
-        },
-        {
-          "pref": "北海道",
-          "addr": "渡島地方東部",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県津軽北部",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県津軽北部",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県下北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県下北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県下北",
+          "pref": "鹿児島県",
+          "addr": "鹿児島県十島村",
           "scale": 10
         }
       ]
