@@ -1,16 +1,16 @@
 {
   "list": [
     {
-      "id": "69dc926be88ee598246bebe9",
-      "time": "2026/04/13 15:48:00",
-      "hypocenter": "長野県中部",
-      "magnitude": "2.7",
+      "id": "69dddc08e88ee598246bebea",
+      "time": "2026/04/14 15:14:00",
+      "hypocenter": "熊本県天草・芦北地方",
+      "magnitude": "2.6",
       "depth": "約10km",
-      "lat": 36.4,
-      "lng": 138,
-      "maxScale": "1",
+      "lat": 32.3,
+      "lng": 130.4,
+      "maxScale": "2",
       "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#f2f2ff",
+      "maxScaleBg": "#00aaff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
@@ -21,18 +21,38 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "長野県",
-          "addr": "長野県北部",
+          "pref": "熊本県",
+          "addr": "熊本県球磨",
+          "scale": 20
+        },
+        {
+          "pref": "熊本県",
+          "addr": "熊本県天草・芦北",
+          "scale": 20
+        },
+        {
+          "pref": "熊本県",
+          "addr": "熊本県天草・芦北",
+          "scale": 20
+        },
+        {
+          "pref": "熊本県",
+          "addr": "熊本県天草・芦北",
           "scale": 10
         },
         {
-          "pref": "長野県",
-          "addr": "長野県北部",
+          "pref": "熊本県",
+          "addr": "熊本県天草・芦北",
           "scale": 10
         },
         {
-          "pref": "長野県",
-          "addr": "長野県北部",
+          "pref": "鹿児島県",
+          "addr": "鹿児島県薩摩",
+          "scale": 10
+        },
+        {
+          "pref": "鹿児島県",
+          "addr": "鹿児島県薩摩",
           "scale": 10
         }
       ]
