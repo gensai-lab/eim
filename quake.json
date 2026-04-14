@@ -1,16 +1,16 @@
 {
   "list": [
     {
-      "id": "69dde0d0e88ee598246bebeb",
-      "time": "2026/04/14 15:34:00",
+      "id": "69ddf2f3e88ee598246bebec",
+      "time": "2026/04/14 16:52:00",
       "hypocenter": "岐阜県飛騨地方",
-      "magnitude": "4.0",
+      "magnitude": "3.3",
       "depth": "約0km",
       "lat": 36.3,
       "lng": 137.6,
-      "maxScale": "2",
+      "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#00aaff",
+      "maxScaleBg": "#f2f2ff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
@@ -23,17 +23,7 @@
         {
           "pref": "岐阜県",
           "addr": "岐阜県飛騨",
-          "scale": 20
-        },
-        {
-          "pref": "岐阜県",
-          "addr": "岐阜県飛騨",
-          "scale": 20
-        },
-        {
-          "pref": "岐阜県",
-          "addr": "岐阜県飛騨",
-          "scale": 20
+          "scale": 10
         },
         {
           "pref": "岐阜県",
@@ -41,48 +31,8 @@
           "scale": 10
         },
         {
-          "pref": "長野県",
-          "addr": "長野県北部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県北部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県北部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県北部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県中部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県中部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県中部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県中部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県中部",
+          "pref": "岐阜県",
+          "addr": "岐阜県飛騨",
           "scale": 10
         }
       ]
