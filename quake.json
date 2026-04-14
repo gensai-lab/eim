@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69de9b3fe88ee598246bebef",
-      "time": "2026/04/15 04:50:00",
-      "hypocenter": "岩手県沖",
-      "magnitude": "3.6",
-      "depth": "約10km",
-      "lat": 39.8,
-      "lng": 142.3,
+      "id": "69dec62ae88ee598246bebf0",
+      "time": "2026/04/15 07:52:00",
+      "hypocenter": "トカラ列島近海",
+      "magnitude": "2.3",
+      "depth": "約20km",
+      "lat": 29.3,
+      "lng": 129.5,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,8 +21,8 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "岩手県",
-          "addr": "岩手県沿岸北部",
+          "pref": "鹿児島県",
+          "addr": "鹿児島県十島村",
           "scale": 10
         }
       ]
