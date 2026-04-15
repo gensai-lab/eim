@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69df3a12e88ee598246bebf3",
-      "time": "2026/04/15 16:08:00",
-      "hypocenter": "福島県沖",
-      "magnitude": "3.5",
-      "depth": "約50km",
-      "lat": 37.5,
-      "lng": 141.6,
+      "id": "69df80fce88ee598246bebf4",
+      "time": "2026/04/15 21:10:00",
+      "hypocenter": "和歌山県北部",
+      "magnitude": "2.1",
+      "depth": "約10km",
+      "lat": 34.2,
+      "lng": 135.2,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,8 +21,13 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "福島県",
-          "addr": "福島県浜通り",
+          "pref": "和歌山県",
+          "addr": "和歌山県北部",
+          "scale": 10
+        },
+        {
+          "pref": "和歌山県",
+          "addr": "和歌山県北部",
           "scale": 10
         }
       ]
