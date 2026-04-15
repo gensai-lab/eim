@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69df80fce88ee598246bebf4",
-      "time": "2026/04/15 21:10:00",
-      "hypocenter": "和歌山県北部",
-      "magnitude": "2.1",
-      "depth": "約10km",
-      "lat": 34.2,
-      "lng": 135.2,
+      "id": "69e01afde88ee598246bebf5",
+      "time": "2026/04/16 08:07:00",
+      "hypocenter": "福島県沖",
+      "magnitude": "4.1",
+      "depth": "約60km",
+      "lat": 37.7,
+      "lng": 141.7,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,13 +21,63 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "和歌山県",
-          "addr": "和歌山県北部",
+          "pref": "宮城県",
+          "addr": "宮城県南部",
           "scale": 10
         },
         {
-          "pref": "和歌山県",
-          "addr": "和歌山県北部",
+          "pref": "宮城県",
+          "addr": "宮城県南部",
+          "scale": 10
+        },
+        {
+          "pref": "宮城県",
+          "addr": "宮城県南部",
+          "scale": 10
+        },
+        {
+          "pref": "宮城県",
+          "addr": "宮城県南部",
+          "scale": 10
+        },
+        {
+          "pref": "宮城県",
+          "addr": "宮城県中部",
+          "scale": 10
+        },
+        {
+          "pref": "福島県",
+          "addr": "福島県中通り",
+          "scale": 10
+        },
+        {
+          "pref": "福島県",
+          "addr": "福島県中通り",
+          "scale": 10
+        },
+        {
+          "pref": "福島県",
+          "addr": "福島県浜通り",
+          "scale": 10
+        },
+        {
+          "pref": "福島県",
+          "addr": "福島県浜通り",
+          "scale": 10
+        },
+        {
+          "pref": "福島県",
+          "addr": "福島県浜通り",
+          "scale": 10
+        },
+        {
+          "pref": "福島県",
+          "addr": "福島県浜通り",
+          "scale": 10
+        },
+        {
+          "pref": "福島県",
+          "addr": "福島県浜通り",
           "scale": 10
         }
       ]
