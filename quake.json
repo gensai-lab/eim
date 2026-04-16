@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69e12b1ce88ee598246bebf7",
-      "time": "2026/04/17 03:28:00",
-      "hypocenter": "山梨県東部・富士五湖",
-      "magnitude": "2.5",
-      "depth": "約20km",
-      "lat": 35.5,
-      "lng": 139,
+      "id": "69e1384ee88ee598246bebf8",
+      "time": "2026/04/17 04:25:00",
+      "hypocenter": "北海道東方沖",
+      "magnitude": "3.2",
+      "depth": "約40km",
+      "lat": 43.4,
+      "lng": 146.6,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,8 +21,8 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "山梨県",
-          "addr": "山梨県東部・富士五湖",
+          "pref": "北海道",
+          "addr": "根室地方南部",
           "scale": 10
         }
       ]
