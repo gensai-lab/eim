@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69e1384ee88ee598246bebf8",
-      "time": "2026/04/17 04:25:00",
-      "hypocenter": "北海道東方沖",
-      "magnitude": "3.2",
-      "depth": "約40km",
-      "lat": 43.4,
-      "lng": 146.6,
+      "id": "69e145d5e88ee598246bebf9",
+      "time": "2026/04/17 05:23:00",
+      "hypocenter": "岩手県沖",
+      "magnitude": "3.4",
+      "depth": "約50km",
+      "lat": 39.7,
+      "lng": 142.1,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,8 +21,8 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "北海道",
-          "addr": "根室地方南部",
+          "pref": "岩手県",
+          "addr": "岩手県沿岸南部",
           "scale": 10
         }
       ]
