@@ -1,16 +1,16 @@
 {
   "list": [
     {
-      "id": "69e01afde88ee598246bebf5",
-      "time": "2026/04/16 08:07:00",
-      "hypocenter": "福島県沖",
-      "magnitude": "4.1",
-      "depth": "約60km",
-      "lat": 37.7,
-      "lng": 141.7,
-      "maxScale": "1",
+      "id": "69e11fa9e88ee598246bebf6",
+      "time": "2026/04/17 02:40:00",
+      "hypocenter": "島根県東部",
+      "magnitude": "3.8",
+      "depth": "約20km",
+      "lat": 35.3,
+      "lng": 133.2,
+      "maxScale": "2",
       "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#f2f2ff",
+      "maxScaleBg": "#00aaff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
@@ -21,63 +21,228 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "宮城県",
-          "addr": "宮城県南部",
+          "pref": "鳥取県",
+          "addr": "鳥取県西部",
+          "scale": 20
+        },
+        {
+          "pref": "鳥取県",
+          "addr": "鳥取県西部",
           "scale": 10
         },
         {
-          "pref": "宮城県",
-          "addr": "宮城県南部",
+          "pref": "鳥取県",
+          "addr": "鳥取県西部",
+          "scale": 20
+        },
+        {
+          "pref": "鳥取県",
+          "addr": "鳥取県西部",
+          "scale": 20
+        },
+        {
+          "pref": "鳥取県",
+          "addr": "鳥取県西部",
+          "scale": 20
+        },
+        {
+          "pref": "鳥取県",
+          "addr": "鳥取県西部",
           "scale": 10
         },
         {
-          "pref": "宮城県",
-          "addr": "宮城県南部",
+          "pref": "鳥取県",
+          "addr": "鳥取県西部",
           "scale": 10
         },
         {
-          "pref": "宮城県",
-          "addr": "宮城県南部",
+          "pref": "鳥取県",
+          "addr": "鳥取県西部",
           "scale": 10
         },
         {
-          "pref": "宮城県",
-          "addr": "宮城県中部",
+          "pref": "鳥取県",
+          "addr": "鳥取県西部",
           "scale": 10
         },
         {
-          "pref": "福島県",
-          "addr": "福島県中通り",
+          "pref": "鳥取県",
+          "addr": "鳥取県西部",
           "scale": 10
         },
         {
-          "pref": "福島県",
-          "addr": "福島県中通り",
+          "pref": "鳥取県",
+          "addr": "鳥取県西部",
           "scale": 10
         },
         {
-          "pref": "福島県",
-          "addr": "福島県浜通り",
+          "pref": "鳥取県",
+          "addr": "鳥取県西部",
           "scale": 10
         },
         {
-          "pref": "福島県",
-          "addr": "福島県浜通り",
+          "pref": "島根県",
+          "addr": "島根県東部",
+          "scale": 20
+        },
+        {
+          "pref": "島根県",
+          "addr": "渡島地方北部",
+          "scale": 20
+        },
+        {
+          "pref": "島根県",
+          "addr": "島根県東部",
           "scale": 10
         },
         {
-          "pref": "福島県",
-          "addr": "福島県浜通り",
+          "pref": "島根県",
+          "addr": "島根県東部",
           "scale": 10
         },
         {
-          "pref": "福島県",
-          "addr": "福島県浜通り",
+          "pref": "島根県",
+          "addr": "島根県東部",
           "scale": 10
         },
         {
-          "pref": "福島県",
-          "addr": "福島県浜通り",
+          "pref": "島根県",
+          "addr": "島根県東部",
+          "scale": 10
+        },
+        {
+          "pref": "島根県",
+          "addr": "島根県東部",
+          "scale": 20
+        },
+        {
+          "pref": "島根県",
+          "addr": "島根県東部",
+          "scale": 10
+        },
+        {
+          "pref": "島根県",
+          "addr": "島根県東部",
+          "scale": 20
+        },
+        {
+          "pref": "島根県",
+          "addr": "島根県東部",
+          "scale": 10
+        },
+        {
+          "pref": "島根県",
+          "addr": "島根県東部",
+          "scale": 10
+        },
+        {
+          "pref": "島根県",
+          "addr": "島根県東部",
+          "scale": 10
+        },
+        {
+          "pref": "島根県",
+          "addr": "静岡県中部",
+          "scale": 10
+        },
+        {
+          "pref": "島根県",
+          "addr": "島根県東部",
+          "scale": 10
+        },
+        {
+          "pref": "島根県",
+          "addr": "島根県東部",
+          "scale": 20
+        },
+        {
+          "pref": "島根県",
+          "addr": "島根県東部",
+          "scale": 10
+        },
+        {
+          "pref": "島根県",
+          "addr": "島根県東部",
+          "scale": 10
+        },
+        {
+          "pref": "島根県",
+          "addr": "島根県西部",
+          "scale": 10
+        },
+        {
+          "pref": "島根県",
+          "addr": "島根県西部",
+          "scale": 10
+        },
+        {
+          "pref": "島根県",
+          "addr": "島根県西部",
+          "scale": 10
+        },
+        {
+          "pref": "島根県",
+          "addr": "島根県西部",
+          "scale": 10
+        },
+        {
+          "pref": "島根県",
+          "addr": "島根県西部",
+          "scale": 10
+        },
+        {
+          "pref": "岡山県",
+          "addr": "岡山県北部",
+          "scale": 10
+        },
+        {
+          "pref": "岡山県",
+          "addr": "岡山県北部",
+          "scale": 10
+        },
+        {
+          "pref": "岡山県",
+          "addr": "岡山県北部",
+          "scale": 10
+        },
+        {
+          "pref": "岡山県",
+          "addr": "岡山県北部",
+          "scale": 10
+        },
+        {
+          "pref": "岡山県",
+          "addr": "岡山県北部",
+          "scale": 10
+        },
+        {
+          "pref": "広島県",
+          "addr": "広島県北部",
+          "scale": 10
+        },
+        {
+          "pref": "広島県",
+          "addr": "和歌山県北部",
+          "scale": 10
+        },
+        {
+          "pref": "広島県",
+          "addr": "広島県南東部",
+          "scale": 10
+        },
+        {
+          "pref": "広島県",
+          "addr": "広島県南西部",
+          "scale": 10
+        },
+        {
+          "pref": "広島県",
+          "addr": "広島県南西部",
+          "scale": 10
+        },
+        {
+          "pref": "愛媛県",
+          "addr": "愛媛県東予",
           "scale": 10
         }
       ]
