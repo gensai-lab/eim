@@ -1,16 +1,16 @@
 {
   "list": [
     {
-      "id": "69e1c061e88ee598246bebfc",
-      "time": "2026/04/17 14:05:00",
-      "hypocenter": "茨城県沖",
-      "magnitude": "3.2",
-      "depth": "約40km",
-      "lat": 36.5,
-      "lng": 141,
-      "maxScale": "1",
+      "id": "69e20168e88ee598246bebfd",
+      "time": "2026/04/17 18:43:00",
+      "hypocenter": "青森県三八上北地方",
+      "magnitude": "2.3",
+      "depth": "約10km",
+      "lat": 40.4,
+      "lng": 141.2,
+      "maxScale": "2",
       "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#f2f2ff",
+      "maxScaleBg": "#00aaff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
@@ -21,13 +21,13 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "茨城県",
-          "addr": "茨城県北部",
-          "scale": 10
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 20
         },
         {
-          "pref": "茨城県",
-          "addr": "茨城県北部",
+          "pref": "青森県",
+          "addr": "青森県三八上北",
           "scale": 10
         }
       ]
