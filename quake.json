@@ -1,12 +1,12 @@
 {
   "list": [
     {
-      "id": "69e1b9e4e88ee598246bebfb",
-      "time": "2026/04/17 13:38:00",
+      "id": "69e1c061e88ee598246bebfc",
+      "time": "2026/04/17 14:05:00",
       "hypocenter": "茨城県沖",
-      "magnitude": "3.0",
-      "depth": "約50km",
-      "lat": 36.8,
+      "magnitude": "3.2",
+      "depth": "約40km",
+      "lat": 36.5,
       "lng": 141,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
@@ -20,6 +20,11 @@
       "tsunamiBg": "#7a7a7a",
       "isEEW": false,
       "points": [
+        {
+          "pref": "茨城県",
+          "addr": "茨城県北部",
+          "scale": 10
+        },
         {
           "pref": "茨城県",
           "addr": "茨城県北部",
