@@ -1,16 +1,16 @@
 {
   "list": [
     {
-      "id": "69e20168e88ee598246bebfd",
-      "time": "2026/04/17 18:43:00",
-      "hypocenter": "青森県三八上北地方",
-      "magnitude": "2.3",
-      "depth": "約10km",
-      "lat": 40.4,
-      "lng": 141.2,
-      "maxScale": "2",
+      "id": "69e2288de88ee598246bebfe",
+      "time": "2026/04/17 21:30:00",
+      "hypocenter": "富山県東部",
+      "magnitude": "3.0",
+      "depth": "約0km",
+      "lat": 36.4,
+      "lng": 137.6,
+      "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#00aaff",
+      "maxScaleBg": "#f2f2ff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
@@ -21,13 +21,8 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 20
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
+          "pref": "岐阜県",
+          "addr": "岐阜県飛騨",
           "scale": 10
         }
       ]
