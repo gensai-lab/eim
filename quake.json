@@ -1,10 +1,10 @@
 {
   "list": [
     {
-      "id": "69e3597ce88ee598246bec1b",
-      "time": "2026/04/18 19:11:00",
+      "id": "69e37c8ee88ee598246bec1c",
+      "time": "2026/04/18 21:41:00",
       "hypocenter": "長野県北部",
-      "magnitude": "2.4",
+      "magnitude": "1.9",
       "depth": "約10km",
       "lat": 36.6,
       "lng": 137.9,
@@ -20,11 +20,6 @@
       "tsunamiBg": "#7a7a7a",
       "isEEW": false,
       "points": [
-        {
-          "pref": "長野県",
-          "addr": "長野県北部",
-          "scale": 10
-        },
         {
           "pref": "長野県",
           "addr": "長野県北部",
