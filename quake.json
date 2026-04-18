@@ -1,16 +1,16 @@
 {
   "list": [
     {
-      "id": "69e331c8e88ee598246bec14",
-      "time": "2026/04/18 16:21:00",
+      "id": "69e33910e88ee598246bec15",
+      "time": "2026/04/18 16:53:00",
       "hypocenter": "長野県北部",
-      "magnitude": "3.6",
+      "magnitude": "2.4",
       "depth": "約10km",
       "lat": 36.6,
       "lng": 137.9,
-      "maxScale": "3",
-      "maxScaleColor": "#ffffff",
-      "maxScaleBg": "#005aff",
+      "maxScale": "2",
+      "maxScaleColor": "#1b1b1b",
+      "maxScaleBg": "#00aaff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
@@ -23,16 +23,6 @@
         {
           "pref": "長野県",
           "addr": "長野県北部",
-          "scale": 30
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県北部",
-          "scale": 20
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県北部",
           "scale": 20
         },
         {
@@ -43,156 +33,6 @@
         {
           "pref": "長野県",
           "addr": "長野県北部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県北部",
-          "scale": 30
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県北部",
-          "scale": 30
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県北部",
-          "scale": 30
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県北部",
-          "scale": 30
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県北部",
-          "scale": 30
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県北部",
-          "scale": 20
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県北部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県北部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県北部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県中部",
-          "scale": 20
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県中部",
-          "scale": 20
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県中部",
-          "scale": 20
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県中部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県中部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県中部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県中部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県中部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県中部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県中部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県中部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県中部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県中部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県中部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県中部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県中部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県中部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県中部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県中部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県中部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県中部",
           "scale": 10
         }
       ]
