@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69e39551e88ee598246bec1d",
-      "time": "2026/04/18 23:26:00",
-      "hypocenter": "長野県北部",
-      "magnitude": "1.5",
-      "depth": "約0km",
-      "lat": 36.6,
-      "lng": 137.9,
+      "id": "69e3a7eee88ee598246bec1e",
+      "time": "2026/04/19 00:46:00",
+      "hypocenter": "富山湾",
+      "magnitude": "3.7",
+      "depth": "約20km",
+      "lat": 37.2,
+      "lng": 137.5,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,8 +21,33 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "長野県",
-          "addr": "長野県北部",
+          "pref": "石川県",
+          "addr": "石川県能登",
+          "scale": 10
+        },
+        {
+          "pref": "石川県",
+          "addr": "石川県能登",
+          "scale": 10
+        },
+        {
+          "pref": "石川県",
+          "addr": "石川県能登",
+          "scale": 10
+        },
+        {
+          "pref": "石川県",
+          "addr": "石川県能登",
+          "scale": 10
+        },
+        {
+          "pref": "石川県",
+          "addr": "石川県能登",
+          "scale": 10
+        },
+        {
+          "pref": "石川県",
+          "addr": "石川県能登",
           "scale": 10
         }
       ]
