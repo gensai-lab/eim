@@ -1,16 +1,16 @@
 {
   "list": [
     {
-      "id": "69e3265be88ee598246bec0f",
+      "id": "69e326a8e88ee598246bec10",
       "time": "2026/04/18 15:33:00",
       "hypocenter": "長野県北部",
       "magnitude": "3.2",
       "depth": "約10km",
       "lat": 36.6,
       "lng": 137.9,
-      "maxScale": "-1",
+      "maxScale": "3",
       "maxScaleColor": "#ffffff",
-      "maxScaleBg": "#333333",
+      "maxScaleBg": "#005aff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
@@ -19,7 +19,48 @@
       "tsunamiColor": "#ffffff",
       "tsunamiBg": "#7a7a7a",
       "isEEW": false,
-      "points": []
+      "points": [
+        {
+          "pref": "長野県",
+          "addr": "長野県北部",
+          "scale": 30
+        },
+        {
+          "pref": "長野県",
+          "addr": "長野県北部",
+          "scale": 20
+        },
+        {
+          "pref": "長野県",
+          "addr": "長野県北部",
+          "scale": 20
+        },
+        {
+          "pref": "長野県",
+          "addr": "長野県北部",
+          "scale": 20
+        },
+        {
+          "pref": "長野県",
+          "addr": "長野県北部",
+          "scale": 20
+        },
+        {
+          "pref": "長野県",
+          "addr": "長野県北部",
+          "scale": 10
+        },
+        {
+          "pref": "長野県",
+          "addr": "長野県北部",
+          "scale": 10
+        },
+        {
+          "pref": "長野県",
+          "addr": "長野県北部",
+          "scale": 20
+        }
+      ]
     }
   ]
 }
