@@ -1,36 +1,25 @@
 {
   "list": [
     {
-      "id": "69e306d4e88ee598246bec02",
+      "id": "69e3073ee88ee598246bec03",
       "time": "2026/04/18 13:20:00",
-      "hypocenter": "",
-      "magnitude": "---",
-      "depth": "ごく浅い",
-      "lat": -200,
-      "lng": -200,
-      "maxScale": "5強",
-      "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#ff6600",
+      "hypocenter": "長野県北部",
+      "magnitude": "5.0",
+      "depth": "約10km",
+      "lat": 36.6,
+      "lng": 137.9,
+      "maxScale": "-1",
+      "maxScaleColor": "#ffffff",
+      "maxScaleBg": "#333333",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
       "maxLpgmBg": "#333333",
-      "tsunamiText": "津波 調査中",
+      "tsunamiText": "津波の心配なし",
       "tsunamiColor": "#ffffff",
       "tsunamiBg": "#7a7a7a",
       "isEEW": true,
-      "points": [
-        {
-          "pref": "長野県",
-          "addr": "長野県北部",
-          "scale": 50
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県中部",
-          "scale": 30
-        }
-      ]
+      "points": []
     }
   ]
 }
