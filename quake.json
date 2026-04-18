@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69e30b84e88ee598246bec05",
-      "time": "2026/04/18 13:38:00",
-      "hypocenter": "長野県北部",
-      "magnitude": "1.9",
+      "id": "69e30d02e88ee598246bec06",
+      "time": "2026/04/18 13:41:00",
+      "hypocenter": "千島列島",
+      "magnitude": "5.8",
       "depth": "約10km",
-      "lat": 36.5,
-      "lng": 137.9,
+      "lat": 45.8,
+      "lng": 151.9,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -18,16 +18,11 @@
       "tsunamiText": "津波の心配なし",
       "tsunamiColor": "#ffffff",
       "tsunamiBg": "#7a7a7a",
-      "isEEW": true,
+      "isEEW": false,
       "points": [
         {
-          "pref": "長野県",
-          "addr": "長野県北部",
-          "scale": 10
-        },
-        {
-          "pref": "長野県",
-          "addr": "長野県北部",
+          "pref": "北海道",
+          "addr": "根室地方中部",
           "scale": 10
         }
       ]
