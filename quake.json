@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69e30d02e88ee598246bec06",
-      "time": "2026/04/18 13:41:00",
-      "hypocenter": "千島列島",
-      "magnitude": "5.8",
+      "id": "69e30f54e88ee598246bec07",
+      "time": "2026/04/18 13:52:00",
+      "hypocenter": "長野県北部",
+      "magnitude": "1.5",
       "depth": "約10km",
-      "lat": 45.8,
-      "lng": 151.9,
+      "lat": 36.5,
+      "lng": 137.9,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,8 +21,8 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "北海道",
-          "addr": "根室地方中部",
+          "pref": "長野県",
+          "addr": "長野県北部",
           "scale": 10
         }
       ]
