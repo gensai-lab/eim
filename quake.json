@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69e3d86de88ee598246bec1f",
-      "time": "2026/04/19 04:12:00",
-      "hypocenter": "熊本県球磨地方",
-      "magnitude": "3.1",
+      "id": "69e3e2c9e88ee598246bec20",
+      "time": "2026/04/19 04:56:00",
+      "hypocenter": "長野県北部",
+      "magnitude": "2.1",
       "depth": "約10km",
-      "lat": 32.4,
-      "lng": 130.8,
+      "lat": 36.6,
+      "lng": 137.9,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,48 +21,18 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "熊本県",
-          "addr": "熊本県球磨",
+          "pref": "長野県",
+          "addr": "長野県北部",
           "scale": 10
         },
         {
-          "pref": "熊本県",
-          "addr": "熊本県球磨",
+          "pref": "長野県",
+          "addr": "長野県北部",
           "scale": 10
         },
         {
-          "pref": "熊本県",
-          "addr": "熊本県球磨",
-          "scale": 10
-        },
-        {
-          "pref": "熊本県",
-          "addr": "熊本県球磨",
-          "scale": 10
-        },
-        {
-          "pref": "熊本県",
-          "addr": "熊本県球磨",
-          "scale": 10
-        },
-        {
-          "pref": "熊本県",
-          "addr": "熊本県球磨",
-          "scale": 10
-        },
-        {
-          "pref": "熊本県",
-          "addr": "熊本県球磨",
-          "scale": 10
-        },
-        {
-          "pref": "宮崎県",
-          "addr": "宮崎県北部平野部",
-          "scale": 10
-        },
-        {
-          "pref": "宮崎県",
-          "addr": "宮崎県北部平野部",
+          "pref": "長野県",
+          "addr": "長野県北部",
           "scale": 10
         }
       ]
