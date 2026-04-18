@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69e2288de88ee598246bebfe",
-      "time": "2026/04/17 21:30:00",
-      "hypocenter": "富山県東部",
-      "magnitude": "3.0",
-      "depth": "約0km",
-      "lat": 36.4,
-      "lng": 137.6,
+      "id": "69e2f512e88ee598246bebff",
+      "time": "2026/04/18 12:02:00",
+      "hypocenter": "沖縄本島近海",
+      "magnitude": "3.4",
+      "depth": "約40km",
+      "lat": 26.7,
+      "lng": 127.7,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,8 +21,18 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "岐阜県",
-          "addr": "岐阜県飛騨",
+          "pref": "沖縄県",
+          "addr": "沖縄県本島北部",
+          "scale": 10
+        },
+        {
+          "pref": "沖縄県",
+          "addr": "沖縄県本島北部",
+          "scale": 10
+        },
+        {
+          "pref": "沖縄県",
+          "addr": "沖縄県本島北部",
           "scale": 10
         }
       ]
