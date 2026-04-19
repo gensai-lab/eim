@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69e436d2e88ee598246bec23",
-      "time": "2026/04/19 10:55:00",
-      "hypocenter": "千葉県南部",
-      "magnitude": "3.6",
-      "depth": "約70km",
-      "lat": 35.1,
-      "lng": 140,
+      "id": "69e4acdae88ee598246bec24",
+      "time": "2026/04/19 19:19:00",
+      "hypocenter": "長野県北部",
+      "magnitude": "2.3",
+      "depth": "約10km",
+      "lat": 36.6,
+      "lng": 137.9,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,43 +21,13 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "千葉県",
-          "addr": "千葉県北西部",
+          "pref": "長野県",
+          "addr": "長野県北部",
           "scale": 10
         },
         {
-          "pref": "東京都",
-          "addr": "東京都２３区",
-          "scale": 10
-        },
-        {
-          "pref": "東京都",
-          "addr": "東京都２３区",
-          "scale": 10
-        },
-        {
-          "pref": "神奈川県",
-          "addr": "神奈川県東部",
-          "scale": 10
-        },
-        {
-          "pref": "神奈川県",
-          "addr": "神奈川県東部",
-          "scale": 10
-        },
-        {
-          "pref": "神奈川県",
-          "addr": "神奈川県東部",
-          "scale": 10
-        },
-        {
-          "pref": "神奈川県",
-          "addr": "神奈川県東部",
-          "scale": 10
-        },
-        {
-          "pref": "神奈川県",
-          "addr": "神奈川県東部",
+          "pref": "長野県",
+          "addr": "長野県北部",
           "scale": 10
         }
       ]
