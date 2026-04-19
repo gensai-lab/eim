@@ -1,34 +1,29 @@
 {
   "list": [
     {
-      "id": "69e4b9eee88ee598246bec25",
-      "time": "2026/04/19 20:15:00",
-      "hypocenter": "島根県東部",
-      "magnitude": "2.9",
-      "depth": "約10km",
-      "lat": 35.3,
-      "lng": 133.3,
-      "maxScale": "1",
-      "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#f2f2ff",
+      "id": "69e4d49ee88ee598246bec26",
+      "time": "2026/04/19 22:10:00",
+      "hypocenter": "",
+      "magnitude": "---",
+      "depth": "ごく浅い",
+      "lat": -200,
+      "lng": -200,
+      "maxScale": "3",
+      "maxScaleColor": "#ffffff",
+      "maxScaleBg": "#005aff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
       "maxLpgmBg": "#333333",
-      "tsunamiText": "津波の心配なし",
+      "tsunamiText": "津波 調査中",
       "tsunamiColor": "#ffffff",
       "tsunamiBg": "#7a7a7a",
       "isEEW": false,
       "points": [
         {
-          "pref": "鳥取県",
-          "addr": "鳥取県西部",
-          "scale": 10
-        },
-        {
-          "pref": "島根県",
-          "addr": "島根県東部",
-          "scale": 10
+          "pref": "長野県",
+          "addr": "長野県北部",
+          "scale": 30
         }
       ]
     }
