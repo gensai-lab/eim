@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69e4acdae88ee598246bec24",
-      "time": "2026/04/19 19:19:00",
-      "hypocenter": "長野県北部",
-      "magnitude": "2.3",
+      "id": "69e4b9eee88ee598246bec25",
+      "time": "2026/04/19 20:15:00",
+      "hypocenter": "島根県東部",
+      "magnitude": "2.9",
       "depth": "約10km",
-      "lat": 36.6,
-      "lng": 137.9,
+      "lat": 35.3,
+      "lng": 133.3,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,13 +21,13 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "長野県",
-          "addr": "長野県北部",
+          "pref": "鳥取県",
+          "addr": "鳥取県西部",
           "scale": 10
         },
         {
-          "pref": "長野県",
-          "addr": "長野県北部",
+          "pref": "島根県",
+          "addr": "島根県東部",
           "scale": 10
         }
       ]
