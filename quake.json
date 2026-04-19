@@ -1,16 +1,16 @@
 {
   "list": [
     {
-      "id": "69e4db91e88ee598246bec29",
-      "time": "2026/04/19 22:38:00",
-      "hypocenter": "熊本県熊本地方",
-      "magnitude": "2.5",
-      "depth": "約10km",
-      "lat": 32.8,
-      "lng": 130.7,
-      "maxScale": "2",
+      "id": "69e53826e88ee598246bec2a",
+      "time": "2026/04/20 05:13:00",
+      "hypocenter": "豊後水道",
+      "magnitude": "3.3",
+      "depth": "約50km",
+      "lat": 33.4,
+      "lng": 132.3,
+      "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#00aaff",
+      "maxScaleBg": "#f2f2ff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
@@ -21,23 +21,18 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "熊本県",
-          "addr": "熊本県熊本",
-          "scale": 20
-        },
-        {
-          "pref": "熊本県",
-          "addr": "熊本県熊本",
+          "pref": "愛媛県",
+          "addr": "愛媛県南予",
           "scale": 10
         },
         {
-          "pref": "熊本県",
-          "addr": "熊本県熊本",
+          "pref": "愛媛県",
+          "addr": "愛媛県南予",
           "scale": 10
         },
         {
-          "pref": "熊本県",
-          "addr": "熊本県熊本",
+          "pref": "大分県",
+          "addr": "大分県中部",
           "scale": 10
         }
       ]
