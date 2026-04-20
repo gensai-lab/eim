@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69e602bde88ee598246bec41",
-      "time": "2026/04/20 19:37:00",
+      "id": "69e60443e88ee598246bec42",
+      "time": "2026/04/20 19:44:00",
       "hypocenter": "三陸沖",
-      "magnitude": "4.5",
+      "magnitude": "4.9",
       "depth": "約10km",
-      "lat": 39.5,
-      "lng": 143.4,
+      "lat": 39.6,
+      "lng": 143.6,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,8 +21,38 @@
       "isEEW": false,
       "points": [
         {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 10
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 10
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 10
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県沿岸北部",
+          "scale": 10
+        },
+        {
           "pref": "岩手県",
           "addr": "岩手県内陸北部",
+          "scale": 10
+        },
+        {
+          "pref": "宮城県",
+          "addr": "宮城県中部",
           "scale": 10
         }
       ]
