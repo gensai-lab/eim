@@ -1,34 +1,89 @@
 {
   "list": [
     {
-      "id": "69e5d21de88ee598246bec2f",
-      "time": "2026/04/20 16:10:00",
-      "hypocenter": "長野県北部",
-      "magnitude": "2.4",
-      "depth": "約10km",
-      "lat": 36.6,
-      "lng": 137.9,
-      "maxScale": "1",
+      "id": "69e5dbcce88ee598246bec33",
+      "time": "2026/04/20 16:53:00",
+      "hypocenter": "",
+      "magnitude": "---",
+      "depth": "ごく浅い",
+      "lat": -200,
+      "lng": -200,
+      "maxScale": "5強",
       "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#f2f2ff",
+      "maxScaleBg": "#ff6600",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
       "maxLpgmBg": "#333333",
-      "tsunamiText": "津波の心配なし",
+      "tsunamiText": "津波 調査中",
       "tsunamiColor": "#ffffff",
       "tsunamiBg": "#7a7a7a",
-      "isEEW": false,
+      "isEEW": true,
       "points": [
         {
-          "pref": "長野県",
-          "addr": "長野県北部",
-          "scale": 10
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 50
         },
         {
-          "pref": "長野県",
-          "addr": "長野県北部",
-          "scale": 10
+          "pref": "青森県",
+          "addr": "青森県津軽北部",
+          "scale": 40
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県津軽南部",
+          "scale": 40
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県下北",
+          "scale": 40
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県沿岸北部",
+          "scale": 45
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県内陸北部",
+          "scale": 45
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県内陸南部",
+          "scale": 45
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県沿岸南部",
+          "scale": 40
+        },
+        {
+          "pref": "宮城県",
+          "addr": "宮城県北部",
+          "scale": 45
+        },
+        {
+          "pref": "宮城県",
+          "addr": "宮城県中部",
+          "scale": 40
+        },
+        {
+          "pref": "北海道",
+          "addr": "渡島地方東部",
+          "scale": 40
+        },
+        {
+          "pref": "秋田県",
+          "addr": "秋田県内陸北部",
+          "scale": 40
+        },
+        {
+          "pref": "秋田県",
+          "addr": "秋田県内陸南部",
+          "scale": 40
         }
       ]
     }
