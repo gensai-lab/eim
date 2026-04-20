@@ -1,29 +1,29 @@
 {
   "list": [
     {
-      "id": "69e60ed1e88ee598246bec44",
-      "time": "2026/04/20 20:29:00",
-      "hypocenter": "三陸沖",
-      "magnitude": "4.5",
-      "depth": "約10km",
-      "lat": 39.6,
-      "lng": 143.2,
-      "maxScale": "1",
-      "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#f2f2ff",
+      "id": "69e62300e88ee598246bec45",
+      "time": "2026/04/20 21:56:00",
+      "hypocenter": "",
+      "magnitude": "---",
+      "depth": "ごく浅い",
+      "lat": -200,
+      "lng": -200,
+      "maxScale": "3",
+      "maxScaleColor": "#ffffff",
+      "maxScaleBg": "#005aff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
       "maxLpgmBg": "#333333",
-      "tsunamiText": "津波警報 発表中",
+      "tsunamiText": "津波 調査中",
       "tsunamiColor": "#ffffff",
-      "tsunamiBg": "#de080a",
+      "tsunamiBg": "#7a7a7a",
       "isEEW": true,
       "points": [
         {
           "pref": "岩手県",
           "addr": "岩手県内陸北部",
-          "scale": 10
+          "scale": 30
         }
       ]
     }
