@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69e6e361e88ee598246bec49",
-      "time": "2026/04/21 11:35:00",
-      "hypocenter": "三陸沖",
-      "magnitude": "4.5",
+      "id": "69e6f5a5e88ee598246bec4a",
+      "time": "2026/04/21 12:54:00",
+      "hypocenter": "長野県北部",
+      "magnitude": "2.1",
       "depth": "約10km",
-      "lat": 39.8,
-      "lng": 143.3,
+      "lat": 36.6,
+      "lng": 137.9,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,43 +21,8 @@
       "isEEW": true,
       "points": [
         {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "青森県",
-          "addr": "青森県三八上北",
-          "scale": 10
-        },
-        {
-          "pref": "岩手県",
-          "addr": "岩手県沿岸北部",
-          "scale": 10
-        },
-        {
-          "pref": "岩手県",
-          "addr": "岩手県沿岸北部",
-          "scale": 10
-        },
-        {
-          "pref": "岩手県",
-          "addr": "岩手県内陸北部",
-          "scale": 10
-        },
-        {
-          "pref": "岩手県",
-          "addr": "岩手県内陸北部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県中部",
+          "pref": "長野県",
+          "addr": "長野県北部",
           "scale": 10
         }
       ]
