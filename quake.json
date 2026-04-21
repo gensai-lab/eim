@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69e7263ce88ee598246bec4d",
-      "time": "2026/04/21 16:20:00",
-      "hypocenter": "トカラ列島近海",
-      "magnitude": "2.8",
+      "id": "69e72d13e88ee598246bec4e",
+      "time": "2026/04/21 16:51:00",
+      "hypocenter": "宗谷地方南部",
+      "magnitude": "3.1",
       "depth": "約0km",
-      "lat": 29.3,
-      "lng": 129.6,
+      "lat": 45.1,
+      "lng": 142.2,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,8 +21,8 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "鹿児島県",
-          "addr": "鹿児島県十島村",
+          "pref": "北海道",
+          "addr": "宗谷地方南部",
           "scale": 10
         }
       ]
