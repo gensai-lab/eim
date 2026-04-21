@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69e72d13e88ee598246bec4e",
-      "time": "2026/04/21 16:51:00",
-      "hypocenter": "宗谷地方南部",
-      "magnitude": "3.1",
-      "depth": "約0km",
-      "lat": 45.1,
-      "lng": 142.2,
+      "id": "69e75929e88ee598246bec4f",
+      "time": "2026/04/21 19:58:00",
+      "hypocenter": "石川県能登地方",
+      "magnitude": "1.7",
+      "depth": "約10km",
+      "lat": 37.2,
+      "lng": 136.7,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,8 +21,8 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "北海道",
-          "addr": "宗谷地方南部",
+          "pref": "石川県",
+          "addr": "石川県能登",
           "scale": 10
         }
       ]
