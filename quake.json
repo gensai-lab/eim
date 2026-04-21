@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69e7a6ebe88ee598246bec54",
-      "time": "2026/04/22 01:30:00",
-      "hypocenter": "熊本県阿蘇地方",
-      "magnitude": "2.3",
+      "id": "69e7af1de88ee598246bec55",
+      "time": "2026/04/22 02:05:00",
+      "hypocenter": "和歌山県北部",
+      "magnitude": "3.2",
       "depth": "約10km",
-      "lat": 33,
-      "lng": 131.1,
+      "lat": 34.1,
+      "lng": 135.4,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,8 +21,33 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "熊本県",
-          "addr": "熊本県阿蘇",
+          "pref": "和歌山県",
+          "addr": "和歌山県北部",
+          "scale": 10
+        },
+        {
+          "pref": "和歌山県",
+          "addr": "和歌山県北部",
+          "scale": 10
+        },
+        {
+          "pref": "和歌山県",
+          "addr": "和歌山県北部",
+          "scale": 10
+        },
+        {
+          "pref": "和歌山県",
+          "addr": "和歌山県北部",
+          "scale": 10
+        },
+        {
+          "pref": "和歌山県",
+          "addr": "和歌山県北部",
+          "scale": 10
+        },
+        {
+          "pref": "和歌山県",
+          "addr": "和歌山県北部",
           "scale": 10
         }
       ]
