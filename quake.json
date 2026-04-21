@@ -1,10 +1,10 @@
 {
   "list": [
     {
-      "id": "69e635cde88ee598246bec47",
-      "time": "2026/04/20 23:15:00",
+      "id": "69e6e361e88ee598246bec49",
+      "time": "2026/04/21 11:35:00",
       "hypocenter": "三陸沖",
-      "magnitude": "4.6",
+      "magnitude": "4.5",
       "depth": "約10km",
       "lat": 39.8,
       "lng": 143.3,
@@ -15,11 +15,21 @@
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
       "maxLpgmBg": "#333333",
-      "tsunamiText": "津波警報 発表中",
+      "tsunamiText": "津波の心配なし",
       "tsunamiColor": "#ffffff",
-      "tsunamiBg": "#de080a",
+      "tsunamiBg": "#7a7a7a",
       "isEEW": true,
       "points": [
+        {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 10
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 10
+        },
         {
           "pref": "青森県",
           "addr": "青森県三八上北",
@@ -43,6 +53,11 @@
         {
           "pref": "岩手県",
           "addr": "岩手県内陸北部",
+          "scale": 10
+        },
+        {
+          "pref": "宮城県",
+          "addr": "宮城県中部",
           "scale": 10
         }
       ]
