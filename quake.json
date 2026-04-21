@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69e70c3be88ee598246bec4c",
-      "time": "2026/04/21 14:29:00",
-      "hypocenter": "三陸沖",
-      "magnitude": "5.3",
-      "depth": "約10km",
-      "lat": 39.9,
-      "lng": 143.6,
+      "id": "69e7263ce88ee598246bec4d",
+      "time": "2026/04/21 16:20:00",
+      "hypocenter": "トカラ列島近海",
+      "magnitude": "2.8",
+      "depth": "約0km",
+      "lat": 29.3,
+      "lng": 129.6,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -18,41 +18,11 @@
       "tsunamiText": "津波の心配なし",
       "tsunamiColor": "#ffffff",
       "tsunamiBg": "#7a7a7a",
-      "isEEW": true,
+      "isEEW": false,
       "points": [
         {
-          "pref": "岩手県",
-          "addr": "岩手県沿岸北部",
-          "scale": 10
-        },
-        {
-          "pref": "岩手県",
-          "addr": "岩手県内陸北部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県北部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県北部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県北部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県北部",
-          "scale": 10
-        },
-        {
-          "pref": "宮城県",
-          "addr": "宮城県中部",
+          "pref": "鹿児島県",
+          "addr": "鹿児島県十島村",
           "scale": 10
         }
       ]
