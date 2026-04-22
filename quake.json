@@ -1,16 +1,16 @@
 {
   "list": [
     {
-      "id": "69e909d0e88ee598246bec62",
-      "time": "2026/04/23 02:43:00",
-      "hypocenter": "長野県北部",
-      "magnitude": "2.8",
-      "depth": "約10km",
-      "lat": 36.5,
-      "lng": 137.9,
-      "maxScale": "1",
+      "id": "69e90a73e88ee598246bec63",
+      "time": "2026/04/23 02:46:00",
+      "hypocenter": "岩手県沖",
+      "magnitude": "4.2",
+      "depth": "約50km",
+      "lat": 40.1,
+      "lng": 142.2,
+      "maxScale": "2",
       "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#f2f2ff",
+      "maxScaleBg": "#00aaff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
@@ -21,8 +21,198 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "長野県",
-          "addr": "長野県北部",
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 20
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 20
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 10
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 10
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 20
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 10
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 20
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 10
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 10
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 20
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 10
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 10
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 10
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 10
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 10
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 10
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 10
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県下北",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県沿岸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県沿岸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県沿岸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県沿岸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県沿岸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県沿岸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県沿岸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県沿岸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県沿岸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県沿岸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県沿岸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県沿岸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県内陸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県内陸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県内陸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県内陸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県内陸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県内陸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県内陸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県内陸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県内陸北部",
           "scale": 10
         }
       ]
