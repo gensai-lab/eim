@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69e84ec2e88ee598246bec5a",
-      "time": "2026/04/22 13:27:00",
-      "hypocenter": "石川県加賀地方",
+      "id": "69e88667e88ee598246bec5b",
+      "time": "2026/04/22 17:24:00",
+      "hypocenter": "紀伊水道",
       "magnitude": "2.6",
       "depth": "約10km",
-      "lat": 36.3,
-      "lng": 136.7,
+      "lat": 34.2,
+      "lng": 135.1,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,13 +21,13 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "石川県",
-          "addr": "石川県加賀",
+          "pref": "和歌山県",
+          "addr": "和歌山県北部",
           "scale": 10
         },
         {
-          "pref": "石川県",
-          "addr": "茨城県南部",
+          "pref": "和歌山県",
+          "addr": "和歌山県北部",
           "scale": 10
         }
       ]
