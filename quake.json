@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69e88667e88ee598246bec5b",
-      "time": "2026/04/22 17:24:00",
-      "hypocenter": "紀伊水道",
-      "magnitude": "2.6",
-      "depth": "約10km",
-      "lat": 34.2,
-      "lng": 135.1,
+      "id": "69e8ba73e88ee598246bec5c",
+      "time": "2026/04/22 21:06:00",
+      "hypocenter": "岩手県沖",
+      "magnitude": "4.3",
+      "depth": "約40km",
+      "lat": 40.1,
+      "lng": 142.5,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,13 +21,58 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "和歌山県",
-          "addr": "和歌山県北部",
+          "pref": "青森県",
+          "addr": "青森県三八上北",
           "scale": 10
         },
         {
-          "pref": "和歌山県",
-          "addr": "和歌山県北部",
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 10
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 10
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 10
+        },
+        {
+          "pref": "青森県",
+          "addr": "青森県三八上北",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県沿岸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県沿岸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県内陸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県内陸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県内陸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県内陸北部",
           "scale": 10
         }
       ]
