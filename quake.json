@@ -1,16 +1,16 @@
 {
   "list": [
     {
-      "id": "69e968cfe88ee598246bec66",
-      "time": "2026/04/23 09:30:00",
-      "hypocenter": "岐阜県飛騨地方",
-      "magnitude": "2.3",
+      "id": "69e969c4e88ee598246bec67",
+      "time": "2026/04/23 09:35:00",
+      "hypocenter": "長野県中部",
+      "magnitude": "2.6",
       "depth": "約0km",
       "lat": 36.2,
-      "lng": 137.5,
-      "maxScale": "1",
+      "lng": 137.6,
+      "maxScale": "2",
       "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#f2f2ff",
+      "maxScaleBg": "#00aaff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
@@ -20,6 +20,11 @@
       "tsunamiBg": "#7a7a7a",
       "isEEW": false,
       "points": [
+        {
+          "pref": "岐阜県",
+          "addr": "岐阜県飛騨",
+          "scale": 20
+        },
         {
           "pref": "岐阜県",
           "addr": "岐阜県飛騨",
