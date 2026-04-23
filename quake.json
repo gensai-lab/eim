@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69e963c2e88ee598246bec65",
-      "time": "2026/04/23 09:08:00",
-      "hypocenter": "三陸沖",
-      "magnitude": "4.6",
-      "depth": "約10km",
-      "lat": 39.8,
-      "lng": 143.4,
+      "id": "69e968cfe88ee598246bec66",
+      "time": "2026/04/23 09:30:00",
+      "hypocenter": "岐阜県飛騨地方",
+      "magnitude": "2.3",
+      "depth": "約0km",
+      "lat": 36.2,
+      "lng": 137.5,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -21,13 +21,8 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "岩手県",
-          "addr": "岩手県沿岸北部",
-          "scale": 10
-        },
-        {
-          "pref": "岩手県",
-          "addr": "岩手県内陸北部",
+          "pref": "岐阜県",
+          "addr": "岐阜県飛騨",
           "scale": 10
         }
       ]
