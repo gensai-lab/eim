@@ -1,16 +1,16 @@
 {
   "list": [
     {
-      "id": "69e969c4e88ee598246bec67",
-      "time": "2026/04/23 09:35:00",
-      "hypocenter": "長野県中部",
-      "magnitude": "2.6",
-      "depth": "約0km",
-      "lat": 36.2,
-      "lng": 137.6,
-      "maxScale": "2",
+      "id": "69e9bff1e88ee598246bec68",
+      "time": "2026/04/23 15:41:00",
+      "hypocenter": "岩手県沖",
+      "magnitude": "4.0",
+      "depth": "約40km",
+      "lat": 40.1,
+      "lng": 142.5,
+      "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#00aaff",
+      "maxScaleBg": "#f2f2ff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
@@ -21,13 +21,33 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "岐阜県",
-          "addr": "岐阜県飛騨",
-          "scale": 20
+          "pref": "岩手県",
+          "addr": "岩手県沿岸北部",
+          "scale": 10
         },
         {
-          "pref": "岐阜県",
-          "addr": "岐阜県飛騨",
+          "pref": "岩手県",
+          "addr": "岩手県沿岸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県沿岸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県内陸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県内陸北部",
+          "scale": 10
+        },
+        {
+          "pref": "岩手県",
+          "addr": "岩手県内陸北部",
           "scale": 10
         }
       ]
