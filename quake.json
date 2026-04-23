@@ -1,16 +1,16 @@
 {
   "list": [
     {
-      "id": "69e922fde88ee598246bec64",
-      "time": "2026/04/23 04:32:00",
-      "hypocenter": "茨城県北部",
-      "magnitude": "3.4",
+      "id": "69e963c2e88ee598246bec65",
+      "time": "2026/04/23 09:08:00",
+      "hypocenter": "三陸沖",
+      "magnitude": "4.6",
       "depth": "約10km",
-      "lat": 36.6,
-      "lng": 140.6,
-      "maxScale": "2",
+      "lat": 39.8,
+      "lng": 143.4,
+      "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
-      "maxScaleBg": "#00aaff",
+      "maxScaleBg": "#f2f2ff",
       "hasLpgm": false,
       "maxLpgmScale": "---",
       "maxLpgmColor": "#ffffff",
@@ -21,24 +21,14 @@
       "isEEW": false,
       "points": [
         {
-          "pref": "茨城県",
-          "addr": "茨城県北部",
-          "scale": 20
-        },
-        {
-          "pref": "茨城県",
-          "addr": "茨城県北部",
+          "pref": "岩手県",
+          "addr": "岩手県沿岸北部",
           "scale": 10
         },
         {
-          "pref": "茨城県",
-          "addr": "茨城県北部",
+          "pref": "岩手県",
+          "addr": "岩手県内陸北部",
           "scale": 10
-        },
-        {
-          "pref": "茨城県",
-          "addr": "茨城県北部",
-          "scale": 20
         }
       ]
     }
