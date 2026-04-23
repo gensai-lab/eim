@@ -1,13 +1,13 @@
 {
   "list": [
     {
-      "id": "69e9bff1e88ee598246bec68",
-      "time": "2026/04/23 15:41:00",
+      "id": "69e9c041e88ee598246bec69",
+      "time": "2026/04/23 15:42:00",
       "hypocenter": "岩手県沖",
-      "magnitude": "4.0",
-      "depth": "約40km",
-      "lat": 40.1,
-      "lng": 142.5,
+      "magnitude": "3.5",
+      "depth": "約50km",
+      "lat": 40,
+      "lng": 142.2,
       "maxScale": "1",
       "maxScaleColor": "#1b1b1b",
       "maxScaleBg": "#f2f2ff",
@@ -23,31 +23,6 @@
         {
           "pref": "岩手県",
           "addr": "岩手県沿岸北部",
-          "scale": 10
-        },
-        {
-          "pref": "岩手県",
-          "addr": "岩手県沿岸北部",
-          "scale": 10
-        },
-        {
-          "pref": "岩手県",
-          "addr": "岩手県沿岸北部",
-          "scale": 10
-        },
-        {
-          "pref": "岩手県",
-          "addr": "岩手県内陸北部",
-          "scale": 10
-        },
-        {
-          "pref": "岩手県",
-          "addr": "岩手県内陸北部",
-          "scale": 10
-        },
-        {
-          "pref": "岩手県",
-          "addr": "岩手県内陸北部",
           "scale": 10
         }
       ]
